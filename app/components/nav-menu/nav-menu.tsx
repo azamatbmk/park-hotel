@@ -14,7 +14,7 @@ export default function NavMenu() {
                     <li className={styles.navitem}>Номера</li>
                     <li className={styles.navitem}><Link href={'/restaurant'}>Ресторан</Link></li>
                     <li className={styles.navitem}>Бассейн & Баня</li>
-                    <li className={styles.navitem}>Экскурсии</li>
+                    <li className={styles.navitem}><Link href={'/excursions'}>Экскурсии</Link></li>
                     <li className={styles.navitem}>Контакты</li>
                 </ul>
             </nav>
