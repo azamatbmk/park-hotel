@@ -1,0 +1,33 @@
+.navcontainer {
+    display: flex;
+    gap: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1000;
+    background-color: rgba(27, 21, 0, 0.4);
+    backdrop-filter: blur(10px);
+    transition: top 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.navwrapper {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+}
+
+/* .navitem {
+    marker: none;
+} */
