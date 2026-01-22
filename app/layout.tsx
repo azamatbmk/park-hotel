@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local"
 import NavMenu from "./components/nav-menu/nav-menu";
@@ -7,6 +7,11 @@ import NavMenu from "./components/nav-menu/nav-menu";
 const dzuarikau = localFont({
   src: '../public/fonts/Morington_RUS.otf',
   variable: '--font-dzuarikau'
+})
+
+const inter = Inter({
+  variable: "--font-inter-regular",
+  weight: "300"
 })
 
 const geistSans = Geist({
@@ -31,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${dzuarikau.variable}`}>        
+      <body className={`${geistSans.variable} ${geistMono.variable} ${dzuarikau.variable} ${inter.variable}`}>        
         {children}
       </body>
     </html>

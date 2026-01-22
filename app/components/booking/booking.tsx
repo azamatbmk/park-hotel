@@ -4,7 +4,7 @@ export default function BookingBlock() {
 
     return (
         <div className={styles['booking-form']}>
-            <div className={styles['hint']}>Бронирование <br /> номеров</div>
+            <div className={styles['hint']}>Бронирование <br/> номеров</div>
 
             <div className={styles['form-field']}>
                 <div className={styles['input-wrapper']}>

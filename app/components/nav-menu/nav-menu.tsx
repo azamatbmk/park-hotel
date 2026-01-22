@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function NavMenu() {
     return (
         <div className={styles['nav-container']}>
-            <Image src='./logo.svg' alt="Логотип отеля" width={500} height={70}/>
+            <Image src='./logo.svg' alt="Логотип отеля" width={445} height={96}/>
             <nav >
                 <ul className={styles['nav-wrapper']}>
                     <li className={styles.navitem}><Link href={'/'}>Об отеле</Link></li>

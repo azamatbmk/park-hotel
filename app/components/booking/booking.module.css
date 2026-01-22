@@ -64,8 +64,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .hint {
-    font-size: 20px;
-    font-weight: lighter;
+    font-family: var(--font-inter-regular);
+    font-size: 22px;
     color: #ffffff;
     padding-right: 10px;
     white-space: nowrap;
