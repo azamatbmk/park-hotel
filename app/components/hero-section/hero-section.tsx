@@ -6,6 +6,16 @@ import styles from "./hero-section.module.css";
 export default function HeroSection() {
     return (
         <section className={styles['hero-section']}>
+            <video
+                className={styles['video']}
+                autoPlay
+                muted
+                loop
+                playsInline
+            >
+                <source src="video/main.webm" type="video/webm"/>
+                Ваш браузер не поддерживает видео
+            </video>
             <div className={styles['nav-container']}>
                 <Image className={styles['main-logo']} src='./logo.svg' alt="Логотип отеля" width={500} height={70}/>
                 <div className={styles['nav-and-phone']}>
