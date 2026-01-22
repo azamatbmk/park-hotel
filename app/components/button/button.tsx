@@ -7,6 +7,7 @@ export default function MainButton() {
 
     useEffect(() => {
         console.log('Компонент смонтирован');
+        console.log(window.scrollY)
         
         return () => {
             console.log('Компонент будет размонтирован');
