@@ -17,7 +17,7 @@ export default function BookingBlock() {
             <div className={styles['form-field']}>
                 <div className={styles['input-wrapper']}>
                     <span className={styles['label-inside']}>Дата выезда</span>
-                    <input className={styles['input']} type="date" />
+                    <input className={styles['input']} type="date"/>
                     <img src="./date-icon.svg" className={styles['calendar-icon']} alt="иконка" />
                 </div>
             </div>
@@ -25,7 +25,7 @@ export default function BookingBlock() {
             <div className={styles['form-field']}>
                 <div className={styles['input-wrapper']}>
                     <span className={styles['label-inside']}>Гостей</span>
-                    <input className={styles['input']} type="number" />
+                    <input className={styles['input']} type="number" min={0}/>
                 </div>
             </div>
 
