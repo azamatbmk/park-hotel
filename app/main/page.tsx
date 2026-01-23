@@ -3,6 +3,7 @@ import ImageCarousel from "../components/carousel/carousel";
 import HeroSection from "../components/hero-section/hero-section";
 import restaurantPic from "../../public/photos/about-1.jpg"
 import roomsBg from "../../public/photos/roomsbg.png"
+import rightTopArrow from "../../public/er.svg"
 
  const restaurantImages = [
     { src: '/photos/about2.png', alt: 'Photo 1', title: 'Ресторан1' },
@@ -19,9 +20,21 @@ export default function MainPage() {
     return (
         <>
             <HeroSection />
-            <About description={restDescription} bgPhoto={restaurantPic} >{'Об отеле'}</About>
+            <About
+                description={restDescription}
+                bgPhoto={restaurantPic}
+                anchor={'/restaurant/page.tsx'}
+                icon={rightTopArrow}>
+                    {'Об отеле'}
+            </About>
             <ImageCarousel images={restaurantImages} />
-            <About description={roomsDescription} bgPhoto={roomsBg}>{'Номера'}</About>
+            <About
+                description={roomsDescription}
+                bgPhoto={roomsBg}
+                anchor={'/rooms/page.tsx'}
+                icon={rightTopArrow}>
+                    {'Номера'}
+            </About>
         </>
     )
 }

@@ -1,0 +1,29 @@
+.more-btn {
+    max-width: fit-content;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    display: flex;
+    height: fit-content;
+    font-size: 16px;
+    color: white;
+    gap: 6px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.more-btn:hover {
+    background-color: white;
+    color: black;
+    transition: background 0.3s, color 0.3s;
+}
+
+.icon-hover {
+  fill: black;
+  transition: fill 0.3s ease;
+}
+
+/* .more-btn:hover .icon-hover {
+    fill: black;
+} */

@@ -36,6 +36,11 @@
     max-width: 600px;
 }
 
+.more-btn-and-h5-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 .h5 {
     font-family: var(--font-dzuarikau);
     text-transform: uppercase;

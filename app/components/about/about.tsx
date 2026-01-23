@@ -1,11 +1,14 @@
 import Image, { StaticImageData } from "next/image"
 import styles from "./about.module.css"
 import aboutPic from "/photos/about-1.jpg"
+import MoreButton from "../buttons/more-btn"
 
-export default function About({ children, description, bgPhoto }: {
-    children: React.ReactNode,
-    description: string,
-    bgPhoto: StaticImageData
+export default function About({ children, description, bgPhoto, anchor, icon }: {
+    children: React.ReactNode;
+    description: string;
+    bgPhoto: StaticImageData;
+    anchor: string;
+    icon?: React.ReactNode;
 }) {
     return (
         <section className={styles['about-section']}>
@@ -19,7 +22,10 @@ export default function About({ children, description, bgPhoto }: {
                     alt="Фото об отеле"
                 />
                 <div className={styles['h5-and-p-box']}>
-                    <h5 className={styles['h5']}>{children}</h5>
+                    <div className={styles['more-btn-and-h5-wrapper']}>
+                        <h5 className={styles['h5']}>{children}</h5>
+                        <MoreButton anchor={anchor} icon={icon}>{'подробнее'}</MoreButton>
+                    </div>
                     <p className={styles['paragraph']}>
                         {description}
                     </p>

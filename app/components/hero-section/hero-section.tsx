@@ -13,7 +13,7 @@ export default function HeroSection() {
                 loop
                 playsInline
             >
-                <source src="video/main.webm" type="video/webm"/>
+                <source src="video/main1.webm" type="video/webm"/>
                 Ваш браузер не поддерживает видео
             </video>
             <div className={styles['nav-container']}>
