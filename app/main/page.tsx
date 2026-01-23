@@ -10,6 +10,7 @@ import { aboutImages, aboutDescription } from "./constants";
 import { roomsDescription, roomsImages } from "../rooms/constants";
 import { restaurantDescription, restaurantImages } from "../restaurant/constants";
 import { spaDescription, spaImages } from "../pool/constants";
+import Footer from "../components/footer/footer";
 
  
 export default function MainPage() {
@@ -48,6 +49,7 @@ export default function MainPage() {
                     {'Бассейн & спа'}
             </About>
             <ImageCarousel images={spaImages} />
+            <Footer />
         </>
     )
 }

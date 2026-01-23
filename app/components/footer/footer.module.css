@@ -1,0 +1,39 @@
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-footer);
+    min-height: 500px;
+    padding: 20px 40px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    margin-right: auto;
+}
+
+.policy-link {
+    text-decoration-line: underline;
+}
+
+.footer-nav {
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+
+.h4 {
+    font-family: var(--font-dzuarikau);
+    font-size: 36px;
+    color: #887e71;
+    font-weight: lighter;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
+.li {
+    margin-bottom: 16px;
+}
