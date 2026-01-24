@@ -68,7 +68,7 @@ input:focus {
 
 .hint {
     font-family: var(--font-inter-regular);
-    font-size: 22px;
+    font-size: 20px;
     color: #ffffff;
     padding-right: 10px;
     white-space: nowrap;

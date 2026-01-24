@@ -5,9 +5,6 @@ export const aboutImages = [
     { src: '/photos/about4.png', alt: 'Photo 4' },
     { src: '/photos/about5.png', alt: 'Photo 5' },
     { src: '/photos/about6.png', alt: 'Photo 6' },
-    { src: '/photos/restaurant2.png', alt: 'Photo 1' },
-    { src: '/photos/restaurant3.png', alt: 'Photo 2' },
-    { src: '/photos/restaurant4.png', alt: 'Photo 3' }
   ];
 
   export const aboutDescription = 'Парк-отель «Дзуарикау» расположен в живописном уголке Осетии, недалеко от Владикавказа и вблизи живописного поселка Фиагдон. Это идеальное место для отдыха на природе — в тишине, среди гор и чистого воздуха. Уютные номера, гостеприимная атмосфера и красота окружающих пейзажей сделают ваш отдых по-настоящему особенным.'

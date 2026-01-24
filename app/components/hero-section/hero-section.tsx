@@ -1,7 +1,6 @@
 'use client'
 
 import Link from "next/link";
-import BookingBlock from "../booking/booking";
 import Image from "next/image";
 import styles from "./hero-section.module.css";
 import PhoneButton from "../buttons/phone-btn";
@@ -10,13 +9,14 @@ import { menuItems } from "./constants";
 import { IHeroSectionProps } from "./hero-section.interface";
 
 
-export default function HeroSection({ background, boockingBlock }: IHeroSectionProps) {
+export default function HeroSection({ background, bookingBlock }: IHeroSectionProps) {
     const triangle = '▼';
     const pathName = usePathname();
 
     return (
         <section className={styles['hero-section']}>
             {background}
+            <div className={styles['overlay']}></div>
             <div className={styles['nav-container']}>
                 <Image
                     className={styles['main-logo']}
@@ -48,7 +48,7 @@ export default function HeroSection({ background, boockingBlock }: IHeroSectionP
                     <PhoneButton />
                 </div>
             </div>
-            {boockingBlock}
+            {bookingBlock}
         </section>
     )
 }

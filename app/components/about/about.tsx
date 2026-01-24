@@ -1,14 +1,17 @@
-import Image, { StaticImageData } from "next/image"
+import Image from "next/image"
 import styles from "./about.module.css"
-import MoreButton from "../buttons/more-btn"
+import { IAboutProps } from "./about.interface"
+import FoodMenuItem from "@/app/restaurant/food-menu-item"
 
-export default function About({ children, description, bgPhoto, anchor, icon }: {
-    children: React.ReactNode;
-    description: string;
-    bgPhoto: StaticImageData;
-    anchor: string;
-    icon?: React.ReactNode;
-}) {
+export default function About({ 
+        children, 
+        description, 
+        bgPhoto, 
+        anchor, 
+        icon,
+        alt,
+        btnText
+    }: IAboutProps ) {
     return (
         <section className={styles['about-section']}>
             <div>
@@ -18,17 +21,15 @@ export default function About({ children, description, bgPhoto, anchor, icon }: 
                 <Image 
                     className={styles['photo']}
                     src={bgPhoto}
-                    alt="Фото об отеле"
+                    alt={alt}
                 />
-                <div className={styles['h5-and-p-box']}>
-                    <div className={styles['more-btn-and-h5-wrapper']}>
-                        <h5 className={styles['h5']}>{children}</h5>
-                        <MoreButton anchor={anchor} icon={icon}>{'подробнее'}</MoreButton>
-                    </div>
-                    <p className={styles['paragraph']}>
-                        {description}
-                    </p>
-                </div>
+                <FoodMenuItem
+                    children={children}
+                    anchor={anchor}
+                    btnText={btnText}
+                    icon={icon}
+                    description={description}
+                />
             </div>
         </section>
     )

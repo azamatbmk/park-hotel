@@ -1,6 +1,7 @@
 .restaurant {
     display: flex;
     background-color: blueviolet;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .rest-bg {
@@ -11,4 +12,51 @@
     height: 100vh;
     object-fit: cover;
     z-index: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: lighter;
+    font-size: 112px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-family: var(--font-dzuarikau);
+    z-index: 3;
+}
+
+.food-item-wrapper  {
+    position: absolute;
+    bottom: 40px;
+    left: 130px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px 20px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.menu-btn-and-h5-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h5 {
+    font-family: var(--font-dzuarikau);
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #e9a94f;
+    font-size: 36px;
+}
+
+.paragraph {
+    font-size: 17px;
+    font-weight: 10;
+    text-align: left;
+    line-height: 1.5;
+    color: white;
 }

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./restaurant.module.css"
 
-export default function RestaurantBacground() {
+export default function RestaurantBackground() {
     return (
         <>
             <Image
@@ -10,6 +10,7 @@ export default function RestaurantBacground() {
                 alt="Фото ресторана"
                 fill
             />
+            <h1 className={styles['h1']}>РЕСТОРАН</h1>
         </>
     )
 }

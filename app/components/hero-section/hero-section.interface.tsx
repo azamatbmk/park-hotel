@@ -1,4 +1,4 @@
 export interface IHeroSectionProps {
     background: React.ReactNode;
-    boockingBlock?: React.ReactNode;
+    bookingBlock?: React.ReactNode;
 }

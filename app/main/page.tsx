@@ -24,7 +24,9 @@ export default function MainPage() {
             <About
                 description={aboutDescription}
                 bgPhoto={aboutBg}
+                alt={'Фото отеля'}
                 anchor={'/restaurant'}
+                btnText={'подробнее'}
                 icon={rightTopArrow}>
                     {'Об отеле'}
             </About>
@@ -32,7 +34,9 @@ export default function MainPage() {
             <About
                 description={roomsDescription}
                 bgPhoto={roomsBg}
+                alt={'Фото номеров'}
                 anchor={'/rooms'}
+                btnText={'подробнее'}
                 icon={rightTopArrow}>
                     {'Номера'}
             </About>
@@ -40,7 +44,9 @@ export default function MainPage() {
             <About
                 description={restaurantDescription}
                 bgPhoto={restBg}
+                alt={'Фото ресторана'}
                 anchor={'/restaurant'}
+                btnText={'подробнее'}
                 icon={rightTopArrow}>
                     {'Ресторан'}
             </About>
@@ -48,7 +54,9 @@ export default function MainPage() {
             <About
                 description={spaDescription}
                 bgPhoto={spaBg}
+                alt={'Фото бассейна'}
                 anchor={'/pool'}
+                btnText={'подробнее'}
                 icon={rightTopArrow}>
                     {'Бассейн & спа'}
             </About>
