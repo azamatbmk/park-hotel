@@ -1,8 +1,8 @@
-export interface IPhoto {
+export interface IPhotoProps {
     src: string,
     alt: string,
 }
 
 export interface IPhotoCarousel {
-    images: IPhoto[];
+    images: IPhotoProps[];
 }

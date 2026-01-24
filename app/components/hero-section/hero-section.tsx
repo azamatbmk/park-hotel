@@ -1,39 +1,54 @@
+'use client'
+
 import Link from "next/link";
 import BookingBlock from "../booking/booking";
 import Image from "next/image";
 import styles from "./hero-section.module.css";
+import PhoneButton from "../buttons/phone-btn";
+import { usePathname } from "next/navigation";
+import { menuItems } from "./constants";
+import { IHeroSectionProps } from "./hero-section.interface";
 
-export default function HeroSection() {
+
+export default function HeroSection({ background, boockingBlock }: IHeroSectionProps) {
+    const triangle = '▼';
+    const pathName = usePathname();
+
     return (
         <section className={styles['hero-section']}>
-            <video
-                className={styles['video']}
-                autoPlay
-                muted
-                loop
-                playsInline
-            >
-                <source src="video/main1.webm" type="video/webm"/>
-                Ваш браузер не поддерживает видео
-            </video>
+            {background}
             <div className={styles['nav-container']}>
-                <Image className={styles['main-logo']} src='./logo.svg' alt="Логотип отеля" width={500} height={70}/>
+                <Image
+                    className={styles['main-logo']}
+                    src='./logo.svg'
+                    alt="Логотип отеля"
+                    width={400}
+                    height={70}
+                />
                 <div className={styles['nav-and-phone']}>
                     <nav >
                         <ul className={styles['nav-wrapper']}>
-                            <li className={styles.navitem}><Link href={'/'}>Об отеле</Link></li>
-                            <li className={styles.navitem}><Link href={'/rooms'}>Номера</Link></li>
-                            <li className={styles.navitem}><Link href={'/restaurant'}>Ресторан</Link></li>
-                            <li className={styles.navitem}><Link href={'/pool'}>Бассейн & Баня</Link></li>
-                            <li className={styles.navitem}><Link href={'/excursions'}>Экскурсии</Link></li>
-                            <li className={styles.navitem}><Link href={'/contacts'}>Контакты</Link></li>
-                            <li className={styles.navitem}><Link href={'/contacts'}>Контакты</Link></li>
+                            { menuItems.map((item) => {
+                                const isActive = pathName == item.href;
+                            return (
+                                <li key={item.href}>
+                                    <Link href={item.href}>
+                                        {item.title}
+                                        {isActive && (
+                                            <span className={styles['triangle']}>
+                                                {triangle}
+                                            </span>
+                                        )}
+                                    </Link>
+                                </li>
+                            )
+                            })}
                         </ul>
                     </nav>
-                    <Link href="tel:+79280701155" className={styles['phone-box']} >+7 (928) 070-11-55</Link>
+                    <PhoneButton />
                 </div>
             </div>
-            <BookingBlock />
+            {boockingBlock}
         </section>
     )
 }

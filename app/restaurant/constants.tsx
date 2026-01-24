@@ -1,3 +1,6 @@
+import styles from "./restaurant.module.css"
+import Image from "next/image";
+
 export const restaurantImages = [
     { src: '/photos/restaurant1.png', alt: 'Photo 1' },
     { src: '/photos/restaurant2.png', alt: 'Photo 2' },
@@ -8,3 +11,4 @@ export const restaurantImages = [
   ];
 
   export const restaurantDescription = 'Ресторан сочетает в себе современный стиль и уют. Просторный зал с комфортной мебелью, мягким освещением и тщательно подобранными элементами интерьера. Здесь можно насладиться не только вкусной едой, приготовленной из свежих ингредиентов, но и атмосферой тепла, гостеприимства и заботы.'
+  

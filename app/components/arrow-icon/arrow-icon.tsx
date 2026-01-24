@@ -5,7 +5,6 @@ export default function ArrowIcon({ color = 'currentColor' }) {
       width="16" 
       height="16" 
       viewBox="0 0 16 16"
-      // Указываем fill здесь и в style
       fill={color}
       style={{ 
         fill: color,

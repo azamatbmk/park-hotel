@@ -10,13 +10,17 @@ import { aboutImages, aboutDescription } from "./constants";
 import { roomsDescription, roomsImages } from "../rooms/constants";
 import { restaurantDescription, restaurantImages } from "../restaurant/constants";
 import { spaDescription, spaImages } from "../pool/constants";
-import Footer from "../components/footer/footer";
+import { aboutBackground } from "../components/hero-section/constants";
+import VideoBackground from "../components/video-background/video-background";
+import BookingBlock from "../components/booking/booking";
 
  
 export default function MainPage() {
     return (
         <>
-            <HeroSection />
+            <HeroSection
+                background={<VideoBackground />}     
+            />
             <About
                 description={aboutDescription}
                 bgPhoto={aboutBg}
@@ -49,7 +53,6 @@ export default function MainPage() {
                     {'Бассейн & спа'}
             </About>
             <ImageCarousel images={spaImages} />
-            <Footer />
         </>
     )
 }

@@ -18,7 +18,7 @@ export default function NavMenu() {
                     <li className={styles.navitem}><Link href={'/contacts'}>Контакты</Link></li>
                 </ul>
             </nav>
-            <Link href="tel:+79280701155" className="phone-box" >+7 (928) 070-11-55</Link>
+            <Link href="tel:+79280701155" className="phone-box" >+7(928)070-11-55</Link>
         </div>
     )
 }

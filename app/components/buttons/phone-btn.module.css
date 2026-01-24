@@ -1,0 +1,18 @@
+.phone-btn {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: transparent;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    max-width: fit-content;
+    /* height: fit-content; */
+    font-size: 16px;
+    color: var(--text-light);
+}
+
+@media (max-width: 1300) {
+    .phone-btn {
+        font-size: 12px;
+    }
+}

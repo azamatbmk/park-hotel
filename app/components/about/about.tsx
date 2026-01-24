@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from "next/image"
 import styles from "./about.module.css"
-import aboutPic from "/photos/about-1.jpg"
 import MoreButton from "../buttons/more-btn"
 
 export default function About({ children, description, bgPhoto, anchor, icon }: {
