@@ -16,9 +16,16 @@ export default function LuxRoom({
     sectionClassName
 }: ILuxRoomProps) {
     return(
-        <section className={`${sectionClassName ? styles['foto-section-left'] : styles['foto-section']}` }>
-            <div className={styles['foto-container']}>
-                <div className={styles['left-foto-wrapper']}>
+        <section className={
+                `${sectionClassName ? styles['foto-section-left'] : styles['foto-section']}`}>
+            <div className={
+                `${sectionClassName 
+                        ? styles['foto-container__right'] 
+                        : styles['foto-container']}`}>
+                <div className={
+                    `${sectionClassName 
+                            ? styles['left-foto-wrapper__right'] 
+                            : styles['left-foto-wrapper']}`}>
                     <Image
                         className={styles['left-image']}
                         src={leftImageSrc}
@@ -28,7 +35,10 @@ export default function LuxRoom({
                     />
                 </div>
                 <div className={styles['right-column']}>
-                    <div className={styles['top-foto-wrapper']}>
+                    <div className={
+                        `${sectionClassName 
+                                    ? styles['top-foto-wrapper__right'] 
+                                    : styles['top-foto-wrapper']}`}>
                         <Image
                             className={styles['top-image']}
                             src={topImageSrc}
@@ -47,7 +57,10 @@ export default function LuxRoom({
                                 height={342}
                             />
                         </div>
-                        <div className={styles['right-bottom-wrapper']}>
+                        <div className={
+                            `${sectionClassName 
+                                    ? styles['right-bottom-wrapper__right'] 
+                                    : styles['right-bottom-wrapper']}`}>
                             <Image
                                 className={styles['right-bottom-image']}
                                 src={rightBottomImageSrc}
@@ -60,10 +73,13 @@ export default function LuxRoom({
                     </div>
                 </div>
             </div>
-            <div className={styles['description-container']}>
-                <h2 className={styles['h2']}>
-                    {h2}
-                </h2>
+            <div className={`${sectionClassName ? styles['description-container__right'] : styles['description-container']}`}>
+                <div className={styles['h2-and-more-place-btn']}>
+                    <h2 className={styles['h2']}>
+                        {h2}
+                    </h2>
+                    <button className={styles['more-place-btn']}>доп.{'\u00A0'}место{'\u00A0'}▼</button>
+                </div>
                 <p className={styles['paragraph']}>{square} кв²</p>
                 <p className={styles['paragraph']}>
                     {description}
@@ -77,11 +93,11 @@ export default function LuxRoom({
                         height={100}
                     />
                 </div>
-                <div className={styles['price']}>
+                <div className={`${sectionClassName ? styles['price__flex-end'] : styles['price']}`}>
                     <strong>от {price} ₽</strong>
                     <span>1 ночь / 2 гостя</span>
+                    <BookButton buttonText={'Забронировать'} />
                 </div>
-                <BookButton buttonText={'Забронировать'} />
             </div>
         </section>
     )

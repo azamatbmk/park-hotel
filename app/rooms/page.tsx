@@ -17,7 +17,7 @@ import topImageThree from "../../public/photos/rooms12.png"
 import leftBootomImageThree from "../../public/photos/rooms13.png"
 import rightBottomImageThree from "../../public/photos/rooms14.png"
 
-export default function Rooms() {
+export default function RoomsPage() {
     return (
         <main>
             <HeroSection

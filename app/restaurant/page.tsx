@@ -6,7 +6,7 @@ import PagesHeroSectionBackground from "./main-section-bg";
 import restBg from "../../public/photos/restbg.png"
 
 
-export default function Restaurant() {
+export default function RestaurantPage() {
     return (
         <main>
             <HeroSection
