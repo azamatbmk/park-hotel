@@ -3,6 +3,7 @@ import HeroSection from "../components/hero-section/hero-section";
 import PagesHeroSectionBackground from "../restaurant/main-section-bg";
 import poolPageBg from "../../public/photos/spa-paige-bg.png"
 import H2HeaderComponent from "../components/h2-header/h2-header";
+import PoolFotoSection from "./pool-foto";
 
 export default function PoolPage() {
     return (
@@ -20,6 +21,7 @@ export default function PoolPage() {
             <H2HeaderComponent
                 children={'Бассейн'}
             />
+            <PoolFotoSection />
         </main>
     )
 }

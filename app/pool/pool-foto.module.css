@@ -1,0 +1,9 @@
+.one-foto-wrapper {
+    display: flex;
+    position: relative;
+    /* object-fit: cover; */
+    /* width: 100%; */
+    max-width: 100vw;
+    height: 704px;
+
+}
