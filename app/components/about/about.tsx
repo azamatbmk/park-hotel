@@ -1,17 +1,17 @@
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import styles from "./about.module.css"
+import MoreButton from "../buttons/more-btn"
 import { IAboutProps } from "./about.interface"
-import FoodMenuItem from "@/app/restaurant/food-menu-item"
 
-export default function About({ 
+export default function About(
+    { 
         children, 
         description, 
         bgPhoto, 
         anchor, 
         icon,
-        alt,
         btnText
-    }: IAboutProps ) {
+    }: IAboutProps) {
     return (
         <section className={styles['about-section']}>
             <div>
@@ -21,15 +21,17 @@ export default function About({
                 <Image 
                     className={styles['photo']}
                     src={bgPhoto}
-                    alt={alt}
+                    alt="Фото об отеле"
                 />
-                <FoodMenuItem
-                    children={children}
-                    anchor={anchor}
-                    btnText={btnText}
-                    icon={icon}
-                    description={description}
-                />
+                <div className={styles['h5-and-p-box']}>
+                    <div className={styles['more-btn-and-h5-wrapper']}>
+                        <h5 className={styles['h5']}>{children}</h5>
+                        <MoreButton anchor={anchor} icon={icon}>{btnText}</MoreButton>
+                    </div>
+                    <p className={styles['paragraph']}>
+                        {description}
+                    </p>
+                </div>
             </div>
         </section>
     )

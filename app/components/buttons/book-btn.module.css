@@ -1,0 +1,12 @@
+.book-btn {
+    border-radius: 10px;
+    background-color: #e9a94f;
+    display: inline-block;
+    font-size: 18px;
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    /* width: 35%; */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}

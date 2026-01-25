@@ -10,9 +10,7 @@ import { aboutImages, aboutDescription } from "./constants";
 import { roomsDescription, roomsImages } from "../rooms/constants";
 import { restaurantDescription, restaurantImages } from "../restaurant/constants";
 import { spaDescription, spaImages } from "../pool/constants";
-import { aboutBackground } from "../components/hero-section/constants";
 import VideoBackground from "../components/video-background/video-background";
-import BookingBlock from "../components/booking/booking";
 
  
 export default function MainPage() {

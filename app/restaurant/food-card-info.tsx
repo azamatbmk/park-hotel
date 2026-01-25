@@ -2,7 +2,7 @@ import { IAboutProps } from "../components/about/about.interface"
 import MoreButton from "../components/buttons/more-btn"
 import styles from "./restaurant.module.css"
 
-export default function FoodMenuItem({
+export default function FoodCardInfo({
     children,
     anchor,
     icon,

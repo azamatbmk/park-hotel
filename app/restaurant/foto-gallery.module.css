@@ -1,0 +1,51 @@
+.foto-gallery-section {
+    padding: 0px 40px;
+    margin-bottom: 100px;
+}
+
+.foto-gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 12px;
+    margin-bottom: 9px; /* Отступы между элементами */
+}
+
+.foto-gallery-item-wrapper {
+    flex: 0 0 calc(50% - 6px); /* 50% ширины минус половина gap */
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-gallery-item-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.foto-cards-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 12px; /* Отступы между элементами */
+}
+
+.foto-card-wrapper {
+    flex: 1; /* Каждый элемент занимает равную долю пространства */
+    min-width: 0; /* Важно для корректного сжатия изображений */
+}
+
+.foto-card-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    height: 270px;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .foto-gallery-item-wrapper {
+    flex: 0 0 100%;
+  }
+}

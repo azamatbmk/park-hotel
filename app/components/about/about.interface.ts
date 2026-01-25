@@ -6,6 +6,6 @@ export interface IAboutProps {
     bgPhoto: StaticImageData;
     alt: string;
     anchor: string;
-    btnText: string;
+    btnText?: string;
     icon?: React.ReactNode;
 }

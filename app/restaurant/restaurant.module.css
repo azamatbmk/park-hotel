@@ -1,7 +1,6 @@
 .restaurant {
     display: flex;
     background-color: blueviolet;
-    background: rgba(0, 0, 0, 0.4);
 }
 
 .rest-bg {
@@ -12,7 +11,6 @@
     height: 100vh;
     object-fit: cover;
     z-index: 0;
-    background: rgba(0, 0, 0, 0.4);
 }
 
 .h1 {
@@ -29,15 +27,39 @@
     z-index: 3;
 }
 
+.food-cards-section {
+    padding: 0px 40px;
+    margin-bottom: 100px;
+}
+
+.food-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.food-card-wrapper {
+    position: relative;
+    display: flex;
+    width: fit-content;
+}
+
 .food-item-wrapper  {
     position: absolute;
-    bottom: 40px;
-    left: 130px;
+    width: 370px;
+    height: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
-    padding: 20px 20px;
-    border-radius: 10px;
-    max-width: 600px;
+    padding: 14px 14px;
+    box-sizing: border-box;
+    color: white;
+    text-align: left;
+    border-radius: 12px;
+    z-index: 1;
 }
 
 .menu-btn-and-h5-wrapper {
@@ -47,7 +69,6 @@
 
 .h5 {
     font-family: var(--font-dzuarikau);
-    text-transform: uppercase;
     font-weight: lighter;
     color: #e9a94f;
     font-size: 36px;
