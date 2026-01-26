@@ -1,4 +1,4 @@
-.nav-container {
+.nav-container__on {
     display: flex;
     position: fixed;
     height: 80px;
@@ -11,12 +11,18 @@
     background-color: rgba(27, 21, 0, 0.4);
     backdrop-filter: blur(10px);
     transition: top 0.3s ease, opacity 0.3s ease;
-    opacity: 0;
     pointer-events: none;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     opacity: 1;
     pointer-events: auto;
+}
+
+.nav-container__off {
+    opacity: 0;
+    position: absolute;
+    top: -100px;
+    transition: all 0.3s ease;
 }
 
 .nav-and-phoneBtn-wrapper {

@@ -1,0 +1,77 @@
+.two-foto-wrapper {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    gap: 20px;
+    padding: 0px 40px;
+}
+
+.excursion-foto-section {
+    /* min-height: 100vh; */
+    flex: 1;
+    min-width: 25%;
+}
+
+.title {
+    padding: 0px 150px;
+    font-family: var(--font-dzuarikau);
+    font-size: 84px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: left;
+    /* margin-left: 130px;
+    margin-bottom: -35px; */
+    color: #696054;
+}
+
+.section-photo {
+    position: relative;
+    width: 100%;
+}
+
+.photo {
+    border-radius: 12px;
+    object-fit: cover;
+    width: 100%;
+    /* height: 90%; */
+}
+
+.h5-and-p-box  {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    /* left: 30px;
+    right: 30px;  */
+    max-width: 600px;
+    transform: translateX(-50%);
+    width: calc(100% - 60px);
+}
+
+.more-btn-and-h5-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h5 {
+    font-family: var(--font-dzuarikau);
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #e9a94f;
+    font-size: 42px;
+}
+
+.paragraph {
+    font-size: 17px;
+    font-weight: 10;
+    text-align: left;
+    line-height: 1.5;
+    color: white;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
+}

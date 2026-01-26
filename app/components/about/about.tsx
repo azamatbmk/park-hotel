@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image"
+import Image from "next/image"
 import styles from "./about.module.css"
 import MoreButton from "../buttons/more-btn"
 import { IAboutProps } from "./about.interface"
@@ -8,7 +8,7 @@ export default function About(
         children, 
         description, 
         bgPhoto, 
-        anchor, 
+        anchor ='/', 
         icon,
         btnText
     }: IAboutProps) {

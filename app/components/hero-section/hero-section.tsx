@@ -24,9 +24,10 @@ export default function HeroSection({ background, bookingBlock }: IHeroSectionPr
                     alt="Логотип отеля"
                     width={400}
                     height={70}
+                    priority={true}
                 />
                 <div className={styles['nav-and-phone']}>
-                    <nav >
+                    <nav>
                         <ul className={styles['nav-wrapper']}>
                             { menuItems.map((item) => {
                                 const isActive = pathName == item.href;

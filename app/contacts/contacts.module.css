@@ -1,0 +1,32 @@
+.contacts-items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contacts-items-container h3 {
+    font-family: var(--font-dzuarikau);
+    font-size: 44px;
+    color: #887e71;
+    font-weight: lighter;
+    line-height: 1;
+    /* margin-bottom: 16px; */
+}
+
+.contacts-item {
+    flex: 1;
+    background-color: #696054;
+    color: white;
+    padding: 20px 25px;
+    border-radius: 12px;
+    height: 120px;
+}
+
+.cocial-logo {
+    margin-right: 10px;
+}
+

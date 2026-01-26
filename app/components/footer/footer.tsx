@@ -36,7 +36,12 @@ export default function Footer() {
             <div className={styles['footer-adress']}>
                 <h4 className={styles['h4']}>Адрес</h4>
                 <div className={styles['adress-text']}>
-                    <Image src={pointIcon} alt={"Иконка геопозиции"} width={42} height={42} />
+                    <Image
+                        src={pointIcon}
+                        alt={"Иконка геопозиции"}
+                        width={42}
+                        height={42}
+                    />
                     <Link href={""}>
                         Республика Северная Осетия — Алания, село Дзуарикау, улица А. Кцоева, 25
                     </Link>

@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dzuarikau.variable} ${inter.variable}`}>
-        {/* <NavMenu /> */}
+        <NavMenu />
         {children}
         <Footer />
       </body>
