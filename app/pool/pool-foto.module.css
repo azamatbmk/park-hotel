@@ -57,6 +57,60 @@
     color: var(--text-light);
 }
 
+.price-work-days-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.price-work-days-wrapper__left {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 17px;
+}
+
+.price-work-days-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 15%;
+}
+
+.price-work-days-item h5 {
+    color: var(--text-light);
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.price-work-days-item__h5 {
+    color: var(--text-light);
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.price-work-days-item span {
+    color: #C2C2C2;
+    font-weight: lighter;
+}
+
+.price-work-days-item__none {
+    display: none;
+}
+
+.price-work-days-item__left h5 {
+    color: var(--text-light);
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.price-work-days-item__left span {
+    color: #C2C2C2;
+    font-weight: lighter;
+}
+
 .book-button-wrapper {
     display: flex;
     width: 100%;

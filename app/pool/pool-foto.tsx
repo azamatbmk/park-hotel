@@ -12,10 +12,12 @@ export default function PoolFotoSection({
     threeFotoSrcTwo,
     threeFotoSrcThree,
     poolServiceIcon,
+    price,
     alt,
     h2,
     description,
     buttonText,
+    guestsAndTime
 }: IPoolProops) {
     return (
             <section className={styles['pool-foto-section']}>
@@ -32,12 +34,17 @@ export default function PoolFotoSection({
                         }>
                         <h2 className={styles['pool-info-box-title']}>{h2}</h2>
                         <Image
-                            className={styles['one-fot']}
+                            className={`${infoBoxLefSide 
+                                        ? styles['price-work-days-item__none']
+                                        : styles['price-work-days-item']}`}
                             src={'/pool-size.svg'}
                             alt="Ионка размеров бассейна"
                             width={675}
                             height={30}
                         />
+                        <h5 className={`${infoBoxLefSide 
+                                        ? styles['price-work-days-item__h5']
+                                        : styles['price-work-days-item__none']}`}>4 чел</h5>
                         <p>
                             {description}
                         </p>
@@ -48,13 +55,31 @@ export default function PoolFotoSection({
                             width={647}
                             height={49}
                         />
-                        {/* <Image
-                            className={styles['one-fot']}
-                            src={'/work-hours-icon.svg'}
-                            alt=" Иконка времени работы бассейна"
-                            width={675}
-                            height={93}
-                        /> */}
+                        <div className={
+                            `${infoBoxLefSide
+                                        ? styles['price-work-days-wrapper__left']
+                                        : styles['price-work-days-wrapper']}`}>
+                            <div className={styles['price-work-days-item']}>
+                                <p>пн-пт</p>
+                                <h5>{price}{'\u00A0'}₽</h5>
+                                <span>{guestsAndTime}</span>
+                            </div>
+                            <div className={
+                                `${infoBoxLefSide
+                                        ? styles['price-work-days-item__none']
+                                        : styles['price-work-days-item']}`}>
+                                <p>сб-вс</p>
+                                <h5>1 500{'\u00A0'}₽</h5>
+                            </div>
+                            <div className={
+                                `${infoBoxLefSide 
+                                        ? styles['price-work-days-item__none']
+                                        : styles['price-work-days-item']}`}>
+                                <p>
+                                    *Для постояльцев стоимость посещения бассейна входит в стоимость проживания
+                                </p>
+                            </div>
+                        </div>
                         <div className={
                             `${infoBoxLefSide ? styles['book-button-wrapper__left'] : styles['book-button-wrapper']}`}>
                             <BookButton buttonText={buttonText} />
