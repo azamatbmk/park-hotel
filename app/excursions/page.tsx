@@ -1,4 +1,6 @@
 export default function Contacts() {
+
+    
     return (
         <>
             <div>Экскурсии</div>
@@ -9,6 +11,7 @@ export default function Contacts() {
             <div>Экскурсии</div>
             <div>Экскурсии</div>
             <div>Экскурсии</div>
+            
         </>
     )
 }
