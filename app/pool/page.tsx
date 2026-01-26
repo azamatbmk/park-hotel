@@ -16,6 +16,8 @@ import spaTwoFotoSrcRight from "../../public/photos/spa15.png"
 import spaThreeFotoSrcOne from "../../public/photos/spa3.png"
 import spaThreeFotoSrcTwo from "../../public/photos/spa16.png"
 import spaThreeFotoSrcThree from "../../public/photos/spa17.png"
+import poolServiceIcon from "../../public/pool-service.svg"
+import spaServiceIcon from "../../public/spa-service-icon.svg"
 
 export default function PoolPage() {
     return (
@@ -41,6 +43,7 @@ export default function PoolPage() {
                 threeFotoSrcOne={poolThreeFotoSrcOne}
                 threeFotoSrcTwo={poolThreeFotoSrcTwo}
                 threeFotoSrcThree={poolThreeFotoSrcThree}
+                poolServiceIcon={poolServiceIcon}
                 alt={'Фото бассейна'}
                 h2={'Бассейн'}
                 description={'Открытый подогреваемый бассейн парк-отеля «Дзуарикау» доступен для гостей с 10:00 до 17:00. Для комфортного отдыха предусмотрены солнечные зоны для загара и тени под навесами.'}
@@ -57,6 +60,7 @@ export default function PoolPage() {
                 threeFotoSrcOne={spaThreeFotoSrcOne}
                 threeFotoSrcTwo={spaThreeFotoSrcTwo}
                 threeFotoSrcThree={spaThreeFotoSrcThree}
+                poolServiceIcon={spaServiceIcon}
                 alt={'Фото бани'}
                 h2={'Баня'}
                 description={'Банный комплекс парк-отеля «Дзуарикау» включает просторную парную и деревянную охлаждающую купель. Для отдыха предусмотрена зона, где гости могут расслабиться и восстановить силы. Также в банный комплекс можно заказать блюда из меню ресторана.'}

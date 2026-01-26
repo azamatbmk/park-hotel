@@ -8,6 +8,7 @@ export interface IPoolProops {
     threeFotoSrcOne: StaticImageData;
     threeFotoSrcTwo: StaticImageData;
     threeFotoSrcThree: StaticImageData;
+    poolServiceIcon: StaticImageData;
     alt: string;
     h2: string;
     description: string;

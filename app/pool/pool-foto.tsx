@@ -11,6 +11,7 @@ export default function PoolFotoSection({
     threeFotoSrcOne,
     threeFotoSrcTwo,
     threeFotoSrcThree,
+    poolServiceIcon,
     alt,
     h2,
     description,
@@ -26,7 +27,9 @@ export default function PoolFotoSection({
                         width={1840}
                         height={650}
                     />
-                    <div className={styles['pool-info-box']}>
+                    <div className={
+                        `${infoBoxLefSide ? styles['pool-info-box__left'] : styles['pool-info-box']}`
+                        }>
                         <h2 className={styles['pool-info-box-title']}>{h2}</h2>
                         <Image
                             className={styles['one-fot']}
@@ -35,24 +38,27 @@ export default function PoolFotoSection({
                             width={675}
                             height={30}
                         />
-                    <p>
-                        {description}
-                    </p>
-                    <Image
-                        className={styles['one-fot']}
-                        src={'/pool-service.svg'}
-                        alt="Ионка услуг у бассейна"
-                        width={647}
-                        height={49}
-                    />
-                    <Image
-                        className={styles['one-fot']}
-                        src={'/work-hours-icon.svg'}
-                        alt=" Иконка времени работы бассейна"
-                        width={675}
-                        height={93}
-                    />
-                    <BookButton buttonText={buttonText} />
+                        <p>
+                            {description}
+                        </p>
+                        <Image
+                            className={styles['one-fot']}
+                            src={poolServiceIcon}
+                            alt="Ионка услуг у бассейна"
+                            width={647}
+                            height={49}
+                        />
+                        {/* <Image
+                            className={styles['one-fot']}
+                            src={'/work-hours-icon.svg'}
+                            alt=" Иконка времени работы бассейна"
+                            width={675}
+                            height={93}
+                        /> */}
+                        <div className={
+                            `${infoBoxLefSide ? styles['book-button-wrapper__left'] : styles['book-button-wrapper']}`}>
+                            <BookButton buttonText={buttonText} />
+                        </div>
                     </div>
                 </div>
                 <div className={styles['two-foto-wrapper']}>
