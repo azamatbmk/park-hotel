@@ -2,8 +2,6 @@
   --bg-main: #8b7d71;
   --bg-footer: #696054;
   --text-light: #fff;
-  --background: #ffffff;
-  --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,6 +23,7 @@ body {
   font-family: Inter, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 * {

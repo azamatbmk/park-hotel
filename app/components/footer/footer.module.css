@@ -7,13 +7,23 @@
     gap: 60px;
 }
 
+@media (max-width: 768) {
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg-footer);
+        min-height: 40%;
+        padding: 20px 40px;
+        gap: 60px;
+    }
+}
+
 .footer-logo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: end;
     color: #ccc;
-    /* margin-right: auto; */
 }
 
 .policy-link {

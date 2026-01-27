@@ -13,13 +13,32 @@
     font-weight: lighter;
     text-transform: uppercase;
     text-align: left;
-    /* margin-left: 130px;
-    margin-bottom: -35px; */
     color: #696054;
 }
 
+@media (max-width: 768) {
+    .title {
+        padding: 0px 16px;
+        font-family: var(--font-dzuarikau);
+        font-size: 84px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        text-align: left;
+        color: #696054;
+    }
+
+    .photo {
+        object-fit: cover;
+        width: 100%;
+        height: 60vh;
+    }
+
+    .section-photo {
+        position: relative;
+    }
+}
+
 .photo {
-    /* position: relative; */
     object-fit: cover;
     width: 100%;
     height: 100vh;
@@ -36,6 +55,18 @@
     max-width: 600px;
 }
 
+@media (max-width: 768) {
+    .h5-and-p-box  {
+        display: none;
+    }
+
+    .mobile-768-description p{
+        color: var(--text-light);
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+
 .more-btn-and-h5-wrapper {
     display: flex;
     justify-content: space-between;
@@ -50,7 +81,7 @@
 }
 
 .paragraph {
-    /* font-family: 'Inter', sans-serif; */
+    white-space: pre-line;
     font-size: 17px;
     font-weight: 10;
     text-align: left;

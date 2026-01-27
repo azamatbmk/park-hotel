@@ -6,7 +6,7 @@ import roomsBg from "../../public/photos/roomsbg.png"
 import restBg from "../../public/photos/restbg.png"
 import spaBg from "../../public/photos/spabg.png"
 import rightTopArrow from "../../public/er.svg"
-import { aboutImages, aboutDescription } from "./constants";
+import { aboutImages, aboutDescription, mobileAboutDescription } from "./constants";
 import { roomsDescription, roomsImages } from "../rooms/constants";
 import { restaurantDescription, restaurantImages } from "../restaurant/constants";
 import { spaDescription, spaImages } from "../pool/constants";
@@ -21,7 +21,7 @@ export default function MainPage() {
                 overlay={false}
             />
             <About
-                description={aboutDescription}
+                description={mobileAboutDescription}
                 bgPhoto={aboutBg}
                 alt={'Фото отеля'}
                 anchor={'/restaurant'}

@@ -16,7 +16,7 @@ export default function HeroSection({ background, bookingBlock, overlay }: IHero
     return (
         <section className={styles['hero-section']}>
             {background}
-            <div className={`${overlay ? styles['overlay'] : styles['overlay__off']}`}></div>
+            <div className={`${overlay ? styles['overlay'] : styles['display__off']}`}></div>
             <div className={styles['nav-container']}>
                 <Image
                     className={styles['main-logo']}

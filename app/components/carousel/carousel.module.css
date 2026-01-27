@@ -7,6 +7,14 @@
   margin-bottom: 100px;
 }
 
+@media (max-width: 768) {
+  .carousel-container {
+    display: none;
+  }
+
+}
+
+
 .carousel-content {
   display: flex;
   animation: marquee 30s linear infinite;

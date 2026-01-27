@@ -31,6 +31,12 @@ export default function About(
                     <p className={styles['paragraph']}>
                         {description}
                     </p>
+                    
+                </div>
+                <div className={styles['mobile-768-description']}>
+                    <p>
+                       {description}
+                    </p>
                 </div>
             </div>
         </section>

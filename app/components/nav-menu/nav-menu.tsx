@@ -20,7 +20,6 @@ export default function NavMenu() {
         const checkScroll = () => {
             const viewportHeight = window.innerHeight;
             setIsScrolled(window.scrollY > viewportHeight);
-            console.log(viewportHeight)
         };
         
         checkScroll();
@@ -29,7 +28,7 @@ export default function NavMenu() {
         
         return () => window.removeEventListener('scroll', checkScroll);
 
-    }, [])
+    }, []);
 
     return (
         <div className={`${styles['nav-container']} ${isScrolled ? styles['nav-container--visible'] : ''}`}>
