@@ -9,14 +9,14 @@ import { menuItems } from "./constants";
 import { IHeroSectionProps } from "./hero-section.interface";
 
 
-export default function HeroSection({ background, bookingBlock }: IHeroSectionProps) {
+export default function HeroSection({ background, bookingBlock, overlay }: IHeroSectionProps) {
     const triangle = '▼';
     const pathName = usePathname();
 
     return (
         <section className={styles['hero-section']}>
             {background}
-            <div className={styles['overlay']}></div>
+            <div className={`${overlay ? styles['overlay'] : styles['overlay__off']}`}></div>
             <div className={styles['nav-container']}>
                 <Image
                     className={styles['main-logo']}

@@ -29,6 +29,7 @@ export default function RoomsPage() {
                     />
                 }
                 bookingBlock={<BookingBlock />}
+                overlay={true}
             />
             <H2HeaderComponent children={'Люкс 1'}/>
             <LuxRoom

@@ -1,8 +1,9 @@
-.nav-container__on {
+.nav-container {
+    /* Базовые стили (всегда) */
     display: flex;
     position: fixed;
     height: 80px;
-    top: 0;
+    top: 0;  /* Всегда на своем месте! */
     left: 0;
     right: 0;
     justify-content: space-between;
@@ -10,19 +11,24 @@
     z-index: 1000;
     background-color: rgba(27, 21, 0, 0.4);
     backdrop-filter: blur(10px);
-    transition: top 0.3s ease, opacity 0.3s ease;
-    pointer-events: none;
     border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.nav-container--visible {
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
 }
 
-.nav-container__off {
-    opacity: 0;
-    position: absolute;
-    top: -100px;
-    transition: all 0.3s ease;
+.triangle {
+    font-size: 14px;
+    padding-left: 2px;
 }
 
 .nav-and-phoneBtn-wrapper {

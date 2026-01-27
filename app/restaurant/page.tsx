@@ -18,6 +18,7 @@ export default function RestaurantPage() {
                     />
                 }
                 bookingBlock={<BookingBlock />}
+                overlay={true}
             />
             <FoodMenu />
             <FotoGallery />

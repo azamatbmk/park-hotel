@@ -23,6 +23,7 @@ export default function Contacts() {
                     />
                 }
                 bookingBlock={<BookingBlock />}
+                overlay={true}
             />
             <H2HeaderComponent children={'Достопримечательности'}/>
             <div className={`${styles['two-foto-wrapper']} ${styles['margin-bottom']}`}>

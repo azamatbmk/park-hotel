@@ -17,6 +17,7 @@ export default function Contacts() {
                     />
                 }
                 bookingBlock={<BookingBlock />}
+                overlay={true}
             />
 
             <div className={styles['contacts-items-container']}>

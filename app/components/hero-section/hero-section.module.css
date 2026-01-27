@@ -25,6 +25,10 @@
   z-index: 0;
 }
 
+.overlay__off {
+    display: none;
+}
+
 .nav-wrapper {
     display: flex;
     flex-direction: row;

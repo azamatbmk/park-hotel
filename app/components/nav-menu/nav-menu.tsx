@@ -6,8 +6,13 @@ import Image from "next/image";
 import PhoneButton from "../buttons/phone-btn";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { menuItems } from "../hero-section/constants";
 
 export default function NavMenu() {
+
+    const triangle = '▼';
+    const pathName = usePathname();
+
     const [isScrolled, setIsScrolled] = useState(false);
     
     useEffect(() => {
@@ -15,7 +20,7 @@ export default function NavMenu() {
         const checkScroll = () => {
             const viewportHeight = window.innerHeight;
             setIsScrolled(window.scrollY > viewportHeight);
-            console.log(window.scrollY)
+            console.log(viewportHeight)
         };
         
         checkScroll();
@@ -27,9 +32,7 @@ export default function NavMenu() {
     }, [])
 
     return (
-        <div className={`${isScrolled
-                            ? styles['nav-container__on']
-                            : styles['nav-container__off']}`}>
+        <div className={`${styles['nav-container']} ${isScrolled ? styles['nav-container--visible'] : ''}`}>
             <Image
                 src='./logo.svg'
                 alt="Логотип отеля"
@@ -40,17 +43,25 @@ export default function NavMenu() {
             <div className={styles['nav-and-phoneBtn-wrapper']}>
                 <nav >
                     <ul className={styles['nav-wrapper']}>
-                        <li><Link href={'/'}>Об отеле</Link></li>
-                        <li><Link href={'/rooms'}>Номера</Link></li>
-                        <li><Link href={'/restaurant'}>Ресторан</Link></li>
-                        <li><Link href={'/pool'}>Бассейн & Баня</Link></li>
-                        <li><Link href={'/excursions'}>Экскурсии</Link></li>
-                        <li><Link href={'/contacts'}>Контакты</Link></li>
+                        { menuItems.map((item) => {
+                            const isActive = pathName == item.href;
+                        return (
+                            <li key={item.href}>
+                                <Link href={item.href}>
+                                    {item.title}
+                                    {isActive && (
+                                        <span className={styles['triangle']}>
+                                            {triangle}
+                                        </span>
+                                    )}
+                                </Link>
+                            </li>
+                        )
+                        })}
                     </ul>
                 </nav>
                 <PhoneButton />
             </div>
-            {/* <Link href="tel:+79280701155" className="phone-box" >+7(928)070-11-55</Link> */}
         </div>
     )
 }

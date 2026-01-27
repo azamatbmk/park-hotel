@@ -17,7 +17,8 @@ export default function MainPage() {
     return (
         <>
             <HeroSection
-                background={<VideoBackground />}     
+                background={<VideoBackground />}
+                overlay={false}
             />
             <About
                 description={aboutDescription}
