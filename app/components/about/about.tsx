@@ -10,7 +10,9 @@ export default function About(
         bgPhoto, 
         anchor ='/', 
         icon,
-        btnText
+        btnText,
+        descriptionPartOne,
+        descriptionPartTwo
     }: IAboutProps) {
     return (
         <section className={styles['about-section']}>
@@ -26,17 +28,26 @@ export default function About(
                 <div className={styles['h5-and-p-box']}>
                     <div className={styles['more-btn-and-h5-wrapper']}>
                         <h5 className={styles['h5']}>{children}</h5>
-                        <MoreButton anchor={anchor} icon={icon}>{btnText}</MoreButton>
+                        {btnText && <MoreButton anchor={anchor} icon={icon}>{btnText}</MoreButton>}
                     </div>
                     <p className={styles['paragraph']}>
                         {description}
                     </p>
-                    
+
                 </div>
                 <div className={styles['mobile-768-description']}>
-                    <p>
-                       {description}
-                    </p>
+                    {
+                        description ? (
+                            <p>{description}</p>
+                        ) : (
+                            <>
+                                <p>{descriptionPartOne}</p>
+                                <p>{descriptionPartTwo}</p>
+                            </>
+                        )
+                        
+                    }
+                    {btnText && <MoreButton anchor={anchor} icon={icon}>{btnText}</MoreButton>}
                 </div>
             </div>
         </section>

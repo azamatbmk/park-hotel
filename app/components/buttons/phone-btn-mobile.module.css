@@ -1,0 +1,19 @@
+.phone-btn__mobile  {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: transparent;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 2px solid white;
+    max-width: fit-content;
+    font-size: 22px;
+    color: var(--text-light);
+    align-self: center;
+}
+
+@media (min-width: 769px) {
+    .phone-btn__mobile {
+        display: none;
+    }
+}
+
