@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 
 export interface IAboutProps {
     children: React.ReactNode;
-    description: string;
+    description?: string;
     descriptionPartOne?: string;
     descriptionPartTwo?: string;
     bgPhoto: StaticImageData;

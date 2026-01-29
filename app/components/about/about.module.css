@@ -104,7 +104,7 @@
         align-items: flex-end;
     }
 
-    .mobile-768-description p{
+    .mobile-768-description p {
         display: flex;
         color: var(--text-light);
         font-size: 18px;
