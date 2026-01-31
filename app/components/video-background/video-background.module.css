@@ -7,3 +7,9 @@
     object-fit: cover;
     z-index: 0;
 }
+
+@media (max-width: 480px) {
+    .video {
+        height: 25em;
+    }
+}

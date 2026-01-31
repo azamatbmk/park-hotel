@@ -21,6 +21,7 @@ export default function MainPage() {
                 overlay={false}
             />
             <About
+                description={aboutDescription}
                 descriptionPartOne={mobileAboutDescriptionPartOne}
                 descriptionPartTwo={mobileAboutDescriptionPartTwo}
                 bgPhoto={aboutBg}
@@ -32,6 +33,7 @@ export default function MainPage() {
             <ImageCarousel images={aboutImages} />
             <About
                 description={roomsDescription}
+                descriptionPartOne={roomsDescription}
                 bgPhoto={roomsBg}
                 alt={'Фото номеров'}
                 anchor={'/rooms'}
@@ -42,6 +44,7 @@ export default function MainPage() {
             <ImageCarousel images={roomsImages} />
             <About
                 description={restaurantDescription}
+                descriptionPartOne={restaurantDescription}
                 bgPhoto={restBg}
                 alt={'Фото ресторана'}
                 anchor={'/restaurant'}
@@ -52,6 +55,7 @@ export default function MainPage() {
             <ImageCarousel images={restaurantImages} />
             <About
                 description={spaDescription}
+                descriptionPartOne={spaDescription}
                 bgPhoto={spaBg}
                 alt={'Фото бассейна'}
                 anchor={'/pool'}

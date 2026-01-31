@@ -1,48 +1,26 @@
-.restaurant {
+/* .restaurant {
     display: flex;
-    background-color: blueviolet;
-}
-
-.rest-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    z-index: 0;
-}
-
-.h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: lighter;
-    font-size: 112px;
-    text-transform: uppercase;
-    color: white;
-    text-align: center;
-    font-family: var(--font-dzuarikau);
-    z-index: 3;
-}
+    position: relative;
+    min-height: 100vh;
+} */
 
 .food-cards-section {
-    padding: 0px 40px;
     margin-bottom: 100px;
 }
 
 .food-cards-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-self: center;
     gap: 20px;
 }
 
 .food-card-wrapper {
-    position: relative;
+    /* flex: 1; */
     display: flex;
-    width: fit-content;
+    padding: 0 14px;
+    position: relative;
+    /* width: fit-content; */
 }
 
 .food-item-wrapper  {
@@ -80,4 +58,90 @@
     text-align: left;
     line-height: 1.5;
     color: white;
+}
+
+.info-cards-container {
+    display: none;
+}
+
+.desktop-image {
+    
+}
+
+.mobile-image {
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .food-cards-section {
+        margin-bottom: 100px;
+    }
+
+    .food-cards-container {
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        gap: 40px;
+        /* padding: 0px 16px; */
+        /* width: 90vw; */
+        margin-top: 16px;
+        
+    }
+    
+    .food-card-wrapper {
+        /* width: 95vw; */
+    }
+
+    .food-item-wrapper  {
+        position: absolute;
+        width: 97%;
+        height: 140px;
+        left: 11;
+        right: 0;
+        bottom: -10;
+        transform: translateX(0%);
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        padding: 16px 16px;
+        box-sizing: border-box;
+        color: white;
+        text-align: left;
+        border-radius: 12px;
+        z-index: 1;
+        /* margin: 0px 12px; */
+    }
+
+    .desktop-image {
+        display: none;
+    }
+
+    .mobile-image {
+        display: block;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .food-item-wrapper  {
+        position: absolute;
+        width: 94%;
+        height: 140px;
+        left: 11;
+        right: 0;
+        bottom: -10;
+        transform: translateX(0%);
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        padding: 16px 16px;
+        box-sizing: border-box;
+        color: white;
+        text-align: left;
+        border-radius: 12px;
+        z-index: 1;
+        /* margin: 0px 12px; */
+    }
 }

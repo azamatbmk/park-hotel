@@ -2,7 +2,7 @@ import BookingBlock from "../components/booking/booking";
 import HeroSection from "../components/hero-section/hero-section";
 import FoodMenu from "./food-card";
 import FotoGallery from "./foto-gallery";
-import PagesHeroSectionBackground from "./main-section-bg";
+import PagesHeroSectionBackground from "../components/photo-background/photo-background";
 import restBg from "../../public/photos/restbg.png"
 
 

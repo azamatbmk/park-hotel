@@ -1,6 +1,6 @@
 import BookingBlock from "../components/booking/booking";
 import HeroSection from "../components/hero-section/hero-section";
-import PagesHeroSectionBackground from "../restaurant/main-section-bg";
+import PagesHeroSectionBackground from "../components/photo-background/photo-background";
 import poolPageBg from "../../public/photos/spa-paige-bg.png"
 import H2HeaderComponent from "../components/h2-header/h2-header";
 import PoolFotoSection from "./pool-foto";
@@ -36,7 +36,7 @@ export default function PoolPage() {
             <H2HeaderComponent
                 children={'Бассейн'}
             />
-            <PoolFotoSection 
+            <PoolFotoSection
                 infoBoxLefSide={false}
                 oneFotoSrc={poolOneFotoSrc}
                 twoFotoSrcLeft={poolTwoFotoSrcLeft}

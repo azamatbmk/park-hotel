@@ -1,5 +1,5 @@
 import HeroSection from "../components/hero-section/hero-section";
-import PagesHeroSectionBackground from "../restaurant/main-section-bg";
+import PagesHeroSectionBackground from "../components/photo-background/photo-background";
 import contactsBg from "../../public/photos/contactsbg.png"
 import BookingBlock from "../components/booking/booking";
 import styles from "./contacts.module.css"
@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Contacts() {
     return (
-       <main>
+        <main>
             <HeroSection
                 background={
                     <PagesHeroSectionBackground
@@ -32,7 +32,7 @@ export default function Contacts() {
                 </div>
                 <div className={styles['contacts-item']}>
                     <h3>Соцсети</h3>
-                     <a href="" target="_blank">
+                    <a href="" target="_blank">
                         <Image
                             className={styles['cocial-logo']}
                             src={"/whatsapp-logo.svg"}
@@ -61,6 +61,6 @@ export default function Contacts() {
                     </a>
                 </div>
             </div>
-       </main>
+        </main>
     )
 }

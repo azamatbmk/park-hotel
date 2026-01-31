@@ -1,11 +1,17 @@
 .title {
     padding: 0px 150px;
     font-family: var(--font-dzuarikau);
-    font-size: 84px;
+    font-size: 100px;
     font-weight: lighter;
     text-transform: uppercase;
     text-align: left;
-    /* margin-left: 130px;
-    margin-bottom: -35px; */
     color: #696054;
+}
+
+@media (max-width: 768px) {
+    .title {
+        padding: 0px 16px;
+        font-size: 70px;
+        /* margin-bottom: 100px; */
+    }
 }

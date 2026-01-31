@@ -33,20 +33,10 @@ export default function About(
                     <p className={styles['paragraph']}>
                         {description}
                     </p>
-
                 </div>
                 <div className={styles['mobile-768-description']}>
-                    {
-                        description ? (
-                            <p>{description}</p>
-                        ) : (
-                            <>
-                                <p>{descriptionPartOne}</p>
-                                <p>{descriptionPartTwo}</p>
-                            </>
-                        )
-                        
-                    }
+                    <p>{descriptionPartOne}</p>
+                    <p>{descriptionPartTwo}</p>
                     {btnText && <MoreButton anchor={anchor} icon={icon}>{btnText}</MoreButton>}
                 </div>
             </div>

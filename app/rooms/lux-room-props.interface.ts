@@ -3,6 +3,7 @@ import { StaticImageData } from "next/image";
 export interface ILuxRoomProps {
     sectionClassName?: string;
     leftImageSrc: StaticImageData;
+    mobileImageSrc: StaticImageData;
     topImageSrc: StaticImageData;
     leftBottobImageSrc: StaticImageData;
     rightBottomImageSrc: StaticImageData;

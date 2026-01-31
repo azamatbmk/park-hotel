@@ -3,7 +3,7 @@
     margin-bottom: 100px;
 }
 
-.foto-gallery-container {
+.desktop-foto-gallery-container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -19,16 +19,17 @@
 }
 
 .foto-gallery-item-wrapper img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
 
-.foto-cards-container {
+.desktop-foto-cards-container {
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    gap: 12px; /* Отступы между элементами */
+    gap: 12px;
 }
 
 .foto-card-wrapper {
@@ -40,12 +41,94 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    height: 270px;
+    /* height: 270px; */
     border-radius: 12px;
 }
 
+.mobile-foto-gallery-container {
+    display: none;
+}
+
+
+
 @media (max-width: 768px) {
-  .foto-gallery-item-wrapper {
-    flex: 0 0 100%;
-  }
+    .foto-gallery-section {
+        padding: 0px 0px;
+        margin-bottom: 100px;
+    }
+
+    .foto-gallery-item-wrapper {
+        flex: 0 0 100%;
+        margin-bottom: 12px;
+    }
+
+    .foto-card-wrapper__left img {
+        width: 100%;
+        object-fit: cover;
+        height: 134px;
+        border-radius: 0 12px 12px 0;
+        display: none;
+        margin: 12px 0;
+    }
+
+    .foto-card-wrapper__right img {
+        width: 100%;
+        object-fit: cover;
+        height: 134px;
+        border-radius: 12px 0 0 12px;
+        display: none;
+        margin: 12px 0;
+    }
+
+    .mobile-foto-gallery-container {
+        display: block;
+        gap: 12px;
+    }
+
+    .desktop-foto-gallery-container {
+        display: none;
+    }
+    .desktop-foto-cards-container {
+        display: none;
+    }
+
+    .mobile-foto-cards-container {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        gap: 12px;
+    }
+}
+
+
+
+
+@media (max-width:480px) {
+
+     .foto-gallery-item-wrapper {
+        margin-bottom: 0px;
+    }
+
+    /* .foto-card-wrapper {
+        flex: 1;
+        min-width: 0;
+    } */
+
+    .foto-card-wrapper__left img {
+        width: 100%;
+        object-fit: cover;
+        height: 134px;
+        border-radius: 0 12px 12px 0;
+        display: block;
+        margin: 12px 0;
+    }
+
+    .foto-card-wrapper__right img {
+        width: 100%;
+        object-fit: cover;
+        height: 134px;
+        border-radius: 12px 0 0 12px;
+        display: block;
+        margin: 12px 0;
+    }
 }
