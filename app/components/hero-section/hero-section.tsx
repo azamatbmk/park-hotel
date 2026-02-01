@@ -7,6 +7,10 @@ import PhoneButton from "../buttons/phone-btn";
 import { usePathname } from "next/navigation";
 import { menuItems } from "./constants";
 import { IHeroSectionProps } from "./hero-section.interface";
+import BurgerIcon from "../burger-menu/burger-icon";
+import Modal from "../burger-menu/modal";
+import NavMenu from "../nav-menu/nav-menu";
+import { useState } from "react";
 
 
 export default function HeroSection({ background, bookingBlock, overlay }: IHeroSectionProps) {
@@ -26,6 +30,7 @@ export default function HeroSection({ background, bookingBlock, overlay }: IHero
                     height={70}
                     priority={true}
                 />
+                <BurgerIcon />
                 <div className={styles['nav-and-phone']}>
                     <nav>
                         <ul className={styles['nav-wrapper']}>

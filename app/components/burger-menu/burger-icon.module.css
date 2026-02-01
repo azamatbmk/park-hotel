@@ -1,0 +1,44 @@
+/* BurgerIcon.module.css */
+.burger-btn {
+    width: 40px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    position: relative;
+    /* z-index: 1001; */
+    margin: 10px;
+    /* gap: 10px */
+}
+
+.line {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Анимация при открытии */
+.burger-btn.open .line:nth-child(1) {
+    transform: translateY(10.5px) rotate(45deg);
+}
+
+.burger-btn.open .line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-btn.open .line:nth-child(3) {
+    transform: translateY(-10.5px) rotate(-45deg);
+}
+
+@media (min-width: 769px) {
+    .burger-btn {
+        display: none;
+    }
+}

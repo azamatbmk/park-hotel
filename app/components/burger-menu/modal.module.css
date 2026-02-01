@@ -1,0 +1,92 @@
+.overlay {
+    display: none;
+}
+
+.modal {
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+
+    .modal {
+        display: block;
+        background: #696054;
+        padding: 2rem;
+        position: relative;
+        max-width: 500px;
+        width: 90%;
+        height: 90vh;
+        max-height: 100vh;
+        overflow-y: auto;
+        z-index: 3003;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        line-height: 1;
+        color: var(--text-light);
+    }
+
+    .nav-and-phoneBtn-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-wrapper {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 15px;
+        color: var(--text-light);
+        font-size: 20px;
+    }
+
+    .h4 {
+        font-family: var(--font-dzuarikau);
+        font-size: 36px;
+        color: #887e71;
+        font-weight: lighter;
+        line-height: 1;
+        margin-bottom: 16px;
+    }
+
+    .phone-btn {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: transparent;
+        padding: 10px 14px;
+        border-radius: 10px;
+        border: 2px solid white;
+        max-width: fit-content;
+        font-size: 20px;
+        color: var(--text-light);
+        align-self: center;
+    }
+    
+}
