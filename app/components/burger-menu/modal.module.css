@@ -1,13 +1,9 @@
-.overlay {
-    display: none;
+@media (min-width: 769px) {
+    .overlay,
+    .modal {
+        display: none;
+    }
 }
-
-.modal {
-    display: none;
-}
-
-
-
 
 
 @media (max-width: 768px) {
@@ -22,6 +18,8 @@
         align-items: center;
         justify-content: center;
         z-index: 1000;
+
+        
     }
 
     .modal {
@@ -32,9 +30,10 @@
         max-width: 500px;
         width: 90%;
         height: 90vh;
-        max-height: 100vh;
-        overflow-y: auto;
+        overflow: visible;
         z-index: 3003;
+        transform: translateX(100%);
+        animation: slideIn 0.5s forwards;
     }
 
     .close-button {
@@ -89,4 +88,15 @@
         align-self: center;
     }
     
+}
+
+@media (max-height: 430px) {
+     .nav-and-phoneBtn-wrapper {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}
+
+@keyframes slideIn {
+  to { transform: translateX(0); }
 }

@@ -82,11 +82,7 @@ export default function PoolFotoSection({
                                     <h5>{price}{'\u00A0'}₽</h5>
                                     <span>{guestsAndTime}</span>
                                 </div>
-                                {/* <div className={styles['price-work-days-item']}>
-                                    <p>пн-пт</p>
-                                    <h5>{price}{'\u00A0'}₽</h5>
-                                    <span>{guestsAndTime}</span>
-                                </div> */}
+    
                                 <div className={
                                     `${infoBoxLeftSide
                                             ? styles['price-work-days-item__none']

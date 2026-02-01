@@ -4,6 +4,7 @@ import contactsBg from "../../public/photos/contactsbg.png"
 import BookingBlock from "../components/booking/booking";
 import styles from "./contacts.module.css"
 import Image from "next/image";
+import H2HeaderComponent from "../components/h2-header/h2-header";
 
 export default function Contacts() {
     return (
@@ -19,7 +20,7 @@ export default function Contacts() {
                 bookingBlock={<BookingBlock />}
                 overlay={true}
             />
-
+            <h2 className={styles['title']}>Контакты</h2>
             <div className={styles['contacts-items-container']}>
                 <div className={styles['contacts-item']}>
                     <h3>Адрес</h3>

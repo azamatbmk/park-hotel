@@ -25,7 +25,7 @@ export default function Contacts() {
                 bookingBlock={<BookingBlock />}
                 overlay={true}
             />
-            <H2HeaderComponent children={'Достопримечательности'} />
+            <H2HeaderComponent children={'Экскурсии'} />
             <div className={`${styles['two-foto-wrapper']} ${styles['margin-bottom']}`}>
                 <ExcursionPhotoSection
                     description={'Природная достопримечательность, расположенная в Куртатинском ущелье Северной Осетии. Он представляет собой узкую расщелину, окруженную высокими скалами, сквозь которые с шумом пробивается река. Вода здесь кристально чистая и прозрачная.'}

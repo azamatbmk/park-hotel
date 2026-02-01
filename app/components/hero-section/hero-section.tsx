@@ -13,12 +13,17 @@ import NavMenu from "../nav-menu/nav-menu";
 import { useState } from "react";
 
 
-export default function HeroSection({ background, bookingBlock, overlay }: IHeroSectionProps) {
+export default function HeroSection({
+    background,
+    bookingBlock,
+    overlay,
+    mobileMargin
+}: IHeroSectionProps) {
     const triangle = '▼';
     const pathName = usePathname();
 
     return (
-        <section className={styles['hero-section']}>
+        <section className={`${mobileMargin ? styles['hero-section__mobile'] : styles['hero-section']}`}>
             {background}
             <div className={`${overlay ? styles['overlay'] : styles['display__off']}`}></div>
             <div className={styles['nav-container']}>

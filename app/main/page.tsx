@@ -19,6 +19,7 @@ export default function MainPage() {
             <HeroSection
                 background={<VideoBackground />}
                 overlay={false}
+                mobileMargin={true}
             />
             <About
                 description={aboutDescription}

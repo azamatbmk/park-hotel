@@ -8,7 +8,7 @@ import closeIcon from "../../../public/close-icon.svg"
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export default function Modal({ isOpen, onClose, children }: ModalProps) {
