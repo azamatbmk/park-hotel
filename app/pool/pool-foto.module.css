@@ -30,7 +30,6 @@
     right: 7%;
     height: 470px;
     bottom: 20px;
-    padding: 15px 15px;
     gap: 20px;
 }
 
@@ -72,6 +71,12 @@
     justify-content: space-between;
     gap: 30px;
     margin-bottom: 17px;
+}
+
+ .price-work-days-wrapper__mobile{
+    display: flex;
+    flex-direction: row;
+    gap: 6em
 }
 
 .price-work-days-item {
@@ -155,4 +160,99 @@
     height: 100%;
     object-fit: cover;
     border-radius: 12px;
+}
+
+.pool-service-icon__mobile {
+    display: none;
+ }
+
+
+
+@media (max-width: 768) {
+    .pool-foto-section {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 100px;
+        padding: 0;
+    }
+
+    .one-foto-wrapper {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        height: auto;
+        max-width: 100vw;
+        overflow: visible;
+        border-radius: 0px;
+    }
+
+    .one-foto {
+        display: none;
+    }
+
+    .mobile-foto {
+        width: 100vw;
+    }
+
+    .pool-info-box {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background: #696054;
+        backdrop-filter: unset;
+        padding: 16px 16px;
+        border-radius: 0px;
+        max-width: 100vw;
+        right: 0%;
+        height: 470px;
+        bottom: 20px;
+        gap: 20px;
+        height: max-content;
+    }
+
+    .pool-info-box__left {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background: #696054;
+        backdrop-filter: unset;
+        padding: 16px 16px;
+        border-radius: 0px;
+        max-width: 100vw;
+        left: 0%;
+        height: 470px;
+        bottom: 20px;
+        gap: 20px;
+        height: max-content;
+    }
+
+    .two-foto-wrapper {
+        display: none;
+    }
+
+    .three-foto-wrapper {
+        display: none;
+    }
+
+    .price-work-days-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 25px;
+    }
+
+    .price-work-days-wrapper__mobile{
+        display: flex;
+        flex-direction: row;
+        gap: 6em;
+    }
+
+    .pool-service-icon__mobile {
+        display: block;
+    }
+
+    .pool-service-icon{
+        display: none;
+    }
 }

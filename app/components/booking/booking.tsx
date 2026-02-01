@@ -30,6 +30,7 @@ export default function BookingBlock() {
                         <div className={styles['input-wrapper']}>
                             <span className={styles['label-inside']}>Гостей</span>
                             <input className={styles['input']} type="number" min={0}/>
+                            <img src="./human-icon.svg" className={styles['calendar-icon']} alt="иконка" />
                         </div>
                     </div>
 

@@ -64,10 +64,6 @@
     display: none;
 }
 
-.desktop-image {
-    
-}
-
 .mobile-image {
     display: none;
 }
@@ -90,10 +86,6 @@
         /* width: 90vw; */
         margin-top: 16px;
         
-    }
-    
-    .food-card-wrapper {
-        /* width: 95vw; */
     }
 
     .food-item-wrapper  {

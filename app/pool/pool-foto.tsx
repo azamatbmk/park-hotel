@@ -3,15 +3,18 @@ import styles from "./pool-foto.module.css"
 import BookButton from "../components/buttons/book-btn"
 import { IPoolProops } from "./pool-foto-props"
 
+
 export default function PoolFotoSection({
-    infoBoxLefSide,
+    infoBoxLeftSide,
     oneFotoSrc,
     twoFotoSrcLeft,
     twoFotoSrcRight,
     threeFotoSrcOne,
     threeFotoSrcTwo,
     threeFotoSrcThree,
+    mobileFoto,
     poolServiceIcon,
+    poolServiceIconMobile,
     price,
     alt,
     h2,
@@ -29,12 +32,19 @@ export default function PoolFotoSection({
                         width={1840}
                         height={650}
                     />
+                    <Image
+                        className={styles['mobile-foto']}
+                        src={mobileFoto}
+                        alt={alt}
+                        width={393}
+                        height={280}
+                    />
                     <div className={
-                        `${infoBoxLefSide ? styles['pool-info-box__left'] : styles['pool-info-box']}`
+                        `${infoBoxLeftSide ? styles['pool-info-box__left'] : styles['pool-info-box']}`
                         }>
                         <h2 className={styles['pool-info-box-title']}>{h2}</h2>
                         <Image
-                            className={`${infoBoxLefSide 
+                            className={`${infoBoxLeftSide 
                                         ? styles['price-work-days-item__none']
                                         : styles['price-work-days-item']}`}
                             src={'/pool-size.svg'}
@@ -42,37 +52,51 @@ export default function PoolFotoSection({
                             width={675}
                             height={30}
                         />
-                        <h5 className={`${infoBoxLefSide 
+                        <h5 className={`${infoBoxLeftSide 
                                         ? styles['price-work-days-item__h5']
                                         : styles['price-work-days-item__none']}`}>4 чел</h5>
                         <p>
                             {description}
                         </p>
                         <Image
-                            className={styles['one-fot']}
+                            className={styles['pool-service-icon']}
                             src={poolServiceIcon}
                             alt="Ионка услуг у бассейна"
                             width={647}
                             height={49}
                         />
+                        <Image
+                            className={styles['pool-service-icon__mobile']}
+                            src={poolServiceIconMobile}
+                            alt="Ионка услуг у бассейна"
+                            width={361}
+                            height={86}
+                        />
                         <div className={
-                            `${infoBoxLefSide
+                            `${infoBoxLeftSide
                                         ? styles['price-work-days-wrapper__left']
                                         : styles['price-work-days-wrapper']}`}>
-                            <div className={styles['price-work-days-item']}>
-                                <p>пн-пт</p>
-                                <h5>{price}{'\u00A0'}₽</h5>
-                                <span>{guestsAndTime}</span>
+                            <div className={styles['price-work-days-wrapper__mobile']}>
+                                <div className={styles['price-work-days-item']}>
+                                    <p>пн-пт</p>
+                                    <h5>{price}{'\u00A0'}₽</h5>
+                                    <span>{guestsAndTime}</span>
+                                </div>
+                                {/* <div className={styles['price-work-days-item']}>
+                                    <p>пн-пт</p>
+                                    <h5>{price}{'\u00A0'}₽</h5>
+                                    <span>{guestsAndTime}</span>
+                                </div> */}
+                                <div className={
+                                    `${infoBoxLeftSide
+                                            ? styles['price-work-days-item__none']
+                                            : styles['price-work-days-item']}`}>
+                                    <p>сб-вс</p>
+                                    <h5>1500{'\u00A0'}₽</h5>
+                                </div>
                             </div>
                             <div className={
-                                `${infoBoxLefSide
-                                        ? styles['price-work-days-item__none']
-                                        : styles['price-work-days-item']}`}>
-                                <p>сб-вс</p>
-                                <h5>1 500{'\u00A0'}₽</h5>
-                            </div>
-                            <div className={
-                                `${infoBoxLefSide 
+                                `${infoBoxLeftSide 
                                         ? styles['price-work-days-item__none']
                                         : styles['price-work-days-item']}`}>
                                 <p>
@@ -81,7 +105,7 @@ export default function PoolFotoSection({
                             </div>
                         </div>
                         <div className={
-                            `${infoBoxLefSide ? styles['book-button-wrapper__left'] : styles['book-button-wrapper']}`}>
+                            `${infoBoxLeftSide ? styles['book-button-wrapper__left'] : styles['book-button-wrapper']}`}>
                             <BookButton buttonText={buttonText} />
                         </div>
                     </div>

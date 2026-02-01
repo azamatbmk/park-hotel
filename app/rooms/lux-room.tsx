@@ -116,8 +116,6 @@ export default function LuxRoom({
                     </div>
                 </div>
             </section>
-
-            
         </>
     )
 }
