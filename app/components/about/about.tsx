@@ -12,7 +12,8 @@ export default function About(
         icon,
         btnText,
         descriptionPartOne,
-        descriptionPartTwo
+        descriptionPartTwo,
+        right
     }: IAboutProps) {
     return (
         <section className={styles['about-section']}>
@@ -25,7 +26,7 @@ export default function About(
                     src={bgPhoto}
                     alt="Фото об отеле"
                 />
-                <div className={styles['h5-and-p-box']}>
+                <div className={`${right ? styles['h5-and-p-box__right'] : styles['h5-and-p-box']}`}>
                     <div className={styles['more-btn-and-h5-wrapper']}>
                         <h5 className={styles['h5']}>{children}</h5>
                         {btnText && <MoreButton anchor={anchor} icon={icon}>{btnText}</MoreButton>}

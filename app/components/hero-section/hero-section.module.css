@@ -24,6 +24,13 @@
     color: var(--text-light);
 }
 
+.nav-tag {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 7px;
+}
+
 .overlay {
   position: absolute;
   top: 0;

@@ -33,14 +33,25 @@
     max-width: 600px;
 }
 
+.h5-and-p-box__right {
+    position: absolute;
+    bottom: 40px;
+    right: 130px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px 20px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
 .more-btn-and-h5-wrapper {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .h5 {
     font-family: var(--font-dzuarikau);
-    text-transform: uppercase;
     font-weight: lighter;
     color: #e9a94f;
     font-size: 42px;

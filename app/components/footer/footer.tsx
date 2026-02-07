@@ -14,8 +14,8 @@ export default function Footer() {
                 <Image
                     src={footerLogo}
                     alt="Лого в подвале"
-                    width={400}
-                    height={80}/>
+                    width={300}
+                    height={60}/>
                 <div className={styles['policy-link-wrapper__desktop']}>
                     <Link href={'/'} className={styles['policy-link']}>{'Правовая информация'}</Link>
                     <p>© 2025. Парк-отель Дзуарикау</p>
@@ -49,7 +49,7 @@ export default function Footer() {
                         height={42}
                     />
                     <Link href={""}>
-                        Республика Северная Осетия — Алания, село Дзуарикау, улица А. Кцоева, 25
+                        Республика Северная Осетия — Алания,<br />село Дзуарикау, улица А. Кцоева, 25
                     </Link>
                 </div>
                 <PhoneButton />

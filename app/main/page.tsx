@@ -50,7 +50,8 @@ export default function MainPage() {
                 alt={'Фото ресторана'}
                 anchor={'/restaurant'}
                 btnText={'подробнее'}
-                icon={rightTopArrow}>
+                icon={rightTopArrow}
+                right={true}>
                     {'Ресторан'}
             </About>
             <ImageCarousel images={restaurantImages} />

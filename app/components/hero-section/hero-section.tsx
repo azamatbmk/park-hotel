@@ -37,7 +37,7 @@ export default function HeroSection({
                 />
                 <BurgerIcon />
                 <div className={styles['nav-and-phone']}>
-                    <nav>
+                    <nav className={styles['nav-tag']}>
                         <ul className={styles['nav-wrapper']}>
                             { menuItems.map((item) => {
                                 const isActive = pathName == item.href;

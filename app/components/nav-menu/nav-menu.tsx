@@ -40,7 +40,7 @@ export default function NavMenu() {
                 priority={true}
             />
             <div className={styles['nav-and-phoneBtn-wrapper']}>
-                <nav >
+                <nav className={styles['nav-tag']}>
                     <ul className={styles['nav-wrapper']}>
                         { menuItems.map((item) => {
                             const isActive = pathName == item.href;
