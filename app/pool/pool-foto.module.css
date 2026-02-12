@@ -166,6 +166,10 @@
     display: none;
  }
 
+.mobile-foto {
+    display: none;
+}
+
 
 
 @media (max-width: 768) {
@@ -191,6 +195,7 @@
     }
 
     .mobile-foto {
+        display: block;
         width: 100vw;
     }
 

@@ -91,6 +91,10 @@
         display: none;
     }
 
+    .h5-and-p-box__right {
+        display: none;
+    }
+
     .mobile-768-description {
         color: var(--text-light);
         font-size: 18px;

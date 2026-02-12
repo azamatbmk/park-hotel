@@ -42,7 +42,7 @@ export default function RoomsPage() {
                 leftBottobImageSrc={leftBootomImageOne}
                 rightBottomImageSrc={rightBottomImageOne}
                 alt="Фото номера"
-                h2="Однокомнатный номер с двуспальной кроватью"
+                h2={"Однокомнатный номер с\u00A0двуспальной кроватью"}
                 description="Однокомнатный номер категории «люкс» оформлен в современном стиле и оснащён всем необходимым для комфортного проживания. В номере — двуспальная кровать и выход на балкон."
                 price={12000}
                 square={20}
@@ -55,7 +55,7 @@ export default function RoomsPage() {
                 leftBottobImageSrc={leftBootomImageTwo}
                 rightBottomImageSrc={rightBottomImageTwo}
                 alt="Фото номера"
-                h2="Однокомнатный номер с раздельными кроватями"
+                h2={"Однокомнатный номер с\u00A0раздельными кроватями"}
                 description="Однокомнатный номер с раздельными кроватями подойдёт для комфортного размещения двух гостей. Светлый интерьер, продуманная планировка и спокойная атмосфера создают все условия для отдыха."
                 price={12000}
                 square={20}
@@ -69,7 +69,7 @@ export default function RoomsPage() {
                 leftBottobImageSrc={leftBootomImageThree}
                 rightBottomImageSrc={rightBottomImageThree}
                 alt="Фото номера"
-                h2="Двухкомнатный номер с двуспальной кроватью"
+                h2={"Двухкомнатный номер с\u00A0двуспальной кроватью"}
                 description="Двухкомнатный номер с отдельной спальней и гостиной — удобный вариант для тех, кто предпочитает больше пространства. Современный интерьер и все необходимые удобства обеспечивают комфортное проживание."
                 price={17000}
                 square={32}
