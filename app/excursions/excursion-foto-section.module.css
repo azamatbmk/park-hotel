@@ -34,7 +34,7 @@
 
 .h5-and-p-box  {
     position: absolute;
-    bottom: 40px;
+    bottom: 15px;
     left: 50%;
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
