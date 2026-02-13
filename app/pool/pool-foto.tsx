@@ -43,15 +43,31 @@ export default function PoolFotoSection({
                         `${infoBoxLeftSide ? styles['pool-info-box__left'] : styles['pool-info-box']}`
                         }>
                         <h2 className={styles['pool-info-box-title']}>{h2}</h2>
-                        <Image
-                            className={`${infoBoxLeftSide 
-                                        ? styles['price-work-days-item__none']
-                                        : styles['price-work-days-item']}`}
-                            src={'/pool-size.svg'}
-                            alt="Ионка размеров бассейна"
-                            width={675}
-                            height={30}
-                        />
+                        <div className={`${infoBoxLeftSide 
+                                        ? styles['pool-sizes-container__none']
+                                        : styles['pool-sizes-container']}`}>
+                            <div className={styles['pool-sizes-item']}>
+                                <Image
+                                    src={'./pool-icon.svg'}
+                                    alt="Иконка бассейна"
+                                    width={17}
+                                    height={26}
+                                />
+                                <p>9 x 16</p>
+                            </div>
+                            <div className={styles['pool-sizes-item']}>
+                                <Image
+                                    src={'./pool-long-icon.svg'}
+                                    alt="Иконка бассейна"
+                                    width={17}
+                                    height={26}
+                                />
+                                <p>1,30–1,50 м</p>
+                            </div>
+                            <div className={styles['pool-sizes-item']}>
+                                <p>до 50 чел</p>
+                            </div>
+                        </div>
                         <h5 className={`${infoBoxLeftSide 
                                         ? styles['price-work-days-item__h5']
                                         : styles['price-work-days-item__none']}`}>4 чел</h5>

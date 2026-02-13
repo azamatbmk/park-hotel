@@ -14,15 +14,15 @@ export default function FoodMenu() {
                         className={styles['desktop-image']}
                         src={'/photos/food1.png'}
                         alt="Фото блюда"
-                        width={400}
-                        height={310}    
+                        fill
                     />
                     <Image
                         className={styles['mobile-image']}
                         src={'/photos/food-mobile1.png'}
                         alt="Фото блюда"
                         width={361}
-                        height={115}    
+                        height={115}  
+            
                     />
                     <FoodCardInfo
                         children={'Завтрак'}
@@ -37,8 +37,7 @@ export default function FoodMenu() {
                         className={styles['desktop-image']}
                         src={'/photos/food2.png'}
                         alt="Фото блюда"
-                        width={400}
-                        height={310}    
+                        fill
                     />
                     <Image
                         className={styles['mobile-image']}
@@ -60,8 +59,7 @@ export default function FoodMenu() {
                         className={styles['desktop-image']}
                         src={'/photos/food3.png'}
                         alt="Фото блюда"
-                        width={400}
-                        height={310}    
+                        fill    
                     />
                     <Image
                         className={styles['mobile-image']}
@@ -79,29 +77,6 @@ export default function FoodMenu() {
                     />
                 </div>
             </div>
-            {/* <div className={styles['info-cards-container']}>
-                <FoodCardInfo
-                    children={'Завтрак'}
-                    anchor={'#'}
-                    icon={rightTopArrow}
-                    btnText={'меню'}
-                    description={'Завтраки, которые не только насытят, но и подарят энергию на весь день. С 9:00 до 12:00.'}
-                />
-                <FoodCardInfo
-                    children={'Основное меню'}
-                    anchor={'#'}
-                    icon={rightTopArrow}
-                    btnText={'меню'}
-                    description={'Меню объединяет осетинские, кавказские и европейские блюда, приготовленные с любовью.'}
-                />
-                <FoodCardInfo
-                    children={'Барное меню'}
-                    anchor={'#'}
-                    icon={rightTopArrow}
-                    btnText={'меню'}
-                    description={'Напитки под ваше настроение. Прекрасный выбор для любого повода и компании.'}
-                />
-            </div> */}
         </section>
     )
 }
