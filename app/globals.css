@@ -42,3 +42,13 @@ a {
     color-scheme: dark;
   }
 }
+
+/* @media (max-width: 480px) {
+  body {
+    background-color: #fff;
+  }
+
+  main {  
+    background: var(--bg-main)
+  }
+} */

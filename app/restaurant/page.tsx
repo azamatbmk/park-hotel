@@ -17,7 +17,7 @@ export default function RestaurantPage() {
                         h2="РЕСТОРАН"
                     />
                 }
-                bookingBlock={<BookingBlock />}
+                bookingBlock={<BookingBlock position='absolute'/>}
                 overlay={true}
             />
             <FoodMenu />

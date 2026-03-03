@@ -5,7 +5,7 @@ import NavMenu from '../nav-menu/nav-menu';
 import styles from './burger-icon.module.css';
 import Modal from './modal';
 
-export default function BurgerIcon() {
+export default function BurgerIcon({ black }: { black: boolean }) {
 
     const [closeModal, setCloseModal] = useState<boolean>(false);
     const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -28,9 +28,9 @@ export default function BurgerIcon() {
                 aria-label={isOpen ? "Закрыть меню" : "Открыть меню"}
                 aria-expanded={isOpen}
             >
-                <span className={styles['line']}></span>
-                <span className={styles['line']}></span>
-                <span className={styles['line']}></span>
+                <span className={`${black ? styles['line__black'] : styles['line']}`}></span>
+                <span className={`${black ? styles['line__black'] : styles['line']}`}></span>
+                <span className={`${black ? styles['line__black'] : styles['line']}`}></span>
             </button>
             <Modal
                 isOpen={closeModal}

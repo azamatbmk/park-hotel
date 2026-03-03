@@ -22,7 +22,7 @@ export default function Contacts() {
                         h2="Экскурсии"
                     />
                 }
-                bookingBlock={<BookingBlock />}
+                bookingBlock={<BookingBlock position='absolute'/>}
                 overlay={true}
             />
             <H2HeaderComponent children={'Экскурсии'} />

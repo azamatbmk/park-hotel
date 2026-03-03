@@ -31,7 +31,7 @@ export default function RoomsPage() {
                         h2="Номера"
                     />
                 }
-                bookingBlock={<BookingBlock />}
+                bookingBlock={<BookingBlock position='absolute'/>}
                 overlay={true}
             />
             <H2HeaderComponent children={'Люкс 1'} />

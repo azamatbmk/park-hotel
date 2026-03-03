@@ -1,0 +1,20 @@
+.backButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    gap: 5px;
+    position: relative;
+    font-family: var(--font-geist-sans);
+}
+
+@media (max-width: 768px) {
+    .backButton {
+        color: black;
+        background-color: white;
+    }
+}

@@ -34,7 +34,7 @@ export default function PoolPage() {
                         h2="Бассейн & Баня"
                     />
                 }
-                bookingBlock={<BookingBlock />}
+                bookingBlock={<BookingBlock position='absolute'/>}
                 overlay={true}
             />
             <H2HeaderComponent

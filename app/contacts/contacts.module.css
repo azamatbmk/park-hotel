@@ -14,7 +14,7 @@
     color: #887e71;
     font-weight: lighter;
     line-height: 1;
-    /* margin-bottom: 16px; */
+    margin-bottom: 16px;
 }
 
 .contacts-item {
@@ -52,6 +52,7 @@
         padding: 0 16px;
         gap: 10px;
         margin-bottom: 20px;
+        background: var(--bg-main)
     }
 
     .contacts-item {
@@ -74,3 +75,9 @@
     }
 }
 
+@media (max-width: 480px) {
+     .contacts-items-container {
+        background: var(--bg-main)
+    }
+
+}

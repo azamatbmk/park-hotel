@@ -17,7 +17,7 @@ export default function Contacts() {
                         h2="Контакты"
                     />
                 }
-                bookingBlock={<BookingBlock />}
+                bookingBlock={<BookingBlock position='absolute' />}
                 overlay={true}
             />
             <h2 className={styles['title']}>Контакты</h2>

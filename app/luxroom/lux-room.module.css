@@ -1,0 +1,60 @@
+/* .lux-room-container {
+    padding: 40px;
+} */
+
+.back-button-and-number-wrapper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 20px 40px;
+}
+
+.lux-number {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex; 
+}
+
+.gray-p {
+    color: #696065;
+}
+
+.lux-number__mobile {
+    display: none;
+}
+
+.left-arrow__mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .back-button-and-number-wrapper {
+        background-color: white;
+        padding: 10px 15px;
+    }
+
+    .lux-room-container {
+        padding: 0px;
+    }
+
+    .lux-number__mobile {
+        flex: 1;
+        display: flex;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lux-number {
+        display: none;
+    }
+
+    .left-arrow__mobile {
+        display: block;
+    }
+
+    .left-arrow{
+        display: none;
+    }
+}

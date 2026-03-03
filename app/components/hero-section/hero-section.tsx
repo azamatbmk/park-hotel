@@ -35,24 +35,24 @@ export default function HeroSection({
                     height={70}
                     priority={true}
                 />
-                <BurgerIcon />
+                <BurgerIcon black= { false }/>
                 <div className={styles['nav-and-phone']}>
                     <nav className={styles['nav-tag']}>
                         <ul className={styles['nav-wrapper']}>
                             { menuItems.map((item) => {
                                 const isActive = pathName == item.href;
                             return (
-                                <li key={item.href}>
-                                    <Link href={item.href}>
-                                        {item.title}
-                                        {isActive && (
-                                            <span className={styles['triangle']}>
-                                                {triangle}
-                                            </span>
-                                        )}
-                                    </Link>
-                                </li>
-                            )
+                                    <li key={item.href}>
+                                        <Link href={item.href}>
+                                            {item.title}
+                                            {isActive && (
+                                                <span className={styles['triangle']}>
+                                                    {triangle}
+                                                </span>
+                                            )}
+                                        </Link>
+                                    </li>
+                                )
                             })}
                         </ul>
                     </nav>
