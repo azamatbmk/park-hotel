@@ -77,6 +77,45 @@
 
 
 
+@media (max-width: 1550px) {
+    .h5 {
+        font-size: 38px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+        font-weight: 10;
+    }
+}
+
+
+
+@media (max-width: 1450px) {
+    .h5 {
+        font-size: 35px;
+    }
+
+    .paragraph {
+        font-size: 15px;
+        font-weight: 10;
+    }
+}
+
+
+
+@media (max-width: 1250px) {
+    .h5 {
+        font-size: 30px;
+    }
+
+    .paragraph {
+        font-size: 13px;
+        font-weight: 10;
+    }
+}
+
+
+
 @media (max-width: 768px) {
     .two-foto-wrapper {
         display: flex;
