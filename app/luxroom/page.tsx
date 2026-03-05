@@ -5,6 +5,9 @@ import BackButton from '../components/back-button/back-button'
 import BurgerIcon from '../components/burger-menu/burger-icon'
 import BookingBlock from '../components/booking/booking'
 import BookingButton from '../components/booking/mobile-booking'
+import Tag from './tags'
+import { arriveTime, lux1, lux1Description } from './constants'
+import { roomsDescription } from '../rooms/constants'
 
 export default function LuxRoomPage () {
     return (
@@ -25,6 +28,99 @@ export default function LuxRoomPage () {
             <PhotoGallery
                 images={ fotoArray.images }
             />
+            <div className={styles['tag-component-container']}>
+                <div className={styles['tag-component-wrapper']}>
+                    <Tag room={lux1.room} />
+                    <Tag room={arriveTime.room} mobile={true} />
+                </div>
+                <p className={styles['tag-component-container-paragraph']}>{lux1Description}</p>
+            </div>
+
+            <h2 className={styles['h2']}>Удобства</h2>
+            <div className={styles['facilities-block']}>
+                <div className={styles['facilities-container']}>
+                    <div className={styles['facilities-wrapper']}>
+                        <p>Интернет</p>
+                        <div className={styles['ul-wrapper']}>
+                            <ul>
+                                <li>Wi-Fi</li>
+                                <li>Интернет</li>
+                            </ul>
+                        </div>
+                        <p>Кровать</p>
+                        <div className={styles['ul-wrapper']}>
+                            <ul>
+                                <li>Кровать «KingSize»</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className={styles['facilities-wrapper']}>
+                        <p>Ванная комната</p>
+                        <div className={styles['ul-wrapper']}>
+                            <ul>
+                                <li>Душ</li>
+                                <li>Банные полотенца</li>
+                                <li>Туалет</li>
+                                <li>Халаты</li>
+                                <li>Косметические средства</li>
+                                <li>Тапочки</li>
+                            </ul>
+                        </div>
+                
+                    </div>
+                    <div className={styles['facilities-wrapper']}>
+                        <p>Электроника</p>
+                        <div className={styles['ul-wrapper']}>
+                            <ul>
+                                <li>Телевизор</li>
+                                <li>Фен</li>
+                                <li>Мини-бар</li>
+                                <li>Электронные замки</li>
+                            </ul>
+                        </div>
+                    
+                    </div>
+                </div>
+
+
+
+
+                <div className={styles['facilities-container']}>
+                    <div className={styles['facilities-wrapper']}>
+                        <p>Мебель</p>
+                        <div className={styles['ul-wrapper']}>
+                            <ul>
+                                <li>Зеркало</li>
+                                <li>Рабочий стол</li>
+                                <li>Рабочее кресло</li>
+                                <li>Шкаф для одежды</li>
+                                <li>Тумбы</li>
+                                <li>Дизайнерская мебель</li>
+                                <li>Балкон</li>
+                                <li>Панорамные окна</li>
+                            </ul>
+                        </div>
+                
+                    </div>
+                    <div className={styles['facilities-wrapper']}>
+                        <p>Прочее</p>
+                        <div className={styles['ul-wrapper']}>
+                            <ul>
+                                <li>Бутилированная вода</li>
+                                <li>Чайник</li>
+                                <li>Чайный набор</li>
+                                <li>Стаканы</li>
+                                <li>Отопление</li>
+                                <li>Уборка номера</li>
+                                <li>Парковочное место</li>
+                                <li>Вид на горы</li>
+                            </ul>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

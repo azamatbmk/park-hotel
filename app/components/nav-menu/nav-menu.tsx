@@ -13,6 +13,8 @@ export default function NavMenu() {
     const triangle = '▼';
     const pathName = usePathname();
 
+    const alwaysVisiblePaths = ['/luxroom'];
+
     const [isScrolled, setIsScrolled] = useState(false);
     
     useEffect(() => {
@@ -30,8 +32,10 @@ export default function NavMenu() {
 
     }, []);
 
+    const isAlwaysVisible = alwaysVisiblePaths.includes(pathName);
+
     return (
-        <div className={`${styles['nav-container']} ${isScrolled ? styles['nav-container--visible'] : ''}`}>
+        <div className={`${styles['nav-container']} ${ isAlwaysVisible || isScrolled ? styles['nav-container--visible'] : ''}`}>
             <Image
                 src='./logo.svg'
                 alt="Логотип отеля"
