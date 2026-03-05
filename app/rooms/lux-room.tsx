@@ -3,6 +3,7 @@ import styles from "./lux-room.module.css";
 import mobileStyles from "./mobile-lux-room.module.css"
 import BookButton from "../components/buttons/book-btn";
 import { ILuxRoomProps } from "./lux-room-props.interface";
+import Link from "next/link";
 
 export default function LuxRoom({
     description,
@@ -15,11 +16,13 @@ export default function LuxRoom({
     alt,
     h2,
     square,
-    sectionClassName
+    sectionClassName,
+    path = '/'
 }: ILuxRoomProps) {
     return(
         <>
             <section className={styles['desktop-section']}>
+                <Link href={path}>
                 <div className={
                     `${sectionClassName ? styles['foto-section__right'] : styles['foto-section']}`}>
                     <div className={
@@ -115,6 +118,7 @@ export default function LuxRoom({
                         </div>
                     </div>
                 </div>
+                </Link>
             </section>
         </>
     )

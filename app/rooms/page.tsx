@@ -46,6 +46,7 @@ export default function RoomsPage() {
                 description="Однокомнатный номер категории «люкс» оформлен в современном стиле и оснащён всем необходимым для комфортного проживания. В номере — двуспальная кровать и выход на балкон."
                 price={12000}
                 square={20}
+                path={'/luxroom'}
             />
             <H2HeaderComponent children={'Люкс 2'} />
             <LuxRoom
