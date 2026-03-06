@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import styles from "./lux-room.module.css";
 import mobileStyles from "./mobile-lux-room.module.css"
@@ -22,7 +24,7 @@ export default function LuxRoom({
     return(
         <>
             <section className={styles['desktop-section']}>
-                <Link href={path}>
+                <Link href={path} onClick={(e) => e.stopPropagation()}>
                 <div className={
                     `${sectionClassName ? styles['foto-section__right'] : styles['foto-section']}`}>
                     <div className={

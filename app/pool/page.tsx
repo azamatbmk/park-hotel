@@ -1,3 +1,6 @@
+'use client'
+
+
 import BookingBlock from "../components/booking/booking";
 import HeroSection from "../components/hero-section/hero-section";
 import PagesHeroSectionBackground from "../components/photo-background/photo-background";
