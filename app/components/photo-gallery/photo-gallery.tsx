@@ -19,11 +19,6 @@ interface PhotoGalleryProps {
 export default function PhotoGallery({ images }: PhotoGalleryProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  if (!Array.isArray(images)) {
-    console.error('Ошибка: images должен быть массивом, получен:', typeof images);
-    return <div>Ошибка: неверный формат данных</div>;
-  }
-
   if (images.length === 0) {
     return <div>Нет изображений для отображения</div>;
   }

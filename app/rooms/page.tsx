@@ -19,6 +19,10 @@ import rightBottomImageThree from "../../public/photos/rooms18.png"
 import mobileImageOne from "../../public/photos/rooms-mobile1.png"
 import mobileImageTwo from "../../public/photos/rooms-mobile2.png"
 import mobileImageThree from "../../public/photos/rooms-mobile3.png"
+import LuxRoomReact from "../components/react-photo-gallery/react-photo-gallery";
+import leftImageOneReact from '../../public/photos/Lux1/722.jpg' 
+import leftImageTwoReact from '../../public/photos/Lux2/P1195008.jpg' 
+import leftImageThreeReact from '../../public/photos/Lux3/P1195123.jpg' 
 
 export default function RoomsPage() {
     return (
@@ -35,9 +39,10 @@ export default function RoomsPage() {
                 overlay={true}
             />
             <H2HeaderComponent children={'Люкс 1'} />
-            <LuxRoom
+            <LuxRoomReact
                 mobileImageSrc={mobileImageOne}
                 leftImageSrc={leftImageOne}
+                leftImageSrcReact={leftImageOneReact}
                 topImageSrc={topImageOne}
                 leftBottobImageSrc={leftBootomImageOne}
                 rightBottomImageSrc={rightBottomImageOne}
@@ -49,9 +54,10 @@ export default function RoomsPage() {
                 path={'/luxroom'}
             />
             <H2HeaderComponent children={'Люкс 2'} />
-            <LuxRoom
+            <LuxRoomReact
                 mobileImageSrc={mobileImageTwo}
                 leftImageSrc={leftImageTwo}
+                leftImageSrcReact={leftImageTwoReact}
                 topImageSrc={topImageTwo}
                 leftBottobImageSrc={leftBootomImageTwo}
                 rightBottomImageSrc={rightBottomImageTwo}
@@ -62,10 +68,24 @@ export default function RoomsPage() {
                 square={20}
                 sectionClassName={'foto-section-left'}
             />
-            <H2HeaderComponent children={'Люкс 3'} />
+            {/* <H2HeaderComponent children={'Люкс 3'} />
             <LuxRoom
                 mobileImageSrc={mobileImageThree}
                 leftImageSrc={leftImageThree}
+                topImageSrc={topImageThree}
+                leftBottobImageSrc={leftBootomImageThree}
+                rightBottomImageSrc={rightBottomImageThree}
+                alt="Фото номера"
+                h2={"Двухкомнатный номер с\u00A0двуспальной кроватью"}
+                description="Двухкомнатный номер с отдельной спальней и гостиной — удобный вариант для тех, кто предпочитает больше пространства. Современный интерьер и все необходимые удобства обеспечивают комфортное проживание."
+                price={17000}
+                square={32}
+            /> */}
+            <H2HeaderComponent children={'Люкс 3'} />
+            <LuxRoomReact
+                mobileImageSrc={mobileImageThree}
+                leftImageSrc={leftImageThree}
+                leftImageSrcReact={leftImageThreeReact}
                 topImageSrc={topImageThree}
                 leftBottobImageSrc={leftBootomImageThree}
                 rightBottomImageSrc={rightBottomImageThree}

@@ -1,0 +1,9 @@
+.tags-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF30;
+    border-radius: 10px;
+    color: #C2C2C2;
+    padding: 8px 15px;
+    gap: 8px;
+}

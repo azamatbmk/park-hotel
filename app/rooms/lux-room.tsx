@@ -116,7 +116,7 @@ export default function LuxRoom({
                                 <strong>от {price} ₽</strong>
                                 <span>1 ночь / 2 гостя</span>
                             </div>
-                            <BookButton buttonText={'Забронировать'} />
+                            <BookButton buttonText={'Подробнее'} />
                         </div>
                     </div>
                 </div>
