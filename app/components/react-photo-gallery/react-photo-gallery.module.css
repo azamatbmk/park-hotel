@@ -320,6 +320,7 @@
 .price-and-guests {
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 .mobile-image {

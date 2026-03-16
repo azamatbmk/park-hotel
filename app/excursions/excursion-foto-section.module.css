@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    gap: 20px;
+    gap: 10px;
     padding: 0px 40px;
 }
 
@@ -40,9 +40,8 @@
     backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 10px;
-    max-width: 600px;
     transform: translateX(-50%);
-    width: calc(100% - 60px);
+    width: calc(100% - 20px);
 }
 
 .more-btn-and-h5-wrapper {
@@ -55,6 +54,7 @@
     font-weight: lighter;
     color: #e9a94f;
     font-size: 42px;
+    line-height: 1;
 }
 
 .paragraph {
@@ -66,7 +66,12 @@
 }
 
 .margin-bottom {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    line-height: 0;
+}
+
+.margin-bottom a {
+    line-height: 1;
 }
 
 .more-foto-btn {
@@ -159,7 +164,7 @@
     }
 
     .photo-and-distance-btn {
-        position: relative;;
+        position: relative;
     }
 
     .distance {
