@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image"
 import styles from "./footer.module.css"
 import footerLogo from "../../../public/greylogo.svg"
@@ -5,8 +7,11 @@ import Link from "next/link"
 import PhoneButton from "../buttons/phone-btn"
 import pointIcon from "../../../public/point.svg"
 import PhoneButtonMobile from "../buttons/phone-btn-mobile"
+import { usePathname } from "next/navigation"
 
 export default function Footer() {
+
+    const path = usePathname();
 
     return (
         <section className={styles['footer-section']}>
@@ -85,6 +90,8 @@ export default function Footer() {
                     <p>© 2025. Парк-отель Дзуарикау</p>
                 </div>
             </div>
+
+            <div className={`${path == '/luxroom' ? styles['bottom-div'] : ''}`}></div>
         </section>
     )
 }

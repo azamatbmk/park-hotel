@@ -42,7 +42,6 @@
 }
 
 .footer-nav {
-    /* font-size: 14px; */
     color: #ccc;
     text-decoration: none;
     margin-bottom: 6px;
@@ -129,6 +128,11 @@
         flex-direction: row;
         gap: 20px;
         margin-top: 20px;
+    }
+
+    .bottom-div {
+        height: 12vh;
+        background-color: var(--bg-footer);
     }
 }
 

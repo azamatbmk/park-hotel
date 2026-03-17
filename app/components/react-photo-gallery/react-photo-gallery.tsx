@@ -3,14 +3,30 @@
 import Image from "next/image";
 import styles from "./react-photo-gallery.module.css";
 import Link from "next/link";
-import { Gallery, Item } from 'react-photoswipe-gallery';
+import { Gallery, Item, useGallery } from 'react-photoswipe-gallery';
 import 'photoswipe/photoswipe.css';
 import { ILuxRoomProps } from "@/app/rooms/lux-room-props.interface";
 import BookButton from "../buttons/book-btn";
-import { MouseEvent, useEffect, useRef, useState } from "react";
+import { MouseEvent, useState } from "react";
 import MorePlaceButton from "../more-place-button/more-place-button";
 import DesktopTag from "../room-tag/desktop-room-tag";
 import { desktopTags } from "./constants";
+
+
+function MoreFotoButton() {
+  const { open } = useGallery();
+  
+  return (
+    <button 
+      className={styles['more-foto-btn']}
+      onClick={(e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        open(0);
+      }}
+    >больше фото</button>
+  );
+}
 
 export default function LuxRoomReact({
     description,
@@ -52,7 +68,7 @@ export default function LuxRoomReact({
     return(
         <>
             <section className={styles['desktop-section']}>
-                <Link href={path} onClick={(e) => e.stopPropagation()}>
+                <Link href={path} >
                 <div className={
                     `${sectionClassName ? styles['foto-section__right'] : styles['foto-section']}`}>
                     <Gallery
@@ -104,17 +120,8 @@ export default function LuxRoomReact({
                                     height={250}
                                     quality={100}
                                 />
-                                <button 
-                                    className={styles['more-foto-btn']}
-                                    onClick={(e) => {
-                                        e.preventDefault();
-                                        // Открыть галерею с первого изображения
-                                        const firstImage = document.querySelector('[data-pswp-index="0"]') as HTMLElement;
-                                        if (firstImage) {
-                                            firstImage.click();
-                                        }
-                                    }}
-                                >больше фото</button>
+                            
+                                <MoreFotoButton />
                             </div>
                             <div className={styles['right-column']}>
                                 <div className={

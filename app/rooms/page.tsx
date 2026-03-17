@@ -3,7 +3,7 @@ import HeroSection from "../components/hero-section/hero-section";
 import PagesHeroSectionBackground from "../components/photo-background/photo-background";
 import roomsPageBg from "../../public/photos/rooms-page-bg.png"
 import H2HeaderComponent from "../components/h2-header/h2-header";
-import LuxRoom from "./lux-room";
+// import LuxRoom from "./lux-room";
 import leftImageOne from "../../public/photos/rooms7.png"
 import topImageOne from "../../public/photos/rooms8.png"
 import leftBootomImageOne from "../../public/photos/rooms9.png"
@@ -67,20 +67,8 @@ export default function RoomsPage() {
                 price={12000}
                 square={20}
                 sectionClassName={'foto-section-left'}
+                path={'/luxroom'}
             />
-            {/* <H2HeaderComponent children={'Люкс 3'} />
-            <LuxRoom
-                mobileImageSrc={mobileImageThree}
-                leftImageSrc={leftImageThree}
-                topImageSrc={topImageThree}
-                leftBottobImageSrc={leftBootomImageThree}
-                rightBottomImageSrc={rightBottomImageThree}
-                alt="Фото номера"
-                h2={"Двухкомнатный номер с\u00A0двуспальной кроватью"}
-                description="Двухкомнатный номер с отдельной спальней и гостиной — удобный вариант для тех, кто предпочитает больше пространства. Современный интерьер и все необходимые удобства обеспечивают комфортное проживание."
-                price={17000}
-                square={32}
-            /> */}
             <H2HeaderComponent children={'Люкс 3'} />
             <LuxRoomReact
                 mobileImageSrc={mobileImageThree}
@@ -94,6 +82,7 @@ export default function RoomsPage() {
                 description="Двухкомнатный номер с отдельной спальней и гостиной — удобный вариант для тех, кто предпочитает больше пространства. Современный интерьер и все необходимые удобства обеспечивают комфортное проживание."
                 price={17000}
                 square={32}
+                path={'/luxroom'}
             />
         </main>
     )

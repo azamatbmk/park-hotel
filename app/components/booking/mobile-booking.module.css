@@ -15,12 +15,12 @@
         justify-content: center;
         gap: 18px;
         position: fixed;
-        bottom: 30px;
+        bottom: 0px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
         width: 100vw;
-        height: 30vh;
+        height: 20vh;
         overflow: hidden;
     }
 
@@ -96,4 +96,5 @@
         font-size: 22px;
         font-weight: 600;
     }
+
 }
