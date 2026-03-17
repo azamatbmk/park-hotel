@@ -10,6 +10,7 @@ import rightFoto from "../../public/photos/exc2.png"
 import firstFoto from "../../public/photos/exc3.png"
 import secondFoto from "../../public/photos/exc4.png"
 import thirdFoto from "../../public/photos/exc5.png"
+import Otelix from "../otelix/page";
 
 export default function Contacts() {
     return (
@@ -22,7 +23,7 @@ export default function Contacts() {
                         h2="Экскурсии"
                     />
                 }
-                bookingBlock={<BookingBlock position='absolute'/>}
+                bookingBlock={<Otelix />}
                 overlay={true}
             />
             <H2HeaderComponent children={'Экскурсии'} />

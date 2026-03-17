@@ -5,6 +5,7 @@ import BookingBlock from "../components/booking/booking";
 import styles from "./contacts.module.css"
 import Image from "next/image";
 import H2HeaderComponent from "../components/h2-header/h2-header";
+import Otelix from "../otelix/page";
 
 export default function Contacts() {
     return (
@@ -17,7 +18,7 @@ export default function Contacts() {
                         h2="Контакты"
                     />
                 }
-                bookingBlock={<BookingBlock position='absolute' />}
+                bookingBlock={<Otelix />}
                 overlay={true}
             />
             <h2 className={styles['title']}>Контакты</h2>
@@ -33,33 +34,35 @@ export default function Contacts() {
                 </div>
                 <div className={styles['contacts-item']}>
                     <h3>Соцсети</h3>
-                    <a href="" target="_blank">
-                        <Image
-                            className={styles['cocial-logo']}
-                            src={"/whatsapp-logo.svg"}
-                            alt={"Whatsapp логотип"}
-                            width={40}
-                            height={40}
-                        />
-                    </a>
-                    <a href="" target="_blank">
-                        <Image
-                            className={styles['cocial-logo']}
-                            src={"/instagram-logo.svg"}
-                            alt={"Instagram логотип"}
-                            width={40}
-                            height={40}
-                        />
-                    </a>
-                    <a href="" target="_blank">
-                        <Image
-                            className={styles['cocial-logo']}
-                            src={"/telegram-logo.svg"}
-                            alt={"Telegram логотип"}
-                            width={40}
-                            height={40}
-                        />
-                    </a>
+                    <div>
+                        <a href="" target="_blank">
+                            <Image
+                                className={styles['cocial-logo']}
+                                src={"/whatsapp-logo.svg"}
+                                alt={"Whatsapp логотип"}
+                                width={40}
+                                height={40}
+                            />
+                        </a>
+                        <a href="" target="_blank">
+                            <Image
+                                className={styles['cocial-logo']}
+                                src={"/instagram-logo.svg"}
+                                alt={"Instagram логотип"}
+                                width={40}
+                                height={40}
+                            />
+                        </a>
+                        <a href="" target="_blank">
+                            <Image
+                                className={styles['cocial-logo']}
+                                src={"/telegram-logo.svg"}
+                                alt={"Telegram логотип"}
+                                width={40}
+                                height={40}
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
         </main>

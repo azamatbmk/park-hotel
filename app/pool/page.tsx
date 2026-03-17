@@ -26,6 +26,7 @@ import mobileFotoTwo from "../../public/photos/spa-mobile2.png"
 import poolServiceIconOne from "../../public/pool-service__mobile1.svg"
 import poolServiceIconTwo from "../../public/pool-service__mobile2.svg"
 import { poolTags, saunaTags } from "./constants";
+import Otelix from "../otelix/page";
 
 export default function PoolPage() {
     return (
@@ -38,7 +39,7 @@ export default function PoolPage() {
                         h2="Бассейн & Баня"
                     />
                 }
-                bookingBlock={<BookingBlock position='absolute'/>}
+                bookingBlock={<Otelix />}
                 overlay={true}
             />
             <H2HeaderComponent

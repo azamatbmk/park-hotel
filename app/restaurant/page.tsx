@@ -4,6 +4,7 @@ import FoodMenu from "./food-card";
 import FotoGallery from "./foto-gallery";
 import PagesHeroSectionBackground from "../components/photo-background/photo-background";
 import restBg from "../../public/photos/restbg.png"
+import Otelix from "../otelix/page";
 
 
 export default function RestaurantPage() {
@@ -17,7 +18,7 @@ export default function RestaurantPage() {
                         h2="РЕСТОРАН"
                     />
                 }
-                bookingBlock={<BookingBlock position='absolute'/>}
+                bookingBlock={<Otelix />}
                 overlay={true}
             />
             <FoodMenu />

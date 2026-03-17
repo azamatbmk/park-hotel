@@ -1,0 +1,8 @@
+.otelix {
+    position: absolute;
+    z-index: 1000;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    top: 60%;
+}

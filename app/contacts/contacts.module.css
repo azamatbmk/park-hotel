@@ -23,7 +23,7 @@
     color: white;
     padding: 20px 25px;
     border-radius: 12px;
-    height: 120px;
+    height: 140px;
 }
 
 .cocial-logo {
@@ -32,13 +32,6 @@
 
 .title {
     display: none;
-    /* padding: 0px 150px;
-    font-family: var(--font-dzuarikau);
-    font-size: 100px;
-    font-weight: lighter;
-    text-transform: uppercase;
-    text-align: left;
-    color: #696054; */
 }
 
 
