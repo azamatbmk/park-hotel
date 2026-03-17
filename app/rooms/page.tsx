@@ -67,7 +67,7 @@ export default function RoomsPage() {
                 price={12000}
                 square={20}
                 sectionClassName={'foto-section-left'}
-                path={'/luxroom'}
+                path={'/luxroom2'}
             />
             <H2HeaderComponent children={'Люкс 3'} />
             <LuxRoomReact
@@ -82,7 +82,7 @@ export default function RoomsPage() {
                 description="Двухкомнатный номер с отдельной спальней и гостиной — удобный вариант для тех, кто предпочитает больше пространства. Современный интерьер и все необходимые удобства обеспечивают комфортное проживание."
                 price={17000}
                 square={32}
-                path={'/luxroom'}
+                path={'/luxroom3'}
             />
         </main>
     )

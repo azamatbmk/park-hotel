@@ -27,6 +27,7 @@ export default function MorePlaceButton ()  {
       {isOpen && (
         <div className={styles['price']}>
           2 500 ₽
+          <p>1{'\u00A0'}гость</p>
         </div>
       )}
     </div>

@@ -10,7 +10,7 @@ import BookButton from "../buttons/book-btn";
 import { MouseEvent, useState } from "react";
 import MorePlaceButton from "../more-place-button/more-place-button";
 import DesktopTag from "../room-tag/desktop-room-tag";
-import { desktopTags } from "./constants";
+import { desktopTags, desktopTagsOpen } from "./constants";
 
 
 function MoreFotoButton() {
@@ -211,6 +211,7 @@ export default function LuxRoomReact({
                             </div>
                         </div>
                     </Gallery>
+                    
                     <div className={`${sectionClassName ? styles['description-container__right'] : styles['description-container']}`}>
                         <div className={styles['h2-and-more-place-btn']}>
                             <h2 className={styles['h2']}>
@@ -241,7 +242,7 @@ export default function LuxRoomReact({
                                 
                                  {toggleOpen ? (
                                     <div className={styles['tags-open']}>
-                                        {desktopTags.map((tag, index) => (
+                                        {desktopTagsOpen.map((tag, index) => (
                                             <DesktopTag
                                                 key={index}
                                                 imageSrc={tag.imageSrc}
@@ -254,7 +255,7 @@ export default function LuxRoomReact({
                                     </div>
                                 ) : (
                                     <div className={`${styles['tag-wrapper']} ${isAnimating ? styles['hidden'] : ''}`}>
-                                        + {desktopTags.length}
+                                        + {desktopTagsOpen.length}
                                     </div>
                                 )}
                             </div>

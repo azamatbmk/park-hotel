@@ -1,15 +1,15 @@
 import PhotoGallery from '../components/photo-gallery/photo-gallery'
 import { fotoArray } from '../components/photo-gallery/constants'
-import styles from './lux-room.module.css'
+import styles from './lux-room3.module.css'
 import BackButton from '../components/back-button/back-button'
 import BurgerIcon from '../components/burger-menu/burger-icon'
 import BookingBlock from '../components/booking/booking'
 import BookingButton from '../components/booking/mobile-booking'
-import Tag from './tags'
-import { arriveTime, firstLuxFoto, lux1, lux1Description } from './constants'
+import Tag from './tags3'
+import { arriveTime, lux1, lux1Description, thirdLuxFoto } from './constants'
 import { roomsDescription } from '../rooms/constants'
 
-export default function LuxRoomPage () {
+export default function LuxRoomSecond () {
     return (
         <div className={styles['lux-room-container']}>
             <BookingButton display='hide-desktop' />
@@ -18,15 +18,15 @@ export default function LuxRoomPage () {
                 <BackButton/>
                 <div className={styles['lux-number']}>
                     <p className={styles['gray-p']}>Номера /</p>
-                    <p>Люкс 1</p>
+                    <p>Люкс 3</p>
                 </div>
                 <div className={styles['lux-number__mobile']}>
-                    <p>Люкс 1</p>
+                    <p>Люкс 3</p>
                 </div>
                 <BurgerIcon black= { true } />
             </div>
             <PhotoGallery
-                images={ firstLuxFoto.images }
+                images={ thirdLuxFoto.images }
             />
             <div className={styles['tag-component-container']}>
                 <div className={styles['tag-component-wrapper']}>

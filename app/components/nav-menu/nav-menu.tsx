@@ -13,7 +13,7 @@ export default function NavMenu() {
     const triangle = '▼';
     const pathName = usePathname();
 
-    const alwaysVisiblePaths = ['/luxroom'];
+    const alwaysVisiblePaths = ['/luxroom', '/luxroom2', '/luxroom3'];
 
     const [isScrolled, setIsScrolled] = useState(false);
     

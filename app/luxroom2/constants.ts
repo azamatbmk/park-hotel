@@ -1,5 +1,5 @@
 import { PhotoGalleryProps } from "../components/photo-gallery/interfaces";
-import { PropsArray } from "./tags";
+import { PropsArray } from "./tags2";
 
 export const lux1: PropsArray = {
     room: [
@@ -42,33 +42,53 @@ export const arriveTime: PropsArray = {
     ]
 }
 
-
-export const firstLuxFoto: PhotoGalleryProps = {
+export const secondLuxFoto: PhotoGalleryProps = {
     images: [
         {   
             id: 0,
-            src: '/photos/Lux1/722.jpg',
+            src: '/photos/Lux2/P1194667.jpg',
             alt: 'Фото',
             width: 1685,
             height: 643,
         },
         {
             id: 1,
-            src: '/photos/Lux1/734.jpg',
+            src: '/photos/Lux2/P1194895.jpg',
             alt: 'Фото',
             width: 1685,
             height: 643,
         },
         {
             id: 2,
-            src: '/photos/Lux1/835.jpg',
+            src: '/photos/Lux2/P1195008.jpg',
             alt: 'Фото',
             width: 1685,
             height: 643,
         },
         {
             id: 3,
-            src: '/photos/Lux1/846.jpg',
+            src: '/photos/Lux2/P1195030.jpg',
+            alt: 'Фото',
+            width: 1685,
+            height: 643,
+        },
+        {
+            id: 4,
+            src: '/photos/Lux2/P1195032.jpg',
+            alt: 'Фото',
+            width: 1685,
+            height: 643,
+        },
+        {
+            id: 5,
+            src: '/photos/Lux2/P1195069.jpg',
+            alt: 'Фото',
+            width: 1685,
+            height: 643,
+        },
+        {
+            id: 6,
+            src: '/photos/Lux2/P1195071.jpg',
             alt: 'Фото',
             width: 1685,
             height: 643,
