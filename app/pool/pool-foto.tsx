@@ -2,6 +2,8 @@ import Image from "next/image"
 import styles from "./pool-foto.module.css"
 import BookButton from "../components/buttons/book-btn"
 import { IPoolProops } from "./pool-foto-props"
+import DesktopTag from "../components/room-tag/desktop-room-tag"
+import { poolTags, saunaTags } from "./constants"
 
 
 export default function PoolFotoSection({
@@ -74,20 +76,21 @@ export default function PoolFotoSection({
                         <p>
                             {description}
                         </p>
-                        <Image
-                            className={styles['pool-service-icon']}
-                            src={poolServiceIcon}
-                            alt="Ионка услуг у бассейна"
-                            width={647}
-                            height={49}
-                        />
-                        <Image
-                            className={styles['pool-service-icon__mobile']}
-                            src={poolServiceIconMobile}
-                            alt="Ионка услуг у бассейна"
-                            width={361}
-                            height={86}
-                        />
+                        
+                        <div className={styles['pool-tags-container']}>
+                                {poolServiceIcon.map((tag, index) => {
+                                    return (
+                                        <DesktopTag key={index}
+                                            imageSrc={tag.imageSrc}
+                                            width={tag.width}
+                                            height={tag.height}
+                                            alt={tag.alt}
+                                            text={tag.text}
+                                        />
+                                    )
+                                })}
+                            </div>
+
                         <div className={
                             `${infoBoxLeftSide
                                         ? styles['price-work-days-wrapper__left']
@@ -104,7 +107,7 @@ export default function PoolFotoSection({
                                             ? styles['price-work-days-item__none']
                                             : styles['price-work-days-item']}`}>
                                     <p>сб-вс</p>
-                                    <h5>1500{'\u00A0'}₽</h5>
+                                    <h5>1{'\u00A0'}500{'\u00A0'}₽</h5>
                                 </div>
                             </div>
                             <div className={

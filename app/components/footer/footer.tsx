@@ -37,7 +37,7 @@ export default function Footer() {
             </div>
             <div className={styles['work-time']}>
                 <h4 className={styles['h4']}>График работы</h4>
-                <p style={{ color: '#ccc' }}>с 08:00 до 23:00</p>
+                <p>с 08:00 до 23:00</p>
             </div>
             <div className={styles['footer-adress']}>
                 <h4 className={styles['h4']}>Адрес</h4>

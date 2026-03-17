@@ -12,7 +12,7 @@ import MorePlaceButton from "../more-place-button/more-place-button";
 import DesktopTag from "../room-tag/desktop-room-tag";
 import { desktopTags } from "./constants";
 
-export default function LuxRoom({
+export default function LuxRoomReact({
     description,
     price,
     mobileImageSrc,

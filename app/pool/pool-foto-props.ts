@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image";
+import { IDesktopTagProps } from "../components/room-tag/desktop-tag-props";
 
 export interface IPoolProops {
     infoBoxLeftSide: boolean;
@@ -9,7 +10,7 @@ export interface IPoolProops {
     threeFotoSrcTwo: StaticImageData;
     threeFotoSrcThree: StaticImageData;
     mobileFoto: StaticImageData;
-    poolServiceIcon: StaticImageData;
+    poolServiceIcon: IDesktopTagProps[];
     poolServiceIconMobile: StaticImageData;
     price:string,
     alt: string;

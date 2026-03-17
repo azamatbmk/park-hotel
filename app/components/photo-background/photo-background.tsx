@@ -14,7 +14,6 @@ export default function PagesHeroSectionBackground({ src, alt, h2}: {
                     className={styles['rest-bg__desktop']}
                     src={src}
                     alt={alt}
-                    fill
                 />
             </div>
             <div className={styles['rest-bg-wrapper__mobile']}>

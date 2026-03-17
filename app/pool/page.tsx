@@ -25,6 +25,7 @@ import mobileFotoOne from "../../public/photos/spa-mobile1.png"
 import mobileFotoTwo from "../../public/photos/spa-mobile2.png"
 import poolServiceIconOne from "../../public/pool-service__mobile1.svg"
 import poolServiceIconTwo from "../../public/pool-service__mobile2.svg"
+import { poolTags, saunaTags } from "./constants";
 
 export default function PoolPage() {
     return (
@@ -52,13 +53,13 @@ export default function PoolPage() {
                 threeFotoSrcTwo={poolThreeFotoSrcTwo}
                 threeFotoSrcThree={poolThreeFotoSrcThree}
                 mobileFoto={mobileFotoOne}
-                poolServiceIcon={poolServiceIcon}
+                poolServiceIcon={poolTags}
                 poolServiceIconMobile={poolServiceIconOne}
                 alt={'Фото бассейна'}
                 h2={'Бассейн'}
                 description={'Открытый подогреваемый бассейн парк-отеля «Дзуарикау» доступен для гостей с 10:00 до 17:00. Для комфортного отдыха предусмотрены солнечные зоны для загара и тени под навесами.'}
                 buttonText={'Забронировать лежак'}
-                price="1300"
+                price={"1\u00A0300"}
                 guestsAndTime="1 гость"
             />
             <H2HeaderComponent
@@ -73,13 +74,13 @@ export default function PoolPage() {
                 threeFotoSrcTwo={spaThreeFotoSrcTwo}
                 threeFotoSrcThree={spaThreeFotoSrcThree}
                 mobileFoto={mobileFotoTwo}
-                poolServiceIcon={spaServiceIcon}
+                poolServiceIcon={saunaTags}
                 poolServiceIconMobile={poolServiceIconTwo}
                 alt={'Фото бани'}
                 h2={'Баня'}
                 description={'Банный комплекс парк-отеля «Дзуарикау» включает просторную парную и деревянную охлаждающую купель. Для отдыха предусмотрена зона, где гости могут расслабиться и восстановить силы. Также в банный комплекс можно заказать блюда из меню ресторана.'}
                 buttonText={'Забронировать баню'}
-                price="от 3000"
+                price={"от 3\u00A0000"}
                 guestsAndTime="1 гость/ 1 час"
             />
         </main>
