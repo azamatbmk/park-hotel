@@ -10,6 +10,7 @@ export default function ImageCarousel({ images }: IPhotoCarousel) {
   
   const duplicatedImages = [...images, ...images];
 
+
   return (
     <Gallery
       options={{
@@ -26,10 +27,10 @@ export default function ImageCarousel({ images }: IPhotoCarousel) {
           {duplicatedImages.map((image, index) => (
             <div key={index} className={styles['image-wrapper']}>
               <Item
-                original={image.src}
-                thumbnail={image.src}
-                width={2000}
-                height={1500}
+                original={image.original}
+                thumbnail={image.thumbnail}
+                width={image.width}
+                height={image.height}
                 alt={image.alt || `Image ${index}`}
               >
                 {({ ref, open }) => (
