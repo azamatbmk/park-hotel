@@ -6,6 +6,7 @@ import styles from "./contacts.module.css"
 import Image from "next/image";
 import H2HeaderComponent from "../components/h2-header/h2-header";
 import Otelix from "../otelix/page";
+import OtelixWidget from "../components/otelix-ooking/otelix-booking";
 
 export default function Contacts() {
     return (
@@ -18,7 +19,7 @@ export default function Contacts() {
                         h2="Контакты"
                     />
                 }
-                bookingBlock={<Otelix />}
+                bookingBlock={<OtelixWidget />}
                 overlay={true}
             />
             <h2 className={styles['title']}>Контакты</h2>
