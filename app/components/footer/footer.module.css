@@ -3,8 +3,7 @@
     flex-direction: row;
     background-color: var(--bg-footer);
     padding: 20px 40px;
-    gap: 60px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .policy-link-wrapper__mobile {
@@ -41,15 +40,22 @@
     color: white;
 }
 
+.nav-work-adress-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 70px;
+}
+
 .footer-nav {
     color: #ccc;
     text-decoration: none;
     margin-bottom: 6px;
 }
 
-.work-time {
+/* .work-time {
     width: 410px;
-}
+} */
 
 .work-time p{
     color: white;
@@ -141,7 +147,7 @@
 
 @media (min-width: 769px) {
     .footer-section {
-        height: 40vh;
+        height: 35vh;
     }
     .policy-link-wrapper__mobile {
        display: none;
