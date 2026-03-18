@@ -7,6 +7,7 @@ import Image from "next/image";
 import H2HeaderComponent from "../components/h2-header/h2-header";
 import Otelix from "../otelix/page";
 import OtelixWidget from "../components/otelix-ooking/otelix-booking";
+import PanoramaYandexMap from "../components/panorama/panorama";
 
 export default function Contacts() {
     return (
@@ -66,6 +67,7 @@ export default function Contacts() {
                     </div>
                 </div>
             </div>
+            <PanoramaYandexMap />
         </main>
     )
 }

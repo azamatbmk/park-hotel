@@ -11,8 +11,9 @@ import { roomsDescription, roomsImages } from "../rooms/constants";
 import { restaurantDescription, restaurantImages } from "../restaurant/constants";
 import { spaDescription, spaImages } from "../pool/constants";
 import VideoBackground from "../components/video-background/video-background";
+import PanoramaYandexMap from "../components/panorama/panorama";
 
- 
+
 export default function MainPage() {
     return (
         <>
@@ -29,7 +30,7 @@ export default function MainPage() {
                 alt={'Фото отеля'}
 
                 anchor={'/restaurant'}>
-                    {'Об отеле'}
+                {'Об отеле'}
             </About>
             <ImageCarousel images={aboutImages} />
             <About
@@ -40,7 +41,7 @@ export default function MainPage() {
                 anchor={'/rooms'}
                 btnText={'подробнее'}
                 icon={rightTopArrow}>
-                    {'Номера'}
+                {'Номера'}
             </About>
             <ImageCarousel images={roomsImages} />
             <About
@@ -52,7 +53,7 @@ export default function MainPage() {
                 btnText={'подробнее'}
                 icon={rightTopArrow}
                 right={true}>
-                    {'Ресторан'}
+                {'Ресторан'}
             </About>
             <ImageCarousel images={restaurantImages} />
             <About
@@ -63,9 +64,10 @@ export default function MainPage() {
                 anchor={'/pool'}
                 btnText={'подробнее'}
                 icon={rightTopArrow}>
-                    {'Бассейн & спа'}
+                {'Бассейн & спа'}
             </About>
             <ImageCarousel images={spaImages} />
+            <PanoramaYandexMap />
         </>
     )
 }
