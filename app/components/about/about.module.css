@@ -15,6 +15,7 @@
     text-transform: uppercase;
     text-align: left;
     color: #696054;
+    line-height: 1;
 }
 
 .photo {
@@ -23,7 +24,7 @@
     height: 100vh;
 }
 
-.h5-and-p-box  {
+.h5-and-p-box {
     position: absolute;
     bottom: 10px;
     left: 130px;
@@ -79,7 +80,7 @@
         padding-bottom: 40px;
         min-height: 0;
     }
-    
+
     .title {
         padding: 0px 16px;
         font-family: var(--font-dzuarikau);
@@ -91,7 +92,7 @@
         line-height: 1;
     }
 
-    .h5-and-p-box  {
+    .h5-and-p-box {
         display: none;
     }
 
@@ -107,13 +108,13 @@
         align-items: flex-end;
     }
 
-    .mobile-768-description p{
+    .mobile-768-description p {
         color: var(--text-light);
         font-size: 15px;
         padding: 15px 0;
         background-color: #696054;
     }
-    
+
     .section-photo {
         position: relative;
     }
@@ -125,7 +126,7 @@
         background-color: #696054;
         display: block;
     }
-    
+
     .mobile-768-description {
         display: flex;
         flex-direction: column;
@@ -136,4 +137,3 @@
         color: white;
     }
 }
-
