@@ -18,7 +18,7 @@ export default function RestaurantPage() {
                         h2="РЕСТОРАН"
                     />
                 }
-                bookingBlock={<Otelix />}
+                // bookingBlock={<Otelix />}
                 overlay={true}
             />
             <FoodMenu />

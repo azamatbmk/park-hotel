@@ -12,6 +12,7 @@ import { restaurantDescription, restaurantImages } from "../restaurant/constants
 import { spaDescription, spaImages } from "../pool/constants";
 import VideoBackground from "../components/video-background/video-background";
 import PanoramaYandexMap from "../components/panorama/panorama";
+import H2HeaderComponent from "../components/h2-header/h2-header";
 
 
 export default function MainPage() {
@@ -28,7 +29,6 @@ export default function MainPage() {
                 descriptionPartTwo={mobileAboutDescriptionPartTwo}
                 bgPhoto={aboutBg}
                 alt={'Фото отеля'}
-
                 anchor={'/restaurant'}>
                 {'Об отеле'}
             </About>
@@ -67,6 +67,7 @@ export default function MainPage() {
                 {'Бассейн & спа'}
             </About>
             <ImageCarousel images={spaImages} />
+            <H2HeaderComponent >{'Панорама'}</H2HeaderComponent>
             <PanoramaYandexMap />
         </>
     )

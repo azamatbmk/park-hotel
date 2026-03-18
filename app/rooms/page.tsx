@@ -20,9 +20,9 @@ import mobileImageOne from "../../public/photos/rooms-mobile1.png"
 import mobileImageTwo from "../../public/photos/rooms-mobile2.png"
 import mobileImageThree from "../../public/photos/rooms-mobile3.png"
 import LuxRoomReact from "../components/react-photo-gallery/react-photo-gallery";
-import leftImageOneReact from '../../public/photos/Lux1/722.jpg' 
-import leftImageTwoReact from '../../public/photos/Lux2/P1195008.jpg' 
-import leftImageThreeReact from '../../public/photos/Lux3/P1195123.jpg' 
+import leftImageOneReact from '../../public/photos/Lux1/722.jpg'
+import leftImageTwoReact from '../../public/photos/Lux2/P1195008.jpg'
+import leftImageThreeReact from '../../public/photos/Lux3/P1195123.jpg'
 import Otelix from "../otelix/page";
 
 export default function RoomsPage() {
@@ -36,7 +36,7 @@ export default function RoomsPage() {
                         h2="Номера"
                     />
                 }
-                bookingBlock={<Otelix />}
+                // bookingBlock={<Otelix />}
                 overlay={true}
             />
             <H2HeaderComponent children={'Люкс 1'} />

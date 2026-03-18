@@ -6,6 +6,7 @@
     text-transform: uppercase;
     text-align: left;
     color: #696054;
+    line-height: 1;
 }
 
 @media (max-width: 768px) {

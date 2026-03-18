@@ -20,7 +20,7 @@ export default function Contacts() {
                         h2="Контакты"
                     />
                 }
-                bookingBlock={<OtelixWidget />}
+                // bookingBlock={<OtelixWidget />}
                 overlay={true}
             />
             <h2 className={styles['title']}>Контакты</h2>

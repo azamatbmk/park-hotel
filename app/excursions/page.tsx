@@ -23,7 +23,7 @@ export default function Contacts() {
                         h2="Экскурсии"
                     />
                 }
-                bookingBlock={<Otelix />}
+                // bookingBlock={<Otelix />}
                 overlay={true}
             />
             <H2HeaderComponent children={'Экскурсии'} />
