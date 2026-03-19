@@ -1,25 +1,25 @@
 import { PhotoGalleryProps } from "../components/photo-gallery/interfaces";
 import { PropsArray } from "./tags3";
 
-export const lux1: PropsArray = {
+export const lux3: PropsArray = {
     room: [
         {
             description: 'Размер',
             iconSrc: '/square-tag.svg',
             descriptionCount: '32 кв. м',
-            dark: false, 
+            dark: false,
         },
         {
             description: 'Вместимость',
             iconSrc: '/human-tag.svg',
             descriptionCount: 'до 2 человек',
-            dark: false, 
+            dark: false,
         },
         {
             description: 'Комнаты',
             iconSrc: '/union-square-tag.svg',
-            descriptionCount: '1 комната',
-            dark: false, 
+            descriptionCount: '2 комнаты',
+            dark: false,
         }
     ]
 }
@@ -44,7 +44,7 @@ export const arriveTime: PropsArray = {
 
 export const thirdLuxFoto: PhotoGalleryProps = {
     images: [
-        {   
+        {
             id: 0,
             src: '/photos/Lux3/P1195123.jpg',
             alt: 'Фото',

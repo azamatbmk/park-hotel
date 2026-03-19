@@ -6,16 +6,16 @@ import BurgerIcon from '../components/burger-menu/burger-icon'
 import BookingBlock from '../components/booking/booking'
 import BookingButton from '../components/booking/mobile-booking'
 import Tag from './tags3'
-import { arriveTime, lux1, lux1Description, thirdLuxFoto } from './constants'
+import { arriveTime, lux3, lux1Description, thirdLuxFoto } from './constants'
 import { roomsDescription } from '../rooms/constants'
 
-export default function LuxRoomSecond () {
+export default function LuxRoomSecond() {
     return (
         <div className={styles['lux-room-container']}>
             <BookingButton display='hide-desktop' />
-            <BookingBlock display='hide-mobile' position='relative'  />
+            <BookingBlock display='hide-mobile' position='relative' />
             <div className={styles['back-button-and-number-wrapper']}>
-                <BackButton/>
+                <BackButton />
                 <div className={styles['lux-number']}>
                     <p className={styles['gray-p']}>Номера /</p>
                     <p>Люкс 3</p>
@@ -23,14 +23,14 @@ export default function LuxRoomSecond () {
                 <div className={styles['lux-number__mobile']}>
                     <p>Люкс 3</p>
                 </div>
-                <BurgerIcon black= { true } />
+                <BurgerIcon black={true} />
             </div>
             <PhotoGallery
-                images={ thirdLuxFoto.images }
+                images={thirdLuxFoto.images}
             />
             <div className={styles['tag-component-container']}>
                 <div className={styles['tag-component-wrapper']}>
-                    <Tag room={lux1.room} />
+                    <Tag room={lux3.room} />
                     <Tag room={arriveTime.room} mobile={true} />
                 </div>
                 <p className={styles['tag-component-container-paragraph']}>{lux1Description}</p>
@@ -67,7 +67,7 @@ export default function LuxRoomSecond () {
                                 <li>Тапочки</li>
                             </ul>
                         </div>
-                
+
                     </div>
                     <div className={styles['facilities-wrapper']}>
                         <p>Электроника</p>
@@ -79,7 +79,7 @@ export default function LuxRoomSecond () {
                                 <li>Электронные замки</li>
                             </ul>
                         </div>
-                    
+
                     </div>
                 </div>
 
@@ -101,7 +101,7 @@ export default function LuxRoomSecond () {
                                 <li>Панорамные окна</li>
                             </ul>
                         </div>
-                
+
                     </div>
                     <div className={styles['facilities-wrapper']}>
                         <p>Прочее</p>
@@ -117,7 +117,7 @@ export default function LuxRoomSecond () {
                                 <li>Вид на горы</li>
                             </ul>
                         </div>
-                    
+
                     </div>
                 </div>
             </div>
