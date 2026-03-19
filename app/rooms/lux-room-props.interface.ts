@@ -2,12 +2,15 @@ import { StaticImageData } from "next/image";
 
 export interface ILuxRoomProps {
     sectionClassName?: string;
+    mobileImageSrc: StaticImageData;
     leftImageSrc: StaticImageData;
     leftImageSrcReact?: StaticImageData;
-    mobileImageSrc: StaticImageData;
     topImageSrc: StaticImageData;
+    topImageSrcReact: StaticImageData;
     leftBottobImageSrc: StaticImageData;
+    leftBottobImageSrcReact: StaticImageData;
     rightBottomImageSrc: StaticImageData;
+    rightBottomImageSrcReact: StaticImageData;
     alt: string;
     h2: string;
     square?: number;
