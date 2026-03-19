@@ -227,7 +227,7 @@
     flex-direction: row;
     gap: 10px;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    /* margin-bottom: 10px; */
 }
 
 .desktop-tags-container__toggle {
@@ -303,8 +303,9 @@
     font-weight: lighter;
     color: white;
     align-items: flex-end;
-    margin: 20px 0 0;
+    margin: 40px 0 0;
     align-items: baseline;
+    justify-self: end;
 }
 
 .price__flex-end {
@@ -438,10 +439,14 @@
     }
 
     .desktop-tags-container {
-        margin-bottom: 50px;
+        margin-bottom: 0px;
     }
 
     .desktop-tags-container__toggle {
         margin-bottom: 50px;
+    }
+
+    .price {
+        margin: 90px 0 0;
     }
 }
