@@ -77,7 +77,7 @@ export default function PoolFotoSection({
                         </div>
                     </div>
                     <div className={`${infoBoxLeftSide
-                        ? styles['price-work-days-item__h5']
+                        ? styles['price-work-days-item__p']
                         : styles['price-work-days-item__none']}`}>
                         <Image
                             src={'./human-icon.svg'}
@@ -86,17 +86,15 @@ export default function PoolFotoSection({
                             height={20}
                             style={{ marginRight: '10px' }}
                         />
-                        <h5 className={`${infoBoxLeftSide
-                            ? styles['price-work-days-item__h5']
-                            : styles['price-work-days-item__none']}`}>
-                            4 чел
-                        </h5>
+                        <p>4 чел</p>
                     </div>
-                    <p>
+                    <p className={styles['description']}>
                         {description}
                     </p>
 
-                    <div className={styles['pool-tags-container']}>
+                    <div className={`${infoBoxLeftSide
+                        ? styles['sauna-tags-container']
+                        : styles['pool-tags-container']}`}>
                         {poolServiceIcon.map((tag, index) => {
                             return (
                                 <DesktopTag key={index}

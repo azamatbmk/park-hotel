@@ -28,11 +28,10 @@
     border-radius: 10px;
     max-width: 800px;
     height: calc(100% - 20px);
-    bottom: 10px;
-    gap: 20px;
+
     left: 50%;
+    bottom: 10px;
     margin-right: 100px;
-    justify-content: space-between;
 }
 
 .pool-info-box__left {
@@ -44,20 +43,14 @@
     padding: 20px 20px;
     border-radius: 10px;
     max-width: 800px;
-    right: 50%;
     height: calc(100% - 20px);
+
+    right: 50%;
     bottom: 10px;
-    padding: 15px 15px;
-    gap: 20px;
     margin-left: 100px;
-    justify-content: space-between;
 }
 
-.pool-info-box p {
-    color: var(--text-light);
-}
-
-.pool-info-box__left p {
+.pool-info-box, .pool-info-box__left {
     color: var(--text-light);
 }
 
@@ -66,7 +59,7 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .price-work-days-wrapper__left {
@@ -74,7 +67,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     gap: 30px;
-    margin-bottom: 17px;
+    margin-bottom: 10px;
 }
 
 .price-work-days-wrapper__mobile {
@@ -96,21 +89,18 @@
     align-self: center;
 }
 
-.price-work-days-item__h5 {
+.price-work-days-item__p {
     color: var(--text-light);
     font-size: 16px;
     font-weight: lighter;
     display: flex;
     flex-direction: row;
+    margin-bottom: 40px;
 }
 
 .price-work-days-item span {
     color: #C2C2C2;
     font-weight: lighter;
-}
-
-.price-work-days-item__none {
-    display: none;
 }
 
 .price-work-days-item__left h5 {
@@ -128,12 +118,7 @@
     display: flex;
     flex-direction: row;
     gap: 25px;
-    margin-top: -30px;
-    margin-bottom: 10px;
-}
-
-.pool-sizes-container__none {
-    display: none;
+    margin-bottom: 60px;
 }
 
 .pool-sizes-item {
@@ -161,6 +146,10 @@
     font-weight: lighter;
     text-align: left;
     color: #E9A94F;
+}
+
+.description {
+    margin-bottom: 40px;
 }
 
 .two-foto-wrapper {
@@ -192,19 +181,54 @@
     flex-direction: row;
     gap: 10px;
     flex-wrap: wrap;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
-.pool-service-icon__mobile {
+.sauna-tags-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.pool-service-icon__mobile,
+.mobile-foto,
+.pool-sizes-container__none,
+.price-work-days-item__none,
+.sauna-tags-container__none {
     display: none;
 }
 
-.mobile-foto {
-    display: none;
+
+
+
+
+@media (max-width: 1625px) {
+    .sauna-tags-container {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 1507px) {
+    .price-work-days-item__p {
+        margin-bottom: 30px;
+    }
 }
 
 
-@media (max-width: 1380px) {
+@media (max-width: 1411px) {
+    .pool-sizes-container {
+        margin-bottom: 50px;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 1386px) {
     .pool-info-box {
         display: flex;
         flex-direction: column;
@@ -216,7 +240,6 @@
         max-width: 800px;
         height: calc(100% - 20px);
         bottom: 10px;
-        gap: 10px;
         left: 50%;
     }
 
@@ -232,8 +255,6 @@
         right: 50%;
         height: calc(100% - 20px);
         bottom: 10px;
-        padding: 15px 15px;
-        gap: 10px;
     }
 
     .price-work-days-item p {
@@ -246,7 +267,46 @@
         gap: 3em
     }
 
+    .pool-tags-container {
+        margin-bottom: 40px;
+    }
+
 }
+
+
+
+
+@media (max-width: 1374px) {
+    .pool-sizes-container {
+        margin-bottom: 30px;
+    }
+
+    .description {
+        margin-bottom: 30px;
+    }
+
+    .pool-tags-container {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+@media (max-width: 1177px) {
+     .pool-sizes-container {
+        margin-bottom: 20px;
+    }
+
+    .description {
+        margin-bottom: 30px;
+    }
+
+    .pool-tags-container {
+        margin-bottom: 20px;
+    }
+}
+
 
 
 
@@ -254,7 +314,14 @@
     .price-work-days-item p {
         font-size: 12px;
     }
+
+    .price-work-days-item__p {
+        margin-bottom: 10px;
+    }
 }
+
+
+
 
 
 
@@ -274,10 +341,6 @@
         max-width: 100vw;
         overflow: visible;
         border-radius: 0px;
-    }
-
-    .one-foto {
-        display: none;
     }
 
     .mobile-foto {
@@ -320,11 +383,10 @@
         margin-left: 0;
     }
 
-    .two-foto-wrapper {
-        display: none;
-    }
-
-    .three-foto-wrapper {
+    .one-foto,
+    .two-foto-wrapper,
+    .three-foto-wrapper,
+    .pool-service-icon {
         display: none;
     }
 
@@ -332,8 +394,16 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 30px;
+        gap: 20px;
         margin-bottom: 25px;
+    }
+
+    .price-work-days-wrapper__left {
+        margin: 0px;
+    }
+
+    .price-work-days-item__p {
+        margin-bottom: 0px;
     }
 
     .price-work-days-wrapper__mobile {
@@ -344,13 +414,28 @@
 
     .pool-sizes-container {
         margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .pool-tags-container {
+        margin-bottom: 0px;
+    }
+
+    .description {
+        margin-bottom: 0px;
     }
 
     .pool-service-icon__mobile {
         display: block;
     }
 
-    .pool-service-icon {
-        display: none;
+}
+
+
+
+
+@media (min-width: 1600px) {
+    .price-work-days-item__p {
+        margin-bottom: 60px;
     }
 }

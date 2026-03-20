@@ -136,7 +136,7 @@
 .description-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex: 1;
     background-color: #696054;
     border-top-right-radius: 8px;
@@ -210,9 +210,8 @@
 .paragraph {
     font-weight: 400;
     color: white;
-    margin: 0 10px 16px 0;
+    margin: 0 10px 40px 0;
     font-size: 17px;
-    margin-bottom: 30px;
 }
 
 .desktop-tags-block {
@@ -237,7 +236,7 @@
     position: relative;
     min-width: fit-content;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    /* margin-bottom: 30px; */
+    margin-bottom: 40px;
 }
 
 .tags-open {
@@ -301,7 +300,6 @@
     font-size: 24px;
     font-weight: lighter;
     color: white;
-    /* align-items: flex-end; */
     margin: 40px 0 0;
     align-items: baseline;
     justify-self: end;
@@ -314,7 +312,7 @@
     font-weight: lighter;
     color: white;
     align-items: flex-end;
-    margin: 20px 0 0;
+    margin: 40px 0 0;
     justify-self: end;
 }
 
@@ -344,6 +342,9 @@
 .more-foto-btn {
     display: none;
 }
+
+
+
 
 @media (max-width: 768px) {
     .foto-section {
@@ -442,12 +443,17 @@
 }
 
 @media (min-width: 1700px) {
+
+    .description-container__right {
+        justify-content: unset;
+    }
+
     .paragraph-wrapper {
         margin-bottom: 40px;
     }
 
     .paragraph {
-        margin-bottom: 50px;
+        margin-bottom: 70px;
     }
 
     .desktop-tags-container {
@@ -460,5 +466,9 @@
 
     .price {
         margin: 50px 0 0;
+    }
+
+    .h2 {
+        margin-bottom: 20px;
     }
 }
