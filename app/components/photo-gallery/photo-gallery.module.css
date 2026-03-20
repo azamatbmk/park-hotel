@@ -80,7 +80,6 @@
   width: 130px;
   max-height: 600px;
   overflow-y: auto;
-  padding-left: 5px;
   scrollbar-width: thin;
   scrollbar-color: #888 #f1f1f1;
 }
@@ -118,7 +117,7 @@
 }
 
 .verticalThumbnailButton:hover {
-  transform: translateX(-5px);
+  /* transform: translateX(-5px); */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 

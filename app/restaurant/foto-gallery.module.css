@@ -7,7 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    gap: 12px;
+    gap: 10px;
     margin-bottom: 9px;
 }
 
@@ -29,12 +29,12 @@
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    gap: 12px;
+    gap: 10px;
 }
 
 .foto-card-wrapper {
-    flex: 1; 
-    min-width: 0; 
+    flex: 1;
+    min-width: 0;
 }
 
 .foto-card-wrapper img {
@@ -87,6 +87,7 @@
     .desktop-foto-gallery-container {
         display: none;
     }
+
     .desktop-foto-cards-container {
         display: none;
     }
