@@ -22,7 +22,8 @@ export default function PoolFotoSection({
     h2,
     description,
     buttonText,
-    guestsAndTime
+    guestsAndTime,
+    guestsAndTimeMobile
 }: IPoolProops) {
     return (
         <section className={styles['pool-foto-section']}>
@@ -107,38 +108,67 @@ export default function PoolFotoSection({
                             )
                         })}
                     </div>
-
                     <div className={
-                        `${infoBoxLeftSide
-                            ? styles['price-work-days-wrapper__left']
-                            : styles['price-work-days-wrapper']}`}>
-                        <div className={styles['price-work-days-wrapper__mobile']}>
-                            <div className={styles['price-work-days-item']}>
-                                <p>пн-пт</p>
-                                <h5>{price}{'\u00A0'}₽</h5>
-                                <span>{guestsAndTime}</span>
-                            </div>
+                            `${infoBoxLeftSide
+                                ? styles['price-work-days-wrapper-book-button__mobile']
+                                : styles['']}`}>
+                        <div className={
+                            `${infoBoxLeftSide
+                                ? styles['price-work-days-wrapper__left']
+                                : styles['price-work-days-wrapper']}`}>
+                            <div className={styles['price-work-days-wrapper__desktop']}>
+                                <div className={styles['price-work-days-item']}>
+                                    <p>пн-пт</p>
+                                    <h5>{price}{'\u00A0'}₽</h5>
+                                    <span>{guestsAndTime}</span>
+                                </div>
 
+                                <div className={
+                                    `${infoBoxLeftSide
+                                        ? styles['price-work-days-item__none']
+                                        : styles['price-work-days-item']}`}>
+                                    <p>сб-вс</p>
+                                    <h5>1{'\u00A0'}500{'\u00A0'}₽</h5>
+                                </div>
+                            </div>
+                            <div className={styles['price-work-days-wrapper__mobile']}>
+                                <div className={styles['price-work-days-item']}>
+                                    <span>пн-пт</span>
+                                    <h5>{price}{'\u00A0'}₽</h5>
+                                    <span style={{marginBottom: '10px'}}>{guestsAndTimeMobile}</span>
+                                    <div className={
+                                    `${infoBoxLeftSide
+                                        ? styles['price-work-days-item__none']
+                                        : styles['price-work-days-item']}`}>
+                                        <h5>700{'\u00A0'}₽/чел</h5>
+                                        <span>{'дети с 2 до 6 лет'}</span>
+                                    </div>
+                                </div>
+
+                                <div className={
+                                    `${infoBoxLeftSide
+                                        ? styles['price-work-days-item__none']
+                                        : styles['price-work-days-item']}`}>
+                                    <span>сб-вс</span>
+                                    <h5>1{'\u00A0'}500{'\u00A0'}₽</h5>
+                                    <span style={{marginBottom: '10px'}}>{guestsAndTimeMobile}</span>
+                                    <h5>700{'\u00A0'}₽/чел</h5>
+                                    <span>{'дети с 2 до 6 лет'}</span>
+                                </div>
+                            </div>
                             <div className={
                                 `${infoBoxLeftSide
                                     ? styles['price-work-days-item__none']
                                     : styles['price-work-days-item']}`}>
-                                <p>сб-вс</p>
-                                <h5>1{'\u00A0'}500{'\u00A0'}₽</h5>
+                                <p>
+                                    *Для постояльцев стоимость посещения бассейна входит в стоимость проживания
+                                </p>
                             </div>
                         </div>
                         <div className={
-                            `${infoBoxLeftSide
-                                ? styles['price-work-days-item__none']
-                                : styles['price-work-days-item']}`}>
-                            <p>
-                                *Для постояльцев стоимость посещения бассейна входит в стоимость проживания
-                            </p>
+                            `${infoBoxLeftSide ? styles['book-button-wrapper__left'] : styles['book-button-wrapper']}`}>
+                            <BookButton buttonText={buttonText} />
                         </div>
-                    </div>
-                    <div className={
-                        `${infoBoxLeftSide ? styles['book-button-wrapper__left'] : styles['book-button-wrapper']}`}>
-                        <BookButton buttonText={buttonText} />
                     </div>
                 </div>
             </div>

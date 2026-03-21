@@ -4,6 +4,7 @@
     margin-bottom: 100px;
     width: 100%;
     padding: 0 40px;
+    height: 580px;
 }
 
 .foto-section__right {
@@ -12,6 +13,7 @@
     margin-bottom: 100px;
     width: 100%;
     padding: 0 40px;
+    height: 580px;
 }
 
 .foto-container {
@@ -236,7 +238,7 @@
     position: relative;
     min-width: fit-content;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .tags-open {
@@ -449,11 +451,11 @@
     }
 
     .paragraph-wrapper {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     .paragraph {
-        margin-bottom: 70px;
+        margin-bottom: 35px;
     }
 
     .desktop-tags-container {
@@ -461,11 +463,15 @@
     }
 
     .desktop-tags-container__toggle {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .price {
-        margin: 50px 0 0;
+        margin: 35px 0 0;
+    }
+
+    .price__flex-end {
+        margin: 30px 0 0;
     }
 
     .h2 {

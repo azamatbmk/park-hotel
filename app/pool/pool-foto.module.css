@@ -12,7 +12,7 @@
     display: flex;
     position: relative;
     width: 100%;
-    height: 504px;
+    height: 530px;
     max-width: 100vw;
     overflow: hidden;
     border-radius: 12px;
@@ -70,10 +70,10 @@
     margin-bottom: 10px;
 }
 
-.price-work-days-wrapper__mobile {
+.price-work-days-wrapper__desktop {
     display: flex;
     flex-direction: row;
-    gap: 6em
+    gap: 6em;
 }
 
 .price-work-days-item {
@@ -86,7 +86,7 @@
     color: var(--text-light);
     font-size: 25px;
     font-weight: lighter;
-    align-self: center;
+    /* align-self: center; */
 }
 
 .price-work-days-item__p {
@@ -146,6 +146,7 @@
     font-weight: lighter;
     text-align: left;
     color: #E9A94F;
+    margin-bottom: 10px;
 }
 
 .description {
@@ -181,7 +182,7 @@
     flex-direction: row;
     gap: 10px;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .sauna-tags-container {
@@ -189,14 +190,15 @@
     flex-direction: row;
     gap: 10px;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .pool-service-icon__mobile,
 .mobile-foto,
 .pool-sizes-container__none,
 .price-work-days-item__none,
-.sauna-tags-container__none {
+.sauna-tags-container__none,
+.price-work-days-wrapper__mobile {
     display: none;
 }
 
@@ -204,11 +206,11 @@
 
 
 
-@media (max-width: 1625px) {
+/* @media (max-width: 1625px) {
     .sauna-tags-container {
-        margin-bottom: 0px;
+        margin-bottom: 40px;
     }
-}
+} */
 
 @media (max-width: 1507px) {
     .price-work-days-item__p {
@@ -386,8 +388,15 @@
     .one-foto,
     .two-foto-wrapper,
     .three-foto-wrapper,
-    .pool-service-icon {
+    .pool-service-icon,
+    .price-work-days-wrapper__desktop {
         display: none;
+    }
+
+    .price-work-days-wrapper-book-button__mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .price-work-days-wrapper {
@@ -427,6 +436,19 @@
 
     .pool-service-icon__mobile {
         display: block;
+    }
+
+    .sauna-tags-container {
+        margin-bottom: 0px;
+    }
+
+    .book-button-wrapper {
+        justify-content: flex-end;
+    }
+
+    .book-button-wrapper__left {
+        width: auto;
+        align-items: end;
     }
 
 }

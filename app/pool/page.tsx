@@ -62,6 +62,7 @@ export default function PoolPage() {
                 buttonText={'Забронировать лежак'}
                 price={"1\u00A0300"}
                 guestsAndTime="1 гость"
+                guestsAndTimeMobile="Гости от 6 лет"
             />
             <H2HeaderComponent
                 children={'Баня'}
@@ -83,6 +84,7 @@ export default function PoolPage() {
                 buttonText={'Забронировать баню'}
                 price={"от 3\u00A0000"}
                 guestsAndTime="1 гость/ 1 час"
+                guestsAndTimeMobile="1 гость/ 1 час"
             />
         </main>
     )

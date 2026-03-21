@@ -17,6 +17,7 @@ export interface IPoolProops {
     h2: string;
     description: string;
     buttonText: string;
-    guestsAndTime: string
+    guestsAndTime: string;
+    guestsAndTimeMobile?: string;
 }
 
