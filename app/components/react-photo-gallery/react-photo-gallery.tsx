@@ -48,27 +48,6 @@ export default function LuxRoomReact({
     path = '/'
 }: ILuxRoomProps) {
 
-    const [toggleOpen, setToggleOpen] = useState<boolean>(false);
-    const [isAnimating, setIsAnimating] = useState<boolean>(false);
-
-    const toggleSwitch = (e: MouseEvent<HTMLDivElement>) => {
-        e.preventDefault()
-        e.stopPropagation()
-
-        if (!toggleOpen) {
-            setToggleOpen(true);
-            setIsAnimating(true);
-
-
-            setTimeout(() => {
-                setIsAnimating(false);
-            }, 300);
-        } else {
-            setToggleOpen(false);
-        }
-    }
-
-
     return (
         <>
             <section className={styles['desktop-section']}>
@@ -256,10 +235,8 @@ export default function LuxRoomReact({
                                         )
                                     })}
                                 </div>
-                                <div className={styles['desktop-tags-container__toggle']}
-                                    onClick={toggleSwitch}>
+                                <div className={styles['desktop-tags-container__toggle']}>
 
-                                    {toggleOpen ? (
                                         <div className={styles['tags-open']}>
                                             {desktopTagsOpen.map((tag, index) => (
                                                 <DesktopTag
@@ -272,11 +249,7 @@ export default function LuxRoomReact({
                                                 />
                                             ))}
                                         </div>
-                                    ) : (
-                                        <div className={`${styles['tag-wrapper']} ${isAnimating ? styles['hidden'] : ''}`}>
-                                            + {desktopTagsOpen.length}
-                                        </div>
-                                    )}
+                                
                                 </div>
                             </div>
                             <div className={`${sectionClassName ? styles['price__flex-end'] : styles['price']}`}>

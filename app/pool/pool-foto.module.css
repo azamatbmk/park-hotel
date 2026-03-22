@@ -73,7 +73,7 @@
 .price-work-days-wrapper__desktop {
     display: flex;
     flex-direction: row;
-    gap: 6em;
+    gap: 55px;
 }
 
 .price-work-days-item {
@@ -153,6 +153,10 @@
     margin-bottom: 40px;
 }
 
+.sauna-description {
+    margin-bottom: 40px;
+}
+
 .two-foto-wrapper {
     display: flex;
     width: 100%;
@@ -204,25 +208,33 @@
 
 
 
-
-
-/* @media (max-width: 1625px) {
+@media (max-width: 1763px) {
+    .price-work-days-item__p,
     .sauna-tags-container {
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
-} */
+}
+
+
+
+@media (max-width: 1625px) {
+    .price-work-days-item__p,
+    .sauna-tags-container {
+        margin-bottom: 25px;
+    }
+}
 
 @media (max-width: 1507px) {
-    .price-work-days-item__p {
+    .sauna-description {
         margin-bottom: 30px;
     }
 }
 
 
 @media (max-width: 1411px) {
-    .pool-sizes-container {
-        margin-bottom: 50px;
-    }
+    /* .pool-sizes-container {
+        margin-bottom: 60px;
+    } */
 
 }
 
@@ -263,12 +275,6 @@
         font-size: 14px;
     }
 
-    .price-work-days-wrapper__mobile {
-        display: flex;
-        flex-direction: row;
-        gap: 3em
-    }
-
     .pool-tags-container {
         margin-bottom: 40px;
     }
@@ -287,6 +293,10 @@
         margin-bottom: 30px;
     }
 
+    .sauna-description {
+        margin-bottom: 25px;
+    }
+
     .pool-tags-container {
         margin-bottom: 30px;
     }
@@ -296,16 +306,16 @@
 
 
 @media (max-width: 1177px) {
-     .pool-sizes-container {
-        margin-bottom: 20px;
-    }
-
-    .description {
+     .pool-sizes-container,
+     .description,
+     .sauna-description,
+     .pool-tags-container {
         margin-bottom: 30px;
     }
 
-    .pool-tags-container {
-        margin-bottom: 20px;
+    .pool-info-box-title,
+    .price-work-days-wrapper {
+        margin-bottom: 0px;
     }
 }
 
@@ -318,6 +328,14 @@
     }
 
     .price-work-days-item__p {
+        margin-bottom: 10px;
+    }
+
+    .sauna-description {
+        margin-bottom: 10px;
+    }
+
+    .sauna-tags-container {
         margin-bottom: 10px;
     }
 }
@@ -456,8 +474,8 @@
 
 
 
-@media (min-width: 1600px) {
+/* @media (min-width: 1600px) {
     .price-work-days-item__p {
         margin-bottom: 60px;
     }
-}
+} */

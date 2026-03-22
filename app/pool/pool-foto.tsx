@@ -89,7 +89,9 @@ export default function PoolFotoSection({
                         />
                         <p>4 чел</p>
                     </div>
-                    <p className={styles['description']}>
+                    <p className={`${infoBoxLeftSide
+                        ? styles['sauna-description']
+                        : styles['description']}`}>
                         {description}
                     </p>
 
