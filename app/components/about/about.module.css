@@ -102,16 +102,20 @@
 
     .mobile-768-description {
         color: var(--text-light);
-        font-size: 18px;
-        padding: 15px;
+        padding: 10px;
         background-color: #696054;
         align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        font-size: 17px;
+        font-weight: 10;
+        text-align: left;
+        line-height: 1.2;
     }
 
     .mobile-768-description p {
-        color: var(--text-light);
         font-size: 15px;
-        padding: 15px 0;
+        margin-bottom: 9px;
         background-color: #696054;
     }
 
@@ -125,15 +129,5 @@
         height: 15em;
         background-color: #696054;
         display: block;
-    }
-
-    .mobile-768-description {
-        display: flex;
-        flex-direction: column;
-        font-size: 17px;
-        font-weight: 10;
-        text-align: left;
-        line-height: 1.5;
-        color: white;
     }
 }

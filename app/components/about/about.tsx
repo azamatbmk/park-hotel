@@ -37,7 +37,7 @@ export default function About(
                 </div>
                 <div className={styles['mobile-768-description']}>
                     <p>{descriptionPartOne}</p>
-                    <p>{descriptionPartTwo}</p>
+                    <p style={{ marginBottom: '0px' }}>{descriptionPartTwo}</p>
                     {btnText && <MoreButton anchor={anchor} icon={icon}>{btnText}</MoreButton>}
                 </div>
             </div>
