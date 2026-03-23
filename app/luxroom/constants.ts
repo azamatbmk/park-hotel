@@ -7,19 +7,19 @@ export const lux1: PropsArray = {
             description: 'Размер',
             iconSrc: '/square-tag.svg',
             descriptionCount: '32 кв. м',
-            dark: false, 
+            dark: false,
         },
         {
             description: 'Вместимость',
             iconSrc: '/human-tag.svg',
             descriptionCount: 'до 2 человек',
-            dark: false, 
+            dark: false,
         },
         {
             description: 'Комнаты',
             iconSrc: '/union-square-tag.svg',
             descriptionCount: '1 комната',
-            dark: false, 
+            dark: false,
         }
     ]
 }
@@ -29,14 +29,14 @@ export const arriveTime: PropsArray = {
     room: [
         {
             description: 'Заезд',
-            iconSrc: '/right-arrow-tag.svg',
+            iconSrc: '/right-arrow-tag-white.svg',
             descriptionCount: 'с 14:00',
             dark: true,
         },
         {
             description: 'Выезд',
-            iconSrc: '/left-arrow-tag.svg',
-            descriptionCount: 'с 12:00',
+            iconSrc: '/left-arrow-tag-white.svg',
+            descriptionCount: 'до 12:00',
             dark: true,
         }
     ]
@@ -45,7 +45,7 @@ export const arriveTime: PropsArray = {
 
 export const firstLuxFoto: PhotoGalleryProps = {
     images: [
-        {   
+        {
             id: 0,
             src: '/photos/Lux1/722.jpg',
             alt: 'Фото',
