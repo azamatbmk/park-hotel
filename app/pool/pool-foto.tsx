@@ -111,18 +111,24 @@ export default function PoolFotoSection({
                         })}
                     </div>
                     <div className={
-                            `${infoBoxLeftSide
-                                ? styles['price-work-days-wrapper-book-button__mobile']
-                                : styles['']}`}>
+                        `${infoBoxLeftSide
+                            ? styles['price-work-days-wrapper-book-button__mobile']
+                            : styles['']}`}>
                         <div className={
                             `${infoBoxLeftSide
                                 ? styles['price-work-days-wrapper__left']
                                 : styles['price-work-days-wrapper']}`}>
                             <div className={styles['price-work-days-wrapper__desktop']}>
                                 <div className={styles['price-work-days-item']}>
-                                    <p>пн-пт</p>
+                                    <p className={
+                                        `${infoBoxLeftSide
+                                            ? styles['price-work-days-item__none']
+                                            : styles['']}`}>пн-пт</p>
                                     <h5>{price}{'\u00A0'}₽</h5>
-                                    <span>{guestsAndTime}</span>
+                                    <span className={
+                                        `${infoBoxLeftSide
+                                            ? styles['align-self-end']
+                                            : styles['']}`}>{guestsAndTime}</span>
                                 </div>
 
                                 <div className={
@@ -135,13 +141,16 @@ export default function PoolFotoSection({
                             </div>
                             <div className={styles['price-work-days-wrapper__mobile']}>
                                 <div className={styles['price-work-days-item']}>
-                                    <span>пн-пт</span>
+                                    <span className={
+                                        `${infoBoxLeftSide
+                                            ? styles['price-work-days-item__none']
+                                            : styles['']}`}>пн-пт</span>
                                     <h5>{price}{'\u00A0'}₽</h5>
-                                    <span style={{marginBottom: '10px'}}>{guestsAndTimeMobile}</span>
+                                    <span>{guestsAndTimeMobile}</span>
                                     <div className={
-                                    `${infoBoxLeftSide
-                                        ? styles['price-work-days-item__none']
-                                        : styles['price-work-days-item']}`}>
+                                        `${infoBoxLeftSide
+                                            ? styles['price-work-days-item__none']
+                                            : styles['price-work-days-item']}`}>
                                         <h5>700{'\u00A0'}₽/чел</h5>
                                         <span>{'дети с 2 до 6 лет'}</span>
                                     </div>
@@ -153,7 +162,7 @@ export default function PoolFotoSection({
                                         : styles['price-work-days-item']}`}>
                                     <span>сб-вс</span>
                                     <h5>1{'\u00A0'}500{'\u00A0'}₽</h5>
-                                    <span style={{marginBottom: '10px'}}>{guestsAndTimeMobile}</span>
+                                    <span style={{ marginBottom: '10px' }}>{guestsAndTimeMobile}</span>
                                     <h5>700{'\u00A0'}₽/чел</h5>
                                     <span>{'дети с 2 до 6 лет'}</span>
                                 </div>
@@ -163,7 +172,7 @@ export default function PoolFotoSection({
                                     ? styles['price-work-days-item__none']
                                     : styles['price-work-days-item']}`}>
                                 <p>
-                                    *Для постояльцев стоимость посещения бассейна входит в стоимость проживания
+                                    *Для постояльцев стоимость посещения бассейна входит в{'\u00A0'}стоимость проживания
                                 </p>
                             </div>
                         </div>

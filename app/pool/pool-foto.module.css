@@ -50,7 +50,8 @@
     margin-left: 100px;
 }
 
-.pool-info-box, .pool-info-box__left {
+.pool-info-box,
+.pool-info-box__left {
     color: var(--text-light);
 }
 
@@ -197,6 +198,10 @@
     margin-bottom: 60px;
 }
 
+.align-self-end {
+    align-self: end;
+}
+
 .pool-service-icon__mobile,
 .mobile-foto,
 .pool-sizes-container__none,
@@ -209,6 +214,7 @@
 
 
 @media (max-width: 1763px) {
+
     .price-work-days-item__p,
     .sauna-tags-container {
         margin-bottom: 50px;
@@ -218,6 +224,7 @@
 
 
 @media (max-width: 1625px) {
+
     .price-work-days-item__p,
     .sauna-tags-container {
         margin-bottom: 25px;
@@ -306,10 +313,11 @@
 
 
 @media (max-width: 1177px) {
-     .pool-sizes-container,
-     .description,
-     .sauna-description,
-     .pool-tags-container {
+
+    .pool-sizes-container,
+    .description,
+    .sauna-description,
+    .pool-tags-container {
         margin-bottom: 30px;
     }
 

@@ -21,15 +21,15 @@ export default function FoodMenu() {
                         src={'/photos/food-mobile1.png'}
                         alt="Фото блюда"
                         width={361}
-                        height={115}  
-            
+                        height={115}
+
                     />
                     <FoodCardInfo
                         children={'Завтрак'}
                         anchor={'#'}
                         icon={rightTopArrow}
                         btnText={'меню'}
-                        description={'Завтраки, которые не только насытят, но и подарят энергию на весь день. С 9:00 до 12:00.'}
+                        description={'Завтраки, которые не только насытят, но\u00A0и\u00A0подарят энергию на весь день. С 9:00 до 12:00.'}
                     />
                 </div>
                 <div className={styles['food-card-wrapper']}>
@@ -44,14 +44,14 @@ export default function FoodMenu() {
                         src={'/photos/food-mobile2.png'}
                         alt="Фото блюда"
                         width={361}
-                        height={115}    
+                        height={115}
                     />
                     <FoodCardInfo
                         children={'Основное меню'}
                         anchor={'#'}
                         icon={rightTopArrow}
                         btnText={'меню'}
-                        description={'Меню объединяет осетинские, кавказские и европейские блюда, приготовленные с любовью.'}
+                        description={'Меню объединяет осетинские, кавказские и\u00A0европейские блюда, приготовленные с\u00A0любовью.'}
                     />
                 </div>
                 <div className={styles['food-card-wrapper']}>
@@ -59,21 +59,21 @@ export default function FoodMenu() {
                         className={styles['desktop-image']}
                         src={'/photos/food3.png'}
                         alt="Фото блюда"
-                        fill    
+                        fill
                     />
                     <Image
                         className={styles['mobile-image']}
                         src={'/photos/food-mobile3.png'}
                         alt="Фото блюда"
                         width={361}
-                        height={115}    
+                        height={115}
                     />
                     <FoodCardInfo
                         children={'Барное меню'}
                         anchor={'#'}
                         icon={rightTopArrow}
                         btnText={'меню'}
-                        description={'Напитки под ваше настроение. Прекрасный выбор для любого повода и компании.'}
+                        description={'Напитки под ваше настроение. Прекрасный выбор для\u00A0любого повода и\u00A0компании.'}
                     />
                 </div>
             </div>
