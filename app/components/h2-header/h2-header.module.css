@@ -20,4 +20,8 @@
         font-size: 70px;
         line-height: 1;
     }
+
+    .display-none {
+        display: none;
+    }
 }

@@ -12,7 +12,7 @@ import { roomsDescription } from '../rooms/constants'
 export default function LuxRoomSecond() {
     return (
         <div className={styles['lux-room-container']}>
-            <BookingButton display='hide-desktop' />
+            {/* <BookingButton display='hide-desktop' /> */}
             <BookingBlock display='hide-mobile' position='relative' />
             <div className={styles['back-button-and-number-wrapper']}>
                 <BackButton />
