@@ -176,7 +176,7 @@ export default function PoolFotoSection({
                                     <span>{'дети с 2 до 6 лет'}</span>
                                 </div>
                             </div>
-                            <div >
+                            <div style={{ maxWidth: '65%'}}>
                                 <p className={
                                 `${infoBoxLeftSide
                                     ? styles['price-work-days-item__none']
