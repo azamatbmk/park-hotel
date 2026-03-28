@@ -167,6 +167,11 @@
     .photo-and-distance-btn {
         position: relative;
     }
+    
+    .paragraph {
+        font-size: 16px;
+        line-height: 20px;
+    }
 
     .distance {
         display: none;
