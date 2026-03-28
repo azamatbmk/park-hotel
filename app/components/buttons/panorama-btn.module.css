@@ -1,0 +1,25 @@
+.panorama-btn-container__mobile {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .panorama-btn-container__mobile {
+        display: block;
+        padding: 10px;
+        width: 100%;
+        height: 70px;
+        align-content: center;
+        margin-bottom: 40px;
+    }
+
+    .link {
+        display: flex;
+        border-radius: 8px;
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        justify-content: space-between;
+    }
+}

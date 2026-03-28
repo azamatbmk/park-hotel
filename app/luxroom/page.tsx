@@ -9,13 +9,13 @@ import Tag from './tags'
 import { arriveTime, firstLuxFoto, lux1, lux1Description } from './constants'
 import { roomsDescription } from '../rooms/constants'
 
-export default function LuxRoomPage () {
+export default function LuxRoomPage() {
     return (
         <div className={styles['lux-room-container']}>
-            <BookingButton display='hide-desktop' />
-            <BookingBlock display='hide-mobile' position='relative'  />
+            {/* <BookingButton display='hide-desktop' /> */}
+            <BookingBlock display='hide-mobile' position='relative' />
             <div className={styles['back-button-and-number-wrapper']}>
-                <BackButton/>
+                <BackButton />
                 <div className={styles['lux-number']}>
                     <p className={styles['gray-p']}>Номера /</p>
                     <p>Люкс 1</p>
@@ -23,10 +23,10 @@ export default function LuxRoomPage () {
                 <div className={styles['lux-number__mobile']}>
                     <p>Люкс 1</p>
                 </div>
-                <BurgerIcon black= { true } />
+                <BurgerIcon black={true} />
             </div>
             <PhotoGallery
-                images={ firstLuxFoto.images }
+                images={firstLuxFoto.images}
             />
             <div className={styles['tag-component-container']}>
                 <div className={styles['tag-component-wrapper']}>
@@ -67,7 +67,7 @@ export default function LuxRoomPage () {
                                 <li>Тапочки</li>
                             </ul>
                         </div>
-                
+
                     </div>
                     <div className={styles['facilities-wrapper']}>
                         <p>Электроника</p>
@@ -79,7 +79,7 @@ export default function LuxRoomPage () {
                                 <li>Электронные замки</li>
                             </ul>
                         </div>
-                    
+
                     </div>
                 </div>
 
@@ -101,7 +101,7 @@ export default function LuxRoomPage () {
                                 <li>Панорамные окна</li>
                             </ul>
                         </div>
-                
+
                     </div>
                     <div className={styles['facilities-wrapper']}>
                         <p>Прочее</p>
@@ -117,7 +117,7 @@ export default function LuxRoomPage () {
                                 <li>Вид на горы</li>
                             </ul>
                         </div>
-                    
+
                     </div>
                 </div>
             </div>

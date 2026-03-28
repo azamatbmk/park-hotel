@@ -13,6 +13,7 @@ import { spaDescription, spaImages } from "../pool/constants";
 import VideoBackground from "../components/video-background/video-background";
 import PanoramaYandexMap from "../components/panorama/panorama";
 import H2HeaderComponent from "../components/h2-header/h2-header";
+import PanoramaButton from "../components/buttons/panorama-btn";
 
 
 export default function MainPage() {
@@ -67,8 +68,9 @@ export default function MainPage() {
                 {'Бассейн & спа'}
             </About>
             <ImageCarousel images={spaImages} />
-            <H2HeaderComponent >{'Панорама'}</H2HeaderComponent>
+            <H2HeaderComponent mobile={true}>{'Панорама'}</H2HeaderComponent>
             <PanoramaYandexMap />
+            <PanoramaButton />
         </>
     )
 }
