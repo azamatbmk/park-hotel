@@ -36,7 +36,6 @@ export default function RootLayout({
         <NavMenu />
         <Otelix />
         {children}
-
         <Footer />
       </body>
     </html>
