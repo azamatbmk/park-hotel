@@ -23,7 +23,6 @@ export default function MainPage() {
                 background={<VideoBackground />}
                 overlay={false}
                 mobileMargin={true}
-                showAddress={false}
             />
             <About
                 sectionId="about"

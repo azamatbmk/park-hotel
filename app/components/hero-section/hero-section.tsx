@@ -4,7 +4,6 @@ import Link from "next/link";
 import styles from "./hero-section.module.css";
 import PhoneButton from "../buttons/phone-btn";
 import SiteLogo from "../site-logo/site-logo";
-import SiteAddress from "../site-address/site-address";
 import { usePathname } from "next/navigation";
 import { menuItems } from "./constants";
 import { IHeroSectionProps } from "./hero-section.interface";
@@ -16,7 +15,6 @@ export default function HeroSection({
     bookingBlock,
     overlay,
     mobileMargin,
-    showAddress = true,
 }: IHeroSectionProps) {
     const triangle = '▼';
     const pathName = usePathname();
@@ -38,7 +36,6 @@ export default function HeroSection({
                         height={70}
                         priority={true}
                     />
-                    {showAddress && <SiteAddress />}
                 </div>
                 <BurgerIcon black= { false }/>
                 <div className={styles['nav-and-phone']}>
