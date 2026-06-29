@@ -8,6 +8,7 @@ import PhoneButton from "../buttons/phone-btn"
 import pointIcon from "../../../public/point.svg"
 import PhoneButtonMobile from "../buttons/phone-btn-mobile"
 import { usePathname } from "next/navigation"
+import { WHATSAPP_URL, YANDEX_MAPS_URL } from "../../lib/seo";
 
 export default function Footer() {
 
@@ -53,14 +54,14 @@ export default function Footer() {
                             width={42}
                             height={42}
                         />
-                        <Link href={""}>
+                        <Link href={YANDEX_MAPS_URL} target="_blank" rel="noopener noreferrer">
                             Республика Северная Осетия — Алания,<br />село Дзуарикау, улица А. Кцоева, 25
                         </Link>
                     </div>
                     <PhoneButton />
                     <PhoneButtonMobile />
                     <div className={styles['social-logo-wrapper']}>
-                        <a href="" target="_blank">
+                        <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                             <Image
                                 src={"/whatsapp-logo.svg"}
                                 alt={"Whatsapp логотип"}
@@ -68,22 +69,18 @@ export default function Footer() {
                                 height={40}
                             />
                         </a>
-                        <a href="" target="_blank">
-                            <Image
-                                src={"/instagram-logo.svg"}
-                                alt={"Instagram логотип"}
-                                width={40}
-                                height={40}
-                            />
-                        </a>
-                        <a href="" target="_blank">
-                            <Image
-                                src={"/telegram-logo.svg"}
-                                alt={"Telegram логотип"}
-                                width={40}
-                                height={40}
-                            />
-                        </a>
+                        <Image
+                            src={"/instagram-logo.svg"}
+                            alt={"Instagram логотип"}
+                            width={40}
+                            height={40}
+                        />
+                        <Image
+                            src={"/telegram-logo.svg"}
+                            alt={"Telegram логотип"}
+                            width={40}
+                            height={40}
+                        />
                     </div>
                     <div className={styles['policy-link-wrapper__mobile']}>
                         <Link href={'/'} className={styles['policy-link']}>{'Правовая информация'}</Link>

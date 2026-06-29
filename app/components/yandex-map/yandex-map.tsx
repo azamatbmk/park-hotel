@@ -12,7 +12,9 @@ export default function YandexMap() {
                     style={{ color: '#eee', fontSize: '12px', position: 'absolute', top: '14px' }}>
                     Гостиница в Республике Северная Осетия — Алания
                 </a> */}
-                <iframe src="https://yandex.com/map-widget/v1/org/park_otel_dzuarikau/171424752573/?ll=44.388426%2C43.004550&z=17"
+                <iframe
+                    title="Карта парк-отеля Дзуарикау на Яндекс.Картах"
+                    src="https://yandex.com/map-widget/v1/org/park_otel_dzuarikau/171424752573/?ll=44.388426%2C43.004550&z=17"
                     width="560"
                     height="400"
                     frameBorder="1"

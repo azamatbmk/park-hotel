@@ -1,6 +1,4 @@
-'use client'
-
-
+import type { Metadata } from "next";
 import HeroSection from "../components/hero-section/hero-section";
 import PagesHeroSectionBackground from "../components/photo-background/photo-background";
 import poolPageBg from "../../public/photos/spa-paige-bg.png"
@@ -21,6 +19,14 @@ import spaThreeFotoSrcThree from "../../public/photos/spa17.png"
 import mobileFotoOne from "../../public/photos/spa-mobile1.png"
 import mobileFotoTwo from "../../public/photos/spa-mobile2.png"
 import { poolTags, saunaTags } from "./constants";
+import { createMetadata } from "../lib/seo";
+
+export const metadata: Metadata = createMetadata({
+  title: "Бассейн и баня",
+  description:
+    "Подогреваемый бассейн и банный комплекс парк-отеля «Дзуарикау»: парная, купель и зона отдыха для гостей.",
+  path: "/pool",
+});
 
 export default function PoolPage() {
     return (

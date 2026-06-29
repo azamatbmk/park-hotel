@@ -1,7 +1,7 @@
 export const roomsImages = [
   {
     src: '/photos/rooms1.png',
-    alt: 'Photo 1',
+    alt: 'Номер люкс в парк-отеле Дзуарикау',
     original: 'photos/MainRooms/rooms1.jpg',
     thumbnail: 'photos/MainRooms/rooms1.jpg',
     width: 6000,
@@ -9,7 +9,7 @@ export const roomsImages = [
   },
   {
     src: '/photos/rooms2.png',
-    alt: 'Photo 2',
+    alt: 'Интерьер номера люкс в парк-отеле Дзуарикау',
     original: 'photos/MainRooms/rooms2.jpg',
     thumbnail: 'photos/MainRooms/rooms2.jpg',
     width: 6000,
@@ -17,7 +17,7 @@ export const roomsImages = [
   },
   {
     src: '/photos/rooms3.png',
-    alt: 'Photo 3',
+    alt: 'Спальня в номере люкс парк-отеля Дзуарикау',
     original: 'photos/MainRooms/rooms3.jpg',
     thumbnail: 'photos/MainRooms/rooms3.jpg',
     width: 6000,
@@ -25,7 +25,7 @@ export const roomsImages = [
   },
   {
     src: '/photos/rooms4.png',
-    alt: 'Photo 4',
+    alt: 'Гостиная зона номера люкс',
     original: 'photos/MainRooms/rooms4.jpg',
     thumbnail: 'photos/MainRooms/rooms4.jpg',
     width: 6000,
@@ -33,7 +33,7 @@ export const roomsImages = [
   },
   {
     src: '/photos/rooms5.png',
-    alt: 'Photo 5',
+    alt: 'Ванная комната в номере люкс',
     original: 'photos/rooms5.png',
     thumbnail: 'photos/rooms5.png',
     width: 6000,
@@ -41,7 +41,7 @@ export const roomsImages = [
   },
   {
     src: '/photos/rooms6.png',
-    alt: 'Photo 6',
+    alt: 'Вид из номера люкс на горы',
     original: 'photos/MainRooms/rooms6.jpg',
     thumbnail: 'photos/MainRooms/rooms6.jpg',
     width: 6000,

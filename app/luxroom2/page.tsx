@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import PhotoGallery from '../components/photo-gallery/photo-gallery'
 import styles from './lux-room2.module.css'
 import BackButton from '../components/back-button/back-button'
@@ -5,6 +6,14 @@ import BurgerIcon from '../components/burger-menu/burger-icon'
 import BookingBlock from '../components/booking/booking'
 import Tag from './tags2'
 import { arriveTime, lux2, lux1Description, secondLuxFoto } from './constants'
+import { createMetadata } from '../lib/seo';
+
+export const metadata: Metadata = createMetadata({
+  title: "Люкс 2",
+  description:
+    "Однокомнатный номер люкс с раздельными кроватями в парк-отеле «Дзуарикау».",
+  path: "/luxroom2",
+});
 
 export default function LuxRoomSecond() {
     return (
@@ -14,10 +23,7 @@ export default function LuxRoomSecond() {
                 <BackButton />
                 <div className={styles['lux-number']}>
                     <p className={styles['gray-p']}>Номера /</p>
-                    <p>Люкс 2</p>
-                </div>
-                <div className={styles['lux-number__mobile']}>
-                    <p>Люкс 2</p>
+                    <h1 className={styles['lux-title']}>Люкс 2</h1>
                 </div>
                 <BurgerIcon black={true} />
             </div>

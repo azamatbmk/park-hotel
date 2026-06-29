@@ -5,6 +5,7 @@ import localFont from "next/font/local"
 import NavMenu from "./components/nav-menu/nav-menu";
 import Footer from "./components/footer/footer";
 import Otelix from "./otelix/page";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "./lib/seo";
 
 const dzuarikau = localFont({
   src: '../public/fonts/Morington_RUS.otf',
@@ -17,8 +18,17 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Park-Hotel Dzuarikau',
-  description: 'Парк 0тель Дзуарикау',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: SITE_NAME,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    type: "website",
+    locale: "ru_RU",
+    siteName: SITE_NAME,
+  },
 };
 
 export default function RootLayout({
@@ -27,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       </head>

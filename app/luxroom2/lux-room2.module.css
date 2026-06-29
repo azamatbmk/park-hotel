@@ -38,6 +38,12 @@
     color: #696065;
 }
 
+.lux-title {
+    font: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+
 .lux-number__mobile {
     display: none;
 }
@@ -123,12 +129,22 @@
         padding: 0px;
     }
 
-    .lux-number__mobile {
+    .lux-number {
+        position: static;
+        transform: none;
         flex: 1;
         display: flex;
         background-color: white;
         justify-content: center;
         align-items: center;
+    }
+
+    .lux-number .gray-p {
+        display: none;
+    }
+
+    .lux-number__mobile {
+        display: none;
     }
 
     .tag-component-container {
@@ -158,10 +174,6 @@
         display: flex;
         flex-direction: column;
         padding: 0 10px;
-    }
-
-    .lux-number {
-        display: none;
     }
 
     .left-arrow__mobile {

@@ -13,7 +13,8 @@ export default function About(
         btnText,
         descriptionPartOne,
         descriptionPartTwo,
-        right
+        right,
+        alt,
     }: IAboutProps) {
     return (
         <section className={styles['about-section']}>
@@ -24,7 +25,7 @@ export default function About(
                 <Image 
                     className={styles['photo']}
                     src={bgPhoto}
-                    alt="Фото об отеле"
+                    alt={alt}
                 />
                 <div className={`${right ? styles['h5-and-p-box__right'] : styles['h5-and-p-box']}`}>
                     <div className={styles['more-btn-and-h5-wrapper']}>

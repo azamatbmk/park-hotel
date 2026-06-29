@@ -8,6 +8,8 @@ export default function VideoBackground() {
                 muted
                 loop
                 playsInline
+                poster="/photos/aboutbg.jpg"
+                aria-label="Видео парк-отеля Дзуарикау среди гор"
             >
                 <source src="video/main1.webm" type="video/webm"/>
                 Ваш браузер не поддерживает видео
