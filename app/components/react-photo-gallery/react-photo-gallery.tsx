@@ -255,7 +255,7 @@ export default function LuxRoomReact({
                                     <strong>от {price} ₽</strong>
                                     <span>1 ночь / 2 гостя</span>
                                 </div>
-                                <BookButton buttonText={'Подробнее'} />
+                                <BookButton buttonText={'Подробнее'} asLink={false} />
                             </div>
                         </div>
                     </div>
