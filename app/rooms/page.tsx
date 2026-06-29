@@ -1,9 +1,7 @@
-import BookingBlock from "../components/booking/booking";
 import HeroSection from "../components/hero-section/hero-section";
 import PagesHeroSectionBackground from "../components/photo-background/photo-background";
 import roomsPageBg from "../../public/photos/rooms-page-bg.png"
 import H2HeaderComponent from "../components/h2-header/h2-header";
-// import LuxRoom from "./lux-room";
 import leftImageOne from "../../public/photos/rooms7.png"
 import leftImageOneReact from '../../public/photos/Lux1/722.jpg'
 import topImageOne from "../../public/photos/rooms8.png"
@@ -44,10 +42,9 @@ export default function RoomsPage() {
                         h2="Номера"
                     />
                 }
-                // bookingBlock={<Otelix />}
                 overlay={true}
             />
-            <H2HeaderComponent children={'Люкс 1'} />
+            <H2HeaderComponent>{'Люкс 1'}</H2HeaderComponent>
             <LuxRoomReact
                 mobileImageSrc={mobileImageOne}
                 leftImageSrc={leftImageOne}
@@ -65,7 +62,7 @@ export default function RoomsPage() {
                 square={20}
                 path={'/luxroom'}
             />
-            <H2HeaderComponent children={'Люкс 2'} />
+            <H2HeaderComponent>{'Люкс 2'}</H2HeaderComponent>
             <LuxRoomReact
                 mobileImageSrc={mobileImageTwo}
                 leftImageSrc={leftImageTwo}
@@ -84,7 +81,7 @@ export default function RoomsPage() {
                 sectionClassName={'foto-section-left'}
                 path={'/luxroom2'}
             />
-            <H2HeaderComponent children={'Люкс 3'} />
+            <H2HeaderComponent>{'Люкс 3'}</H2HeaderComponent>
             <LuxRoomReact
                 mobileImageSrc={mobileImageThree}
                 leftImageSrc={leftImageThree}

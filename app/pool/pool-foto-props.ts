@@ -11,7 +11,6 @@ export interface IPoolProops {
     threeFotoSrcThree: StaticImageData;
     mobileFoto: StaticImageData;
     poolServiceIcon: IDesktopTagProps[];
-    poolServiceIconMobile: StaticImageData;
     price:string,
     alt: string;
     h2: string;

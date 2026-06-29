@@ -1,13 +1,8 @@
 import HeroSection from "../components/hero-section/hero-section";
 import PagesHeroSectionBackground from "../components/photo-background/photo-background";
 import contactsBg from "../../public/photos/contactsbg.png"
-import BookingBlock from "../components/booking/booking";
 import styles from "./contacts.module.css"
 import Image from "next/image";
-import H2HeaderComponent from "../components/h2-header/h2-header";
-import Otelix from "../otelix/page";
-import OtelixWidget from "../components/otelix-ooking/otelix-booking";
-import PanoramaYandexMap from "../components/panorama/panorama";
 import YandexMap from "../components/yandex-map/yandex-map";
 
 export default function Contacts() {
@@ -21,7 +16,6 @@ export default function Contacts() {
                         h2="Контакты"
                     />
                 }
-                // bookingBlock={<OtelixWidget />}
                 overlay={true}
             />
             <h2 className={styles['title']}>Контакты</h2>
@@ -68,7 +62,6 @@ export default function Contacts() {
                     </div>
                 </div>
             </div>
-            {/* <PanoramaYandexMap /> */}
             <YandexMap />
         </main>
     )

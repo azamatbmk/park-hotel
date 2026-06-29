@@ -1,7 +1,3 @@
-import styles from "./restaurant.module.css"
-import Image from "next/image";
-
-
 export const restaurantImages = [
     { src: '/photos/restaurant1.png',
       alt: 'Photo 1',

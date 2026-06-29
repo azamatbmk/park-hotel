@@ -1,12 +1,8 @@
-import BookingBlock from "../components/booking/booking";
 import HeroSection from "../components/hero-section/hero-section";
 import FoodMenu from "./food-card";
 import FotoGallery from "./foto-gallery";
 import PagesHeroSectionBackground from "../components/photo-background/photo-background";
 import restBg from "../../public/photos/restbg.png"
-import Otelix from "../otelix/page";
-
-
 export default function RestaurantPage() {
     return (
         <main>
@@ -18,7 +14,6 @@ export default function RestaurantPage() {
                         h2="РЕСТОРАН"
                     />
                 }
-                // bookingBlock={<Otelix />}
                 overlay={true}
             />
             <FoodMenu />

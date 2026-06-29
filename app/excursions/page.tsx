@@ -1,7 +1,6 @@
 import HeroSection from "../components/hero-section/hero-section";
 import PagesHeroSectionBackground from "../components/photo-background/photo-background";
 import excursionsPageBg from "../../public/photos/excursionsbg.png"
-import BookingBlock from "../components/booking/booking";
 import H2HeaderComponent from "../components/h2-header/h2-header";
 import ExcursionPhotoSection from "./excursion-foto-section";
 import styles from "./excursion-foto-section.module.css"
@@ -10,8 +9,6 @@ import rightFoto from "../../public/photos/exc2.png"
 import firstFoto from "../../public/photos/exc3.png"
 import secondFoto from "../../public/photos/exc4.png"
 import thirdFoto from "../../public/photos/exc5.png"
-import Otelix from "../otelix/page";
-
 export default function Contacts() {
     return (
         <main style={{ marginBottom: '100px' }}>
@@ -23,10 +20,9 @@ export default function Contacts() {
                         h2="Экскурсии"
                     />
                 }
-                // bookingBlock={<Otelix />}
                 overlay={true}
             />
-            <H2HeaderComponent children={'Экскурсии'} />
+            <H2HeaderComponent>{'Экскурсии'}</H2HeaderComponent>
             <div className={`${styles['two-foto-wrapper']} ${styles['margin-bottom']}`}>
                 <ExcursionPhotoSection
                     description={'Природная достопримечательность, расположенная в Куртатинском ущелье Северной Осетии. Он\u00A0представляет собой узкую расщелину, окруженную высокими скалами, сквозь которые с\u00A0шумом пробивается река. Вода здесь кристально чистая и\u00A0прозрачная.'}

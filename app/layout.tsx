@@ -4,7 +4,6 @@ import "./globals.css";
 import localFont from "next/font/local"
 import NavMenu from "./components/nav-menu/nav-menu";
 import Footer from "./components/footer/footer";
-import OtelixWidget from "./components/otelix-ooking/otelix-booking";
 import Otelix from "./otelix/page";
 
 const dzuarikau = localFont({

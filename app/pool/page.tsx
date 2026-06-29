@@ -1,7 +1,6 @@
 'use client'
 
 
-import BookingBlock from "../components/booking/booking";
 import HeroSection from "../components/hero-section/hero-section";
 import PagesHeroSectionBackground from "../components/photo-background/photo-background";
 import poolPageBg from "../../public/photos/spa-paige-bg.png"
@@ -19,14 +18,9 @@ import spaTwoFotoSrcRight from "../../public/photos/spa15.png"
 import spaThreeFotoSrcOne from "../../public/photos/spa3.png"
 import spaThreeFotoSrcTwo from "../../public/photos/spa16.png"
 import spaThreeFotoSrcThree from "../../public/photos/spa17.png"
-import poolServiceIcon from "../../public/pool-service.svg"
-import spaServiceIcon from "../../public/spa-service-icon.svg"
 import mobileFotoOne from "../../public/photos/spa-mobile1.png"
 import mobileFotoTwo from "../../public/photos/spa-mobile2.png"
-import poolServiceIconOne from "../../public/pool-service__mobile1.svg"
-import poolServiceIconTwo from "../../public/pool-service__mobile2.svg"
 import { poolTags, saunaTags } from "./constants";
-import Otelix from "../otelix/page";
 
 export default function PoolPage() {
     return (
@@ -39,12 +33,9 @@ export default function PoolPage() {
                         h2="Бассейн & Баня"
                     />
                 }
-                // bookingBlock={<Otelix />}
                 overlay={true}
             />
-            <H2HeaderComponent
-                children={'Бассейн'}
-            />
+            <H2HeaderComponent>{'Бассейн'}</H2HeaderComponent>
             <PoolFotoSection
                 infoBoxLeftSide={false}
                 oneFotoSrc={poolOneFotoSrc}
@@ -55,7 +46,6 @@ export default function PoolPage() {
                 threeFotoSrcThree={poolThreeFotoSrcThree}
                 mobileFoto={mobileFotoOne}
                 poolServiceIcon={poolTags}
-                poolServiceIconMobile={poolServiceIconOne}
                 alt={'Фото бассейна'}
                 h2={'Бассейн'}
                 description={'Открытый подогреваемый бассейн парк-отеля «Дзуарикау» доступен для гостей с\u00A010:00 до 17:00. Для комфортного отдыха предусмотрены солнечные зоны для загара и\u00A0тени под навесами.'}
@@ -64,9 +54,7 @@ export default function PoolPage() {
                 guestsAndTime="1 гость"
                 guestsAndTimeMobile="Гости от 6 лет"
             />
-            <H2HeaderComponent
-                children={'Баня'}
-            />
+            <H2HeaderComponent>{'Баня'}</H2HeaderComponent>
             <PoolFotoSection
                 infoBoxLeftSide={true}
                 oneFotoSrc={spaOneFotoSrc}
@@ -77,7 +65,6 @@ export default function PoolPage() {
                 threeFotoSrcThree={spaThreeFotoSrcThree}
                 mobileFoto={mobileFotoTwo}
                 poolServiceIcon={saunaTags}
-                poolServiceIconMobile={poolServiceIconTwo}
                 alt={'Фото бани'}
                 h2={'Баня'}
                 description={'Банный комплекс парк-отеля «Дзуарикау» включает просторную парную и деревянную охлаждающую купель. Для отдыха предусмотрена зона, где гости могут расслабиться и восстановить силы. Также в\u00A0банный комплекс можно заказать блюда из\u00A0меню ресторана.'}

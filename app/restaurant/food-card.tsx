@@ -25,12 +25,13 @@ export default function FoodMenu() {
 
                     />
                     <FoodCardInfo
-                        children={'Завтрак'}
                         anchor={'#'}
                         icon={rightTopArrow}
                         btnText={'меню'}
                         description={'Завтраки, которые не только насытят, но\u00A0и\u00A0подарят энергию на весь день. С 9:00 до 12:00.'}
-                    />
+                    >
+                        {'Завтрак'}
+                    </FoodCardInfo>
                 </div>
                 <div className={styles['food-card-wrapper']}>
                     <Image
@@ -47,12 +48,13 @@ export default function FoodMenu() {
                         height={115}
                     />
                     <FoodCardInfo
-                        children={'Основное меню'}
                         anchor={'#'}
                         icon={rightTopArrow}
                         btnText={'меню'}
                         description={'Меню объединяет осетинские, кавказские и\u00A0европейские блюда, приготовленные с\u00A0любовью.'}
-                    />
+                    >
+                        {'Основное меню'}
+                    </FoodCardInfo>
                 </div>
                 <div className={styles['food-card-wrapper']}>
                     <Image
@@ -69,12 +71,13 @@ export default function FoodMenu() {
                         height={115}
                     />
                     <FoodCardInfo
-                        children={'Барное меню'}
                         anchor={'#'}
                         icon={rightTopArrow}
                         btnText={'меню'}
                         description={'Напитки под ваше настроение. Прекрасный выбор для\u00A0любого повода и\u00A0компании.'}
-                    />
+                    >
+                        {'Барное меню'}
+                    </FoodCardInfo>
                 </div>
             </div>
         </section>

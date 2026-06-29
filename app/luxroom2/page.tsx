@@ -1,18 +1,14 @@
 import PhotoGallery from '../components/photo-gallery/photo-gallery'
-import { fotoArray } from '../components/photo-gallery/constants'
 import styles from './lux-room2.module.css'
 import BackButton from '../components/back-button/back-button'
 import BurgerIcon from '../components/burger-menu/burger-icon'
 import BookingBlock from '../components/booking/booking'
-import BookingButton from '../components/booking/mobile-booking'
 import Tag from './tags2'
 import { arriveTime, lux2, lux1Description, secondLuxFoto } from './constants'
-import { roomsDescription } from '../rooms/constants'
 
 export default function LuxRoomSecond() {
     return (
         <div className={styles['lux-room-container']}>
-            {/* <BookingButton display='hide-desktop' /> */}
             <BookingBlock display='hide-mobile' position='relative' />
             <div className={styles['back-button-and-number-wrapper']}>
                 <BackButton />

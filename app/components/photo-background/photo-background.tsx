@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from "next/image";
 import styles from "./photo-background.module.css"
-import mobileBg from "../../public/photos/rooms-mobilebg.png"
 
 export default function PagesHeroSectionBackground({ src, alt, h2}: { 
         src: StaticImageData,

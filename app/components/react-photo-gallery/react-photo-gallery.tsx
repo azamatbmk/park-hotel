@@ -2,13 +2,11 @@
 
 import Image from "next/image";
 import styles from "./react-photo-gallery.module.css";
-import grid from "./grid-react-photo-gallery.module.css";
 import Link from "next/link";
 import { Gallery, Item, useGallery } from 'react-photoswipe-gallery';
 import 'photoswipe/photoswipe.css';
 import { ILuxRoomProps } from "@/app/rooms/lux-room-props.interface";
 import BookButton from "../buttons/book-btn";
-import { MouseEvent, useState } from "react";
 import MorePlaceButton from "../more-place-button/more-place-button";
 import DesktopTag from "../room-tag/desktop-room-tag";
 import { desktopTags, desktopTagsOpen } from "./constants";

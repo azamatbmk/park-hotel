@@ -8,9 +8,6 @@ import { usePathname } from "next/navigation";
 import { menuItems } from "./constants";
 import { IHeroSectionProps } from "./hero-section.interface";
 import BurgerIcon from "../burger-menu/burger-icon";
-import Modal from "../burger-menu/modal";
-import NavMenu from "../nav-menu/nav-menu";
-import { useState } from "react";
 
 
 export default function HeroSection({

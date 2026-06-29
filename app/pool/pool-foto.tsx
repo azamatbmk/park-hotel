@@ -3,7 +3,6 @@ import styles from "./pool-foto.module.css"
 import BookButton from "../components/buttons/book-btn"
 import { IPoolProops } from "./pool-foto-props"
 import DesktopTag from "../components/room-tag/desktop-room-tag"
-import { poolTags, saunaTags } from "./constants"
 
 
 export default function PoolFotoSection({
@@ -16,7 +15,6 @@ export default function PoolFotoSection({
     threeFotoSrcThree,
     mobileFoto,
     poolServiceIcon,
-    poolServiceIconMobile,
     price,
     alt,
     h2,

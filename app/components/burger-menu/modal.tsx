@@ -1,9 +1,7 @@
 import { ReactNode, useEffect } from 'react';
 import styles from './modal.module.css';
 import Link from 'next/link';
-import PhoneButton from '../buttons/phone-btn';
 import { menuItems } from '../hero-section/constants';
-import closeIcon from "../../../public/close-icon.svg"
 
 interface ModalProps {
   isOpen: boolean;
