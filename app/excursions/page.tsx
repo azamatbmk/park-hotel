@@ -10,12 +10,13 @@ import firstFoto from "../../public/photos/exc3.png"
 import secondFoto from "../../public/photos/exc4.png"
 import thirdFoto from "../../public/photos/exc5.png"
 import { createMetadata } from "../lib/seo";
+import { EXCURSION_LINKS, PAGE_SEO } from "../lib/page-seo";
 
 export const metadata: Metadata = createMetadata({
-  title: "Экскурсии",
-  description:
-    "Экскурсии из парк-отеля «Дзуарикау»: Кадаргаванский каньон, монастырь, Даргавс и достопримечательности Осетии.",
-  path: "/excursions",
+  title: PAGE_SEO.excursions.title,
+  description: PAGE_SEO.excursions.description,
+  keywords: PAGE_SEO.excursions.keywords,
+  path: PAGE_SEO.excursions.path,
 });
 
 export default function ExcursionsPage() {
@@ -26,7 +27,7 @@ export default function ExcursionsPage() {
                     <PagesHeroSectionBackground
                         src={excursionsPageBg}
                         alt="Фото Даргавс"
-                        h2="Экскурсии"
+                        h2={PAGE_SEO.excursions.h1}
                     />
                 }
                 overlay={true}
@@ -37,14 +38,14 @@ export default function ExcursionsPage() {
                     bgPhoto={leftFoto}
                     alt={'Фото гор'}
                     btnText={'22\u00A0км'}
-                    anchor="/">
+                    mapLink={EXCURSION_LINKS.canyon}>
                     {'Кадаргаванский Каньон'} </ExcursionPhotoSection>
                 <ExcursionPhotoSection
                     description={'Духовный и\u00A0культурный центр Северной Осетии, расположенный в\u00A0Куртатинском ущелье. Монастырь построен в\u00A0византийском стиле с\u00A0использованием горного камня, имеет две старинные сторожевые башни, которые служат колокольней.'}
                     bgPhoto={rightFoto}
                     alt={'Фото монастыря в горах'}
                     btnText={'39\u00A0км'}
-                    anchor="/">
+                    mapLink={EXCURSION_LINKS.monastery}>
                     {'Аланский Успенский монастырь'} </ExcursionPhotoSection>
             </div>
             <div className={styles['two-foto-wrapper']}>
@@ -53,21 +54,21 @@ export default function ExcursionsPage() {
                     bgPhoto={firstFoto}
                     alt={'Фото арт-объекта Æ'}
                     btnText={'33\u00A0км'}
-                    anchor="/">
+                    mapLink={EXCURSION_LINKS.artObject}>
                     {'Арт‑объект Æ'} </ExcursionPhotoSection>
                 <ExcursionPhotoSection
-                    description={'Смотровая площадка Северной Осетии. По\u00A0легенде, местный житель в\u00A0знак своей любви к\u00A0девушке соорудил лавочку на\u00A0краю скалы с\u00A0надписью «Счастье не\u00A0за\u00A0горами, оно в\u00A0горах».'}
+                    description={'Смотровая площадка Северной Осетии. По\u00A0легенде, местный житель в\u00A0знак своей любви к\u00A0девушке соорудил лавочку на\u00A0краю скалы с\u00A0надписью «Счастье не\u00A0за\u00A0горами, оно в\u00A0горах».'}
                     bgPhoto={secondFoto}
                     alt={'Фото лавочки в горах'}
                     btnText={'44\u00A0км'}
-                    anchor="/">
+                    mapLink={EXCURSION_LINKS.bench}>
                     {'Лавочка счастья'} </ExcursionPhotoSection>
                 <ExcursionPhotoSection
                     description={'Крупнейший средневековый склеповый некрополь. Здесь расположены около сотни семейных усыпальниц. Расположен в\u00A0километре от\u00A0селения Даргавс, на\u00A0склоне горы Раминыраг.'}
                     bgPhoto={thirdFoto}
                     alt={'Фото Даргавса'}
                     btnText={'39\u00A0км'}
-                    anchor="/">
+                    mapLink={EXCURSION_LINKS.dargavs}>
                     {'Город мёртвых'} </ExcursionPhotoSection>
             </div>
         </main>

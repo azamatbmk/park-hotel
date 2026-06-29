@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 
 export const SITE_NAME = "Парк-отель Дзуарикау";
 export const SITE_DESCRIPTION =
-  "Парк-отель «Дзуарикау» в Северной Осетии: номера люкс, ресторан, бассейн и баня среди гор. Отдых рядом с Владикавказом и Фиагдоном.";
+  "Парк-отель «Дзуарикау» расположен недалеко от Владикавказа в горах Северной Осетии. Гостей ждут номера категории «люкс» с видом на горы, подогреваемый бассейн под открытым небом и отдых на природе";
 
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://park-hotel-dzuarikau.ru";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.dzuarikau.ru";
 
 export const HOTEL_PHONE = "+7 (928) 070-11-55";
+export const HOTEL_PHONE_HREF = "tel:+79280701155";
 export const HOTEL_ADDRESS =
   "Республика Северная Осетия — Алания, село Дзуарикау, улица А. Кцоева, 25";
 
@@ -22,18 +23,21 @@ export function createMetadata({
   description = SITE_DESCRIPTION,
   path = "",
   noIndex = false,
+  keywords,
 }: {
   title: string;
   description?: string;
   path?: string;
   noIndex?: boolean;
+  keywords?: string;
 }): Metadata {
   const canonicalPath = path || "/";
   const url = canonicalPath === "/" ? SITE_URL : `${SITE_URL}${canonicalPath}`;
 
   return {
-    title,
+    title: { absolute: title },
     description,
+    keywords,
     alternates: {
       canonical: url,
     },

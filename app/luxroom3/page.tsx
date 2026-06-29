@@ -7,12 +7,12 @@ import BookingBlock from '../components/booking/booking'
 import Tag from './tags3'
 import { arriveTime, lux3, lux1Description, thirdLuxFoto } from './constants'
 import { createMetadata } from '../lib/seo';
+import { PAGE_SEO } from '../lib/page-seo';
 
 export const metadata: Metadata = createMetadata({
-  title: "Люкс 3",
-  description:
-    "Двухкомнатный номер люкс с отдельной спальней и гостиной в парк-отеле «Дзуарикау».",
-  path: "/luxroom3",
+  title: PAGE_SEO.luxroom3.title,
+  description: PAGE_SEO.luxroom3.description,
+  path: PAGE_SEO.luxroom3.path,
 });
 
 export default function LuxRoomThird() {
@@ -23,7 +23,7 @@ export default function LuxRoomThird() {
                 <BackButton />
                 <div className={styles['lux-number']}>
                     <p className={styles['gray-p']}>Номера /</p>
-                    <h1 className={styles['lux-title']}>Люкс 3</h1>
+                    <h1 className={styles['lux-title']}>{PAGE_SEO.luxroom3.h1}</h1>
                 </div>
                 <BurgerIcon black={true} />
             </div>

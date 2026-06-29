@@ -32,12 +32,13 @@ import mobileImageTwo from "../../public/photos/rooms-mobile2.png"
 import mobileImageThree from "../../public/photos/rooms-mobile3.png"
 import LuxRoomReact from "../components/react-photo-gallery/react-photo-gallery";
 import { createMetadata } from "../lib/seo";
+import { PAGE_SEO } from "../lib/page-seo";
 
 export const metadata: Metadata = createMetadata({
-  title: "Номера",
-  description:
-    "Номера категории люкс в парк-отеле «Дзуарикау»: однокомнатные и двухкомнатные варианты с видом на горы Северной Осетии.",
-  path: "/rooms",
+  title: PAGE_SEO.rooms.title,
+  description: PAGE_SEO.rooms.description,
+  keywords: PAGE_SEO.rooms.keywords,
+  path: PAGE_SEO.rooms.path,
 });
 
 export default function RoomsPage() {
@@ -48,7 +49,7 @@ export default function RoomsPage() {
                     <PagesHeroSectionBackground
                         src={roomsPageBg}
                         alt="Фото номера"
-                        h2="Номера"
+                        h2={PAGE_SEO.rooms.h1}
                     />
                 }
                 overlay={true}

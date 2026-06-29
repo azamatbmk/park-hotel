@@ -1,0 +1,19 @@
+.site-address {
+  display: block;
+  max-width: 280px;
+  font-size: 12px;
+  line-height: 1.3;
+  color: var(--text-light);
+  opacity: 0.9;
+}
+
+.site-address:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+@media (max-width: 1050px) {
+  .site-address {
+    display: none;
+  }
+}

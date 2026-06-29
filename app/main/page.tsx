@@ -25,6 +25,7 @@ export default function MainPage() {
                 mobileMargin={true}
             />
             <About
+                sectionId="about"
                 description={aboutDescription}
                 descriptionPartOne={mobileAboutDescriptionPartOne}
                 descriptionPartTwo={mobileAboutDescriptionPartTwo}

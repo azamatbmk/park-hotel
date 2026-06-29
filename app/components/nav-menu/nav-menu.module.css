@@ -23,6 +23,13 @@
     pointer-events: auto;
 }
 
+.logo-and-address {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 240px;
+}
+
 .triangle {
     font-size: 14px;
     padding-left: 2px;

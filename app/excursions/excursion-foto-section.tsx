@@ -8,11 +8,11 @@ export default function ExcursionPhotoSection(
         children, 
         description, 
         bgPhoto, 
-        anchor, 
         icon,
         alt,
-        btnText
-    }: IAboutProps) {
+        btnText,
+        mapLink,
+    }: Omit<IAboutProps, 'anchor'> & { mapLink: string }) {
     return (
         <section className={styles['excursion-foto-section']}>
             <div className={styles['section-photo']}>
@@ -24,13 +24,20 @@ export default function ExcursionPhotoSection(
                         width={910}
                         height={413}
                     />
-                    <button className={styles['more-foto-btn']}>больше фото</button>
+                    <a
+                        href={mapLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles['more-foto-btn']}
+                    >
+                        больше фото
+                    </a>
                 </div>
                 <div className={styles['h5-and-p-box']}>
                     <div className={styles['more-btn-and-h5-wrapper']}>
                         <h5 className={styles['h5']}>{children}</h5>
                         <div className={styles['distance']}>
-                            <MoreButton anchor={anchor} icon={icon}>{btnText}</MoreButton>
+                            <MoreButton anchor={mapLink} icon={icon}>{btnText}</MoreButton>
                         </div>
                     </div>
                     <p className={styles['paragraph']}>

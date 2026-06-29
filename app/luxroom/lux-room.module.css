@@ -42,6 +42,9 @@
     font: inherit;
     font-weight: inherit;
     margin: 0;
+    font-size: clamp(14px, 1.6vw, 20px);
+    line-height: 1.2;
+    text-align: center;
 }
 
 .lux-number__mobile {

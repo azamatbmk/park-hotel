@@ -8,6 +8,7 @@ export default function VideoBackground() {
                 muted
                 loop
                 playsInline
+                preload="metadata"
                 poster="/photos/aboutbg.jpg"
                 aria-label="Видео парк-отеля Дзуарикау среди гор"
             >

@@ -15,9 +15,10 @@ export default function About(
         descriptionPartTwo,
         right,
         alt,
+        sectionId,
     }: IAboutProps) {
     return (
-        <section className={styles['about-section']}>
+        <section id={sectionId} className={styles['about-section']}>
             <div>
                 <h2 className={styles['title']}>{children}</h2>
             </div>

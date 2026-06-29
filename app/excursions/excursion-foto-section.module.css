@@ -162,6 +162,8 @@
         right: 20px;
         bottom: 20px;
         color: var(--text-light);
+        text-decoration: none;
+        cursor: pointer;
     }
 
     .photo-and-distance-btn {

@@ -32,7 +32,7 @@ export default function Footer() {
                     <h4 className={styles['h4']}>Навигация</h4>
                     <nav >
                         <ul className={styles['nav-wrapper']} style={{ listStyle: 'none' }}>
-                            <li><Link href={'/'}>Об отеле</Link></li>
+                            <li><Link href={'/#about'}>Об отеле</Link></li>
                             <li><Link href={'/rooms'}>Номера</Link></li>
                             <li><Link href={'/restaurant'}>Ресторан</Link></li>
                             <li><Link href={'/pool'}>Бассейн & Баня</Link></li>

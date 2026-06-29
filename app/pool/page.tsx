@@ -20,12 +20,13 @@ import mobileFotoOne from "../../public/photos/spa-mobile1.png"
 import mobileFotoTwo from "../../public/photos/spa-mobile2.png"
 import { poolTags, saunaTags } from "./constants";
 import { createMetadata } from "../lib/seo";
+import { PAGE_SEO } from "../lib/page-seo";
 
 export const metadata: Metadata = createMetadata({
-  title: "Бассейн и баня",
-  description:
-    "Подогреваемый бассейн и банный комплекс парк-отеля «Дзуарикау»: парная, купель и зона отдыха для гостей.",
-  path: "/pool",
+  title: PAGE_SEO.pool.title,
+  description: PAGE_SEO.pool.description,
+  keywords: PAGE_SEO.pool.keywords,
+  path: PAGE_SEO.pool.path,
 });
 
 export default function PoolPage() {
@@ -36,7 +37,7 @@ export default function PoolPage() {
                     <PagesHeroSectionBackground
                         src={poolPageBg}
                         alt="Фото бассейна"
-                        h2="Бассейн & Баня"
+                        h2={PAGE_SEO.pool.h1}
                     />
                 }
                 overlay={true}

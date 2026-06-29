@@ -10,5 +10,6 @@ export interface IAboutProps {
     anchor: string;
     btnText?: string;
     icon?: React.ReactNode;
-    right?: boolean
+    right?: boolean;
+    sectionId?: string;
 }

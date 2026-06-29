@@ -7,12 +7,13 @@ import Image from "next/image";
 import YandexMap from "../components/yandex-map/yandex-map";
 import JsonLd from "../components/json-ld/json-ld";
 import { createMetadata, hotelJsonLd, WHATSAPP_URL } from "../lib/seo";
+import { PAGE_SEO } from "../lib/page-seo";
 
 export const metadata: Metadata = createMetadata({
-  title: "Контакты",
-  description:
-    "Контакты парк-отеля «Дзуарикау»: адрес в селе Дзуарикау, телефон +7 (928) 070-11-55, карта проезда.",
-  path: "/contacts",
+  title: PAGE_SEO.contacts.title,
+  description: PAGE_SEO.contacts.description,
+  keywords: PAGE_SEO.contacts.keywords,
+  path: PAGE_SEO.contacts.path,
 });
 
 export default function Contacts() {
@@ -24,7 +25,7 @@ export default function Contacts() {
                     <PagesHeroSectionBackground
                         src={contactsBg}
                         alt="Фото лестниц"
-                        h2="Контакты"
+                        h2={PAGE_SEO.contacts.h1}
                     />
                 }
                 overlay={true}
