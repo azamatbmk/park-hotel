@@ -15,7 +15,8 @@ export default function HeroSection({
     background,
     bookingBlock,
     overlay,
-    mobileMargin
+    mobileMargin,
+    showAddress = true,
 }: IHeroSectionProps) {
     const triangle = '▼';
     const pathName = usePathname();
@@ -37,7 +38,7 @@ export default function HeroSection({
                         height={70}
                         priority={true}
                     />
-                    <SiteAddress />
+                    {showAddress && <SiteAddress />}
                 </div>
                 <BurgerIcon black= { false }/>
                 <div className={styles['nav-and-phone']}>

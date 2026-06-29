@@ -3,4 +3,5 @@ export interface IHeroSectionProps {
     bookingBlock?: React.ReactNode;
     overlay: boolean;
     mobileMargin?: boolean;
+    showAddress?: boolean;
 }

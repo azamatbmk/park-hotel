@@ -44,7 +44,7 @@ export default function NavMenu() {
         <div className={`${styles['nav-container']} ${ isAlwaysVisible || isScrolled ? styles['nav-container--visible'] : ''}`}>
             <div className={styles['logo-and-address']}>
                 <SiteLogo width={200} height={40} priority={true} />
-                <SiteAddress />
+                {pathName !== "/" && <SiteAddress />}
             </div>
             <div className={styles['nav-and-phoneBtn-wrapper']}>
                 <nav className={styles['nav-tag']}>
