@@ -16,7 +16,7 @@ export const YANDEX_MAPS_URL =
   "https://yandex.ru/maps/org/park_otel_dzuarikau/171424752573/";
 export const WHATSAPP_URL = "https://wa.me/79280701155";
 
-export const OG_IMAGE = "/photos/aboutbg.jpg";
+export const OG_IMAGE = "/photos/aboutbg.webp";
 
 export function createMetadata({
   title,

@@ -42,13 +42,15 @@ export default function ImageCarousel({ images }: IPhotoCarousel) {
                     }}
                     style={{ cursor: 'pointer' }}
                   >
-                    <Image
-                      src={image.src}
-                      alt={image.alt || `Image ${index}`}
-                      width={450}
-                      height={250}
-                      className={styles['image']}
-                    />
+                <Image 
+                    className={styles['image']}
+                    src={image.src}
+                    alt={image.alt || `Image ${index}`}
+                    width={450}
+                    height={250}
+                    sizes="450px"
+                    loading="lazy"
+                />
                   </div>
                 )}
               </Item>

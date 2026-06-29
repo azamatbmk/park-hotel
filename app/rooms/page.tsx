@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import HeroSection from "../components/hero-section/hero-section";
 import PagesHeroSectionBackground from "../components/photo-background/photo-background";
-import roomsPageBg from "../../public/photos/rooms-page-bg.png"
+import roomsPageBg from "../../public/photos/rooms-page-bg.webp"
 import H2HeaderComponent from "../components/h2-header/h2-header";
 import leftImageOne from "../../public/photos/rooms7.png"
 import leftImageOneReact from '../../public/photos/Lux1/722.jpg'

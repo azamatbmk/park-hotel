@@ -1,10 +1,10 @@
 import About from "../components/about/about";
 import ImageCarousel from "../components/carousel/carousel";
 import HeroSection from "../components/hero-section/hero-section";
-import aboutBg from "../../public/photos/aboutbg.jpg"
-import roomsBg from "../../public/photos/roomsbg.png"
-import restBg from "../../public/photos/restbg.png"
-import spaBg from "../../public/photos/spabg.png"
+import aboutBg from "../../public/photos/aboutbg.webp"
+import roomsBg from "../../public/photos/roomsbg.webp"
+import restBg from "../../public/photos/restbg.webp"
+import spaBg from "../../public/photos/spabg.webp"
 import rightTopArrow from "../../public/er.svg"
 import { aboutImages, aboutDescription, mobileAboutDescriptionPartOne, mobileAboutDescriptionPartTwo } from "./constants";
 import { roomsDescription, roomsImages } from "../rooms/constants";

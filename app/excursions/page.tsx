@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import HeroSection from "../components/hero-section/hero-section";
 import PagesHeroSectionBackground from "../components/photo-background/photo-background";
-import excursionsPageBg from "../../public/photos/excursionsbg.png"
+import excursionsPageBg from "../../public/photos/excursionsbg.webp"
 import ExcursionPhotoSection from "./excursion-foto-section";
 import styles from "./excursion-foto-section.module.css"
 import leftFoto from "../../public/photos/exc1.png"

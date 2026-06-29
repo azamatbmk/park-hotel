@@ -1,11 +1,25 @@
 'use client'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 
 export default function OtelixWidget() {
   const pathname = usePathname()
+  const [shouldLoad, setShouldLoad] = useState(false)
 
   useEffect(() => {
+    const loadWidget = () => setShouldLoad(true)
+
+    if ('requestIdleCallback' in window) {
+      const idleId = window.requestIdleCallback(loadWidget, { timeout: 3000 })
+      return () => window.cancelIdleCallback(idleId)
+    }
+
+    const timeoutId = window.setTimeout(loadWidget, 2000)
+    return () => window.clearTimeout(timeoutId)
+  }, [])
+
+  useEffect(() => {
+    if (!shouldLoad) return
 
     const existing = document.querySelector('script[src*="hotelBdraivLoader"]')
     if (existing) existing.remove()
@@ -13,14 +27,18 @@ export default function OtelixWidget() {
     const script = document.createElement('script')
     script.type = 'text/javascript'
     script.async = true
-    script.src = `https://otelix.pro/js/hotelBdraivLoader.js?t=${new Date().getTime()}`
+    script.src = `https://otelix.pro/js/hotelBdraivLoader.js?t=${Date.now()}`
     document.body.appendChild(script)
+
     return () => {
       const s = document.querySelector('script[src*="hotelBdraivLoader"]')
       if (s) s.remove()
     }
+  }, [pathname, shouldLoad])
 
-  }, [pathname])
+  if (!shouldLoad) {
+    return null
+  }
 
   return (
     <div

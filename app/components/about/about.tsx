@@ -27,6 +27,8 @@ export default function About(
                     className={styles['photo']}
                     src={bgPhoto}
                     alt={alt}
+                    sizes="100vw"
+                    loading="lazy"
                 />
                 <div className={`${right ? styles['h5-and-p-box__right'] : styles['h5-and-p-box']}`}>
                     <div className={styles['more-btn-and-h5-wrapper']}>

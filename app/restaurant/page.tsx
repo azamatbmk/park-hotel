@@ -4,7 +4,7 @@ import FoodMenu from "./food-card";
 import FotoGallery from "./foto-gallery";
 import RestaurantBookingPhone from "../components/restaurant-booking/restaurant-booking";
 import PagesHeroSectionBackground from "../components/photo-background/photo-background";
-import restBg from "../../public/photos/restbg.png"
+import restBg from "../../public/photos/restbg.webp"
 import { createMetadata } from "../lib/seo";
 import { PAGE_SEO } from "../lib/page-seo";
 

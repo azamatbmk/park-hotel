@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import HeroSection from "../components/hero-section/hero-section";
 import PagesHeroSectionBackground from "../components/photo-background/photo-background";
-import contactsBg from "../../public/photos/contactsbg.png"
+import contactsBg from "../../public/photos/contactsbg.webp"
 import styles from "./contacts.module.css"
 import Image from "next/image";
 import YandexMap from "../components/yandex-map/yandex-map";
