@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./restaurant.module.css"
 import FoodCardInfo from "./food-card-info";
 import H2HeaderComponent from "../components/h2-header/h2-header";
-import { HOTEL_PHONE_HREF } from "../lib/seo";
+import { MENU_PDF } from "./constants";
 
 export default function FoodMenu() {
     return (
@@ -26,7 +26,7 @@ export default function FoodMenu() {
 
                     />
                     <FoodCardInfo
-                        anchor={HOTEL_PHONE_HREF}
+                        anchor={MENU_PDF.breakfast}
                         icon={rightTopArrow}
                         btnText={'меню'}
                         description={'Завтраки, которые не только насытят, но\u00A0и\u00A0подарят энергию на весь день. С 9:00 до 12:00.'}
@@ -49,7 +49,7 @@ export default function FoodMenu() {
                         height={115}
                     />
                     <FoodCardInfo
-                        anchor={HOTEL_PHONE_HREF}
+                        anchor={MENU_PDF.main}
                         icon={rightTopArrow}
                         btnText={'меню'}
                         description={'Меню объединяет осетинские, кавказские и\u00A0европейские блюда, приготовленные с\u00A0любовью.'}
@@ -72,7 +72,7 @@ export default function FoodMenu() {
                         height={115}
                     />
                     <FoodCardInfo
-                        anchor={HOTEL_PHONE_HREF}
+                        anchor={MENU_PDF.bar}
                         icon={rightTopArrow}
                         btnText={'меню'}
                         description={'Напитки под ваше настроение. Прекрасный выбор для\u00A0любого повода и\u00A0компании.'}

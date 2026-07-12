@@ -1,3 +1,9 @@
+export const MENU_PDF = {
+  breakfast: "/menu/zavtrak.pdf",
+  main: "/menu/osnovnoe.pdf",
+  bar: "/menu/bar.pdf",
+} as const;
+
 export const restaurantImages = [
     { src: '/photos/restaurant1.png',
       alt: 'Ресторан парк-отеля Дзуарикау — интерьер зала',

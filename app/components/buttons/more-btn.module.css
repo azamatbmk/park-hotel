@@ -11,6 +11,7 @@
     gap: 20px;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .more-btn:hover {

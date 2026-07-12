@@ -4,17 +4,34 @@ import { IMoreBtn } from "./more-btn.interface";
 import ArrowIcon from "../arrow-icon/arrow-icon";
 
 export default function MoreButton({ icon, anchor, children }: IMoreBtn) {
-    const isExternal = anchor.startsWith("http");
-    return(
-        <div className={styles['more-btn']}>
-            <Link
+    const isPdf = anchor.toLowerCase().endsWith(".pdf");
+    const isHttp = anchor.startsWith("http");
+    const isTel = anchor.startsWith("tel:");
+    const useNativeLink = isPdf || isHttp || isTel;
+
+    const content = (
+        <>
+            {children}
+            {icon && <ArrowIcon />}
+        </>
+    );
+
+    if (useNativeLink) {
+        return (
+            <a
                 href={anchor}
-                target={isExternal ? "_blank" : undefined}
-                rel={isExternal ? "noopener noreferrer" : undefined}
+                className={styles['more-btn']}
+                target={isPdf || isHttp ? "_blank" : undefined}
+                rel={isPdf || isHttp ? "noopener noreferrer" : undefined}
             >
-                {children}
-            </Link>
-            { icon && <ArrowIcon /> }
-        </div>
-    )
+                {content}
+            </a>
+        );
+    }
+
+    return (
+        <Link href={anchor} className={styles['more-btn']}>
+            {content}
+        </Link>
+    );
 }
