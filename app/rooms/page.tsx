@@ -35,10 +35,10 @@ import { createMetadata } from "../lib/seo";
 import { PAGE_SEO } from "../lib/page-seo";
 
 export const metadata: Metadata = createMetadata({
-  title: PAGE_SEO.rooms.title,
-  description: PAGE_SEO.rooms.description,
-  keywords: PAGE_SEO.rooms.keywords,
-  path: PAGE_SEO.rooms.path,
+    title: PAGE_SEO.rooms.title,
+    description: PAGE_SEO.rooms.description,
+    keywords: PAGE_SEO.rooms.keywords,
+    path: PAGE_SEO.rooms.path,
 });
 
 export default function RoomsPage() {
@@ -68,7 +68,7 @@ export default function RoomsPage() {
                 rightBottomImageSrcReact={rightBottomImageOneReact}
                 h2={"Однокомнатный номер с\u00A0двуспальной кроватью"}
                 description={"Однокомнатный номер категории «люкс» оформлен в современном стиле и\u00A0оснащён всем необходимым для\u00A0комфортного проживания. В номере\u00A0— двуспальная кровать и\u00A0выход на\u00A0балкон."}
-                price={'12 000'}
+                price={'14 500'}
                 square={20}
                 path={'/luxroom'}
             />
@@ -86,7 +86,7 @@ export default function RoomsPage() {
                 alt="Фото номера"
                 h2={"Однокомнатный номер с\u00A0раздельными кроватями"}
                 description={"Однокомнатный номер с раздельными кроватями подойдёт для\u00A0комфортного размещения двух гостей. Светлый интерьер, продуманная планировка и\u00A0спокойная атмосфера создают все\u00A0условия для\u00A0отдыха."}
-                price={'12 000'}
+                price={'14 500'}
                 square={20}
                 sectionClassName={'foto-section-left'}
                 path={'/luxroom2'}
@@ -105,7 +105,7 @@ export default function RoomsPage() {
                 alt="Фото номера"
                 h2={"Двухкомнатный номер с\u00A0двуспальной кроватью"}
                 description={"Двухкомнатный номер с отдельной спальней и гостиной — удобный вариант для\u00A0тех, кто\u00A0предпочитает больше пространства. Современный интерьер и\u00A0все\u00A0необходимые удобства обеспечивают комфортное проживание."}
-                price={'17 000'}
+                price={'19 500'}
                 square={32}
                 path={'/luxroom3'}
             />
