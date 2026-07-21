@@ -50,7 +50,8 @@ export default function PhotoGallery({ images }: PhotoGalleryProps) {
             priority
           />
           
-          <div 
+          <button
+            type="button"
             onClick={handlePrevious}
             className={`${styles['arrowButton']} ${styles['arrowLeft']}`}
             aria-label="Previous image"
@@ -62,9 +63,10 @@ export default function PhotoGallery({ images }: PhotoGalleryProps) {
               height={24}
               className={styles['arrowIcon']}
             />
-          </div>
+          </button>
           
-          <button 
+          <button
+            type="button"
             onClick={handleNext}
             className={`${styles['arrowButton']} ${styles['arrowRight']}`}
             aria-label="Next image"

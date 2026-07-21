@@ -56,6 +56,8 @@ export default function LazyIframe({
           frameBorder={frameBorder}
           allowFullScreen={allowFullScreen}
           loading="lazy"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allow="fullscreen"
         />
       ) : null}
     </div>

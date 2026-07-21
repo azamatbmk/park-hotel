@@ -8,31 +8,24 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { menuItems } from "../hero-section/constants";
 
-export default function NavMenu() {
+const ROOM_PATHS = ['/luxroom', '/luxroom2', '/luxroom3'];
 
+export default function NavMenu() {
     const triangle = '▼';
     const pathName = usePathname();
-
-    const alwaysVisiblePaths = ['/luxroom', '/luxroom2', '/luxroom3'];
-
     const [isScrolled, setIsScrolled] = useState(false);
-    
+
     useEffect(() => {
-        
         const checkScroll = () => {
-            const viewportHeight = window.innerHeight;
-            setIsScrolled(window.scrollY > viewportHeight);
+            setIsScrolled(window.scrollY > window.innerHeight);
         };
-        
+
         checkScroll();
-        
         window.addEventListener('scroll', checkScroll);
-        
         return () => window.removeEventListener('scroll', checkScroll);
+    }, [pathName]);
 
-    }, []);
-
-    const isAlwaysVisible = alwaysVisiblePaths.includes(pathName);
+    const isAlwaysVisible = ROOM_PATHS.includes(pathName);
 
     const isActive = (href: string) => {
         if (href === "/#about") return pathName === "/";
@@ -40,15 +33,14 @@ export default function NavMenu() {
     };
 
     return (
-        <div className={`${styles['nav-container']} ${ isAlwaysVisible || isScrolled ? styles['nav-container--visible'] : ''}`}>
+        <div className={`${styles['nav-container']} ${isAlwaysVisible || isScrolled ? styles['nav-container--visible'] : ''}`}>
             <div className={styles['logo-and-address']}>
                 <SiteLogo width={200} height={40} priority={true} />
             </div>
             <div className={styles['nav-and-phoneBtn-wrapper']}>
                 <nav className={styles['nav-tag']}>
                     <ul className={styles['nav-wrapper']}>
-                        { menuItems.map((item) => {
-                        return (
+                        {menuItems.map((item) => (
                             <li key={item.href}>
                                 <Link href={item.href}>
                                     {item.title}
@@ -59,8 +51,7 @@ export default function NavMenu() {
                                     )}
                                 </Link>
                             </li>
-                        )
-                        })}
+                        ))}
                     </ul>
                 </nav>
                 <PhoneButton />

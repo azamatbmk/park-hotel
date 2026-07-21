@@ -3,22 +3,21 @@ import PhotoGallery from '../components/photo-gallery/photo-gallery'
 import styles from './lux-room3.module.css'
 import BackButton from '../components/back-button/back-button'
 import BurgerIcon from '../components/burger-menu/burger-icon'
-import BookingBlock from '../components/booking/booking'
+import OtelixInline from '../components/otelix-ooking/otelix-inline'
 import Tag from './tags3'
-import { arriveTime, lux3, lux1Description, thirdLuxFoto } from './constants'
+import { arriveTime, lux3, lux3Description, thirdLuxFoto } from './constants'
 import { createMetadata } from '../lib/seo';
 import { PAGE_SEO } from '../lib/page-seo';
 
 export const metadata: Metadata = createMetadata({
-  title: PAGE_SEO.luxroom3.title,
-  description: PAGE_SEO.luxroom3.description,
-  path: PAGE_SEO.luxroom3.path,
+    title: PAGE_SEO.luxroom3.title,
+    description: PAGE_SEO.luxroom3.description,
+    path: PAGE_SEO.luxroom3.path,
 });
 
 export default function LuxRoomThird() {
     return (
         <div className={styles['lux-room-container']}>
-            <BookingBlock display='hide-mobile' position='relative' />
             <div className={styles['back-button-and-number-wrapper']}>
                 <BackButton />
                 <div className={styles['lux-number']}>
@@ -30,12 +29,15 @@ export default function LuxRoomThird() {
             <PhotoGallery
                 images={thirdLuxFoto.images}
             />
+            <div className={styles['otelix-slot']}>
+                <OtelixInline />
+            </div>
             <div className={styles['tag-component-container']}>
                 <div className={styles['tag-component-wrapper']}>
                     <Tag room={lux3.room} />
                     <Tag room={arriveTime.room} mobile={true} />
                 </div>
-                <p className={styles['tag-component-container-paragraph']}>{lux1Description}</p>
+                <p className={styles['tag-component-container-paragraph']}>{lux3Description}</p>
             </div>
 
             <h2 className={styles['h2']}>Удобства</h2>

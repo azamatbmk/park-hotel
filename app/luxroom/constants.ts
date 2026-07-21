@@ -6,7 +6,7 @@ export const lux1: PropsArray = {
         {
             description: 'Размер',
             iconSrc: '/square-tag.svg',
-            descriptionCount: '32 кв. м',
+            descriptionCount: '20 кв. м',
             dark: false,
         },
         {

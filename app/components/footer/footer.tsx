@@ -10,9 +10,11 @@ import PhoneButtonMobile from "../buttons/phone-btn-mobile"
 import { usePathname } from "next/navigation"
 import { WHATSAPP_URL, YANDEX_MAPS_URL } from "../../lib/seo";
 
-export default function Footer() {
+const ROOM_PATHS = ['/luxroom', '/luxroom2', '/luxroom3'];
 
+export default function Footer() {
     const path = usePathname();
+    const year = new Date().getFullYear();
 
     return (
         <section className={styles['footer-section']}>
@@ -23,8 +25,8 @@ export default function Footer() {
                     width={300}
                     height={60}/>
                 <div className={styles['policy-link-wrapper__desktop']}>
-                    <Link href={'/'} className={styles['policy-link']}>{'Правовая информация'}</Link>
-                    <p>© 2025. Парк-отель Дзуарикау</p>
+                    <p className={styles['policy-link']}>Правовая информация</p>
+                    <p>© {year}. Парк-отель Дзуарикау</p>
                 </div>
             </div>
             <div className={styles['nav-work-adress-wrapper']}>
@@ -69,26 +71,14 @@ export default function Footer() {
                                 height={40}
                             />
                         </a>
-                        <Image
-                            src={"/instagram-logo.svg"}
-                            alt={"Instagram логотип"}
-                            width={40}
-                            height={40}
-                        />
-                        <Image
-                            src={"/telegram-logo.svg"}
-                            alt={"Telegram логотип"}
-                            width={40}
-                            height={40}
-                        />
                     </div>
                     <div className={styles['policy-link-wrapper__mobile']}>
-                        <Link href={'/'} className={styles['policy-link']}>{'Правовая информация'}</Link>
-                        <p>© 2025. Парк-отель Дзуарикау</p>
+                        <p className={styles['policy-link']}>Правовая информация</p>
+                        <p>© {year}. Парк-отель Дзуарикау</p>
                     </div>
                 </div>
             </div>
-            <div className={`${path == '/luxroom' ? styles['bottom-div'] : ''}`}></div>
+            <div className={`${ROOM_PATHS.includes(path) ? styles['bottom-div'] : ''}`}></div>
         </section>
     )
 }

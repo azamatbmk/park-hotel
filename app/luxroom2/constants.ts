@@ -6,7 +6,7 @@ export const lux2: PropsArray = {
         {
             description: 'Размер',
             iconSrc: '/square-tag.svg',
-            descriptionCount: '32 кв. м',
+            descriptionCount: '20 кв. м',
             dark: false,
         },
         {
@@ -96,4 +96,5 @@ export const secondLuxFoto: PhotoGalleryProps = {
     ]
 }
 
-export const lux1Description: string = 'Однокомнатный номер категории «Люкс» оформлен в\u00A0современном стиле и\u00A0оснащён всем необходимым для\u00A0комфортного проживания. В\u00A0номере — двуспальная кровать, выход на балкон.'
+export const lux2Description: string =
+  'Однокомнатный номер с\u00A0раздельными кроватями подойдёт для\u00A0комфортного размещения двух гостей. Светлый интерьер, продуманная планировка и\u00A0спокойная атмосфера создают все\u00A0условия для\u00A0отдыха.';

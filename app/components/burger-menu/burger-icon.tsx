@@ -1,44 +1,29 @@
 'use client'
 
-import { useState } from 'react';
-import NavMenu from '../nav-menu/nav-menu';
-import styles from './burger-icon.module.css';
-import Modal from './modal';
+import { useState } from 'react'
+import { usePathname } from 'next/navigation'
+import styles from './burger-icon.module.css'
+import Modal from './modal'
 
 export default function BurgerIcon({ black }: { black: boolean }) {
-
-    const [closeModal, setCloseModal] = useState<boolean>(false);
-    const [isOpen, setIsOpen] = useState<boolean>(false);
-
-    const modalToggle = () => {
-        if (closeModal) {
-            setCloseModal(false)
-            setIsOpen(false)
-        } else {
-            setCloseModal(true)
-            setIsOpen(true)
-            }
-    }
+    const pathname = usePathname()
+    const [menuPath, setMenuPath] = useState<string | null>(null)
+    const isOpen = menuPath === pathname
 
     return (
         <>
-            <button 
+            <button
                 className={`${styles['burger-btn']} ${isOpen ? styles['open'] : ''}`}
-                onClick={modalToggle}
-                aria-label={isOpen ? "Закрыть меню" : "Открыть меню"}
+                onClick={() => setMenuPath(isOpen ? null : pathname)}
+                aria-label={isOpen ? 'Закрыть меню' : 'Открыть меню'}
                 aria-expanded={isOpen}
+                type="button"
             >
                 <span className={`${black ? styles['line__black'] : styles['line']}`}></span>
                 <span className={`${black ? styles['line__black'] : styles['line']}`}></span>
                 <span className={`${black ? styles['line__black'] : styles['line']}`}></span>
             </button>
-            <Modal
-                isOpen={closeModal}
-                onClose={() => {
-                    setCloseModal(false)
-                    setIsOpen(false)
-                }}
-            >{<NavMenu/>}</Modal>
+            <Modal isOpen={isOpen} onClose={() => setMenuPath(null)} />
         </>
-    );
+    )
 }

@@ -49,7 +49,6 @@ export default function LuxRoomReact({
     return (
         <>
             <section className={styles['desktop-section']}>
-                <Link href={path} >
                     <div className={
                         `${sectionClassName ? styles['foto-section__right'] : styles['foto-section']}`}>
                         <Gallery
@@ -196,7 +195,9 @@ export default function LuxRoomReact({
                         <div className={`${sectionClassName ? styles['description-container__right'] : styles['description-container']}`}>
                             <div className={styles['h2-and-more-place-btn']}>
                                 <h2 className={styles['h2']}>
-                                    {h2}
+                                    <Link href={path} className={styles['room-title-link']}>
+                                        {h2}
+                                    </Link>
                                 </h2>
                                 <MorePlaceButton />
                             </div>
@@ -255,11 +256,10 @@ export default function LuxRoomReact({
                                     <strong>от {price} ₽</strong>
                                     <span>1 ночь / 2 гостя</span>
                                 </div>
-                                <BookButton buttonText={'Подробнее'} asLink={false} />
+                                <BookButton buttonText={'Подробнее'} href={path} asLink={true} />
                             </div>
                         </div>
                     </div>
-                </Link>
             </section>
         </>
     )

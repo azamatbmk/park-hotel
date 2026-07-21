@@ -16,6 +16,5 @@ export interface ILuxRoomProps {
     square?: number;
     description: string;
     price: string;
-    guests?: string;
     path?: string;
 }

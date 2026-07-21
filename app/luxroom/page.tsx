@@ -3,23 +3,22 @@ import PhotoGallery from '../components/photo-gallery/photo-gallery'
 import styles from './lux-room.module.css'
 import BackButton from '../components/back-button/back-button'
 import BurgerIcon from '../components/burger-menu/burger-icon'
-import BookingBlock from '../components/booking/booking'
+import OtelixInline from '../components/otelix-ooking/otelix-inline'
 import Tag from './tags'
 import { arriveTime, firstLuxFoto, lux1, lux1Description } from './constants'
 import { createMetadata } from '../lib/seo';
 import { PAGE_SEO } from '../lib/page-seo';
 
 export const metadata: Metadata = createMetadata({
-  title: PAGE_SEO.luxroom.title,
-  description: PAGE_SEO.luxroom.description,
-  keywords: PAGE_SEO.luxroom.keywords,
-  path: PAGE_SEO.luxroom.path,
+    title: PAGE_SEO.luxroom.title,
+    description: PAGE_SEO.luxroom.description,
+    keywords: PAGE_SEO.luxroom.keywords,
+    path: PAGE_SEO.luxroom.path,
 });
 
 export default function LuxRoomPage() {
     return (
         <div className={styles['lux-room-container']}>
-            <BookingBlock display='hide-mobile' position='relative' />
             <div className={styles['back-button-and-number-wrapper']}>
                 <BackButton />
                 <div className={styles['lux-number']}>
@@ -31,6 +30,9 @@ export default function LuxRoomPage() {
             <PhotoGallery
                 images={firstLuxFoto.images}
             />
+            <div className={styles['otelix-slot']}>
+                <OtelixInline />
+            </div>
             <div className={styles['tag-component-container']}>
                 <div className={styles['tag-component-wrapper']}>
                     <Tag room={lux1.room} />

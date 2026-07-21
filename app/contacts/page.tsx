@@ -6,7 +6,7 @@ import styles from "./contacts.module.css"
 import Image from "next/image";
 import YandexMap from "../components/yandex-map/yandex-map";
 import JsonLd from "../components/json-ld/json-ld";
-import { createMetadata, hotelJsonLd, WHATSAPP_URL } from "../lib/seo";
+import { createMetadata, hotelJsonLd, HOTEL_PHONE, HOTEL_PHONE_HREF, WHATSAPP_URL } from "../lib/seo";
 import { PAGE_SEO } from "../lib/page-seo";
 
 export const metadata: Metadata = createMetadata({
@@ -38,7 +38,9 @@ export default function Contacts() {
                 </div>
                 <div className={styles['contacts-item']}>
                     <h3>Телефон</h3>
-                    <p>+7 (928) 070-11-55</p>
+                    <p>
+                        <a href={HOTEL_PHONE_HREF}>{HOTEL_PHONE}</a>
+                    </p>
                 </div>
                 <div className={styles['contacts-item']}>
                     <h3>Соцсети</h3>
@@ -52,20 +54,6 @@ export default function Contacts() {
                                 height={40}
                             />
                         </a>
-                        <Image
-                            className={styles['cocial-logo']}
-                            src={"/instagram-logo.svg"}
-                            alt={"Instagram логотип"}
-                            width={40}
-                            height={40}
-                        />
-                        <Image
-                            className={styles['cocial-logo']}
-                            src={"/telegram-logo.svg"}
-                            alt={"Telegram логотип"}
-                            width={40}
-                            height={40}
-                        />
                     </div>
                 </div>
             </div>

@@ -3,22 +3,21 @@ import PhotoGallery from '../components/photo-gallery/photo-gallery'
 import styles from './lux-room2.module.css'
 import BackButton from '../components/back-button/back-button'
 import BurgerIcon from '../components/burger-menu/burger-icon'
-import BookingBlock from '../components/booking/booking'
+import OtelixInline from '../components/otelix-ooking/otelix-inline'
 import Tag from './tags2'
-import { arriveTime, lux2, lux1Description, secondLuxFoto } from './constants'
+import { arriveTime, lux2, lux2Description, secondLuxFoto } from './constants'
 import { createMetadata } from '../lib/seo';
 import { PAGE_SEO } from '../lib/page-seo';
 
 export const metadata: Metadata = createMetadata({
-  title: PAGE_SEO.luxroom2.title,
-  description: PAGE_SEO.luxroom2.description,
-  path: PAGE_SEO.luxroom2.path,
+    title: PAGE_SEO.luxroom2.title,
+    description: PAGE_SEO.luxroom2.description,
+    path: PAGE_SEO.luxroom2.path,
 });
 
 export default function LuxRoomSecond() {
     return (
         <div className={styles['lux-room-container']}>
-            <BookingBlock display='hide-mobile' position='relative' />
             <div className={styles['back-button-and-number-wrapper']}>
                 <BackButton />
                 <div className={styles['lux-number']}>
@@ -30,12 +29,15 @@ export default function LuxRoomSecond() {
             <PhotoGallery
                 images={secondLuxFoto.images}
             />
+            <div className={styles['otelix-slot']}>
+                <OtelixInline />
+            </div>
             <div className={styles['tag-component-container']}>
                 <div className={styles['tag-component-wrapper']}>
                     <Tag room={lux2.room} />
                     <Tag room={arriveTime.room} mobile={true} />
                 </div>
-                <p className={styles['tag-component-container-paragraph']}>{lux1Description}</p>
+                <p className={styles['tag-component-container-paragraph']}>{lux2Description}</p>
             </div>
 
             <h2 className={styles['h2']}>Удобства</h2>
@@ -49,10 +51,10 @@ export default function LuxRoomSecond() {
                                 <li>Интернет</li>
                             </ul>
                         </div>
-                        <p>Кровать</p>
+                        <p>Кровати</p>
                         <div className={styles['ul-wrapper']}>
                             <ul>
-                                <li>Кровать «KingSize»</li>
+                                <li>Две раздельные кровати</li>
                             </ul>
                         </div>
                     </div>

@@ -12,7 +12,6 @@ import BurgerIcon from "../burger-menu/burger-icon";
 
 export default function HeroSection({
     background,
-    bookingBlock,
     overlay,
     mobileMargin,
 }: IHeroSectionProps) {
@@ -60,7 +59,6 @@ export default function HeroSection({
                     <PhoneButton />
                 </div>
             </div>
-            {bookingBlock}
         </section>
     )
 }

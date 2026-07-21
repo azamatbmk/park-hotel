@@ -9,7 +9,7 @@
     font-size: 17px;
     gap: 5px;
     position: relative;
-    font-family: var(--font-geist-sans);
+    font-family: var(--font-inter-regular), Helvetica, sans-serif;
 }
 
 @media (max-width: 768px) {

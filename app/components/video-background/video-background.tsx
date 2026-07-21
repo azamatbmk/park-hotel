@@ -8,15 +8,30 @@ export default function VideoBackground() {
   const [shouldLoad, setShouldLoad] = useState(false)
 
   useEffect(() => {
-    const loadVideo = () => setShouldLoad(true)
+    let cancelled = false
 
-    if ('requestIdleCallback' in window) {
-      const idleId = window.requestIdleCallback(loadVideo, { timeout: 2000 })
-      return () => window.cancelIdleCallback(idleId)
+    const loadVideo = () => {
+      if (!cancelled) setShouldLoad(true)
+    }
+
+    const idleWindow = window as Window & {
+      requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => number
+      cancelIdleCallback?: (id: number) => void
+    }
+
+    if (typeof idleWindow.requestIdleCallback === 'function') {
+      const idleId = idleWindow.requestIdleCallback(loadVideo, { timeout: 2000 })
+      return () => {
+        cancelled = true
+        idleWindow.cancelIdleCallback?.(idleId)
+      }
     }
 
     const timeoutId = window.setTimeout(loadVideo, 1500)
-    return () => window.clearTimeout(timeoutId)
+    return () => {
+      cancelled = true
+      window.clearTimeout(timeoutId)
+    }
   }, [])
 
   useEffect(() => {

@@ -10,16 +10,3 @@ export interface IPhotoProps {
 export interface IPhotoCarousel {
     images: IPhotoProps[];
 }
-
-// export interface IGalleryItemProps {
-//     original: string;
-//     thumbnail: string;
-//     width: number;
-//     height: number;
-//     alt: string;
-// }
-
-// export interface IGalleryItems {
-//     items: IGalleryItemProps[];
-//     images: IPhotoProps[];
-// }

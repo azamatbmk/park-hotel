@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local"
 import NavMenu from "./components/nav-menu/nav-menu";
 import Footer from "./components/footer/footer";
-import Otelix from "./otelix/page";
+import OtelixGlobal from "./components/otelix-ooking/otelix-global";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "./lib/seo";
 
 const dzuarikau = localFont({
@@ -14,7 +14,8 @@ const dzuarikau = localFont({
 
 const inter = Inter({
   variable: "--font-inter-regular",
-  weight: "300"
+  weight: "300",
+  subsets: ["latin", "cyrillic"],
 })
 
 export const metadata: Metadata = {
@@ -31,6 +32,12 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -38,12 +45,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-      </head>
-      <body className={`${dzuarikau.variable} ${inter.variable}`}>
+      <body className={`${dzuarikau.variable} ${inter.variable} ${inter.className}`}>
         <NavMenu />
-        <Otelix />
+        <OtelixGlobal />
         {children}
         <Footer />
       </body>
