@@ -29,7 +29,7 @@ export default function FoodMenu() {
                         anchor={MENU_PDF.breakfast}
                         icon={rightTopArrow}
                         btnText={'меню'}
-                        description={'Завтраки, которые не только насытят, но\u00A0и\u00A0подарят энергию на весь день. С 9:00 до 12:00.'}
+                        description={'Завтраки, которые не только насытят, но\u00A0и\u00A0подарят энергию на весь день. С 9:00 до 11:00.'}
                     >
                         {'Завтрак'}
                     </FoodCardInfo>
