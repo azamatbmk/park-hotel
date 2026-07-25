@@ -23,21 +23,24 @@ export default function About(
                 <h2 className={styles['title']}>{children}</h2>
             </div>
             <div className={styles['section-photo']}>
-                <Image 
-                    className={styles['photo']}
-                    src={bgPhoto}
-                    alt={alt}
-                    sizes="100vw"
-                    loading="lazy"
-                />
-                <div className={`${right ? styles['h5-and-p-box__right'] : styles['h5-and-p-box']}`}>
-                    <div className={styles['more-btn-and-h5-wrapper']}>
-                        <h5 className={styles['h5']}>{children}</h5>
-                        {btnText && <MoreButton anchor={anchor} icon={icon}>{btnText}</MoreButton>}
+                <div className={styles['photo-frame']}>
+                    <Image 
+                        className={styles['photo']}
+                        src={bgPhoto}
+                        alt={alt}
+                        fill
+                        sizes="100vw"
+                        loading="lazy"
+                    />
+                    <div className={`${right ? styles['h5-and-p-box__right'] : styles['h5-and-p-box']}`}>
+                        <div className={styles['more-btn-and-h5-wrapper']}>
+                            <h5 className={styles['h5']}>{children}</h5>
+                            {btnText && <MoreButton anchor={anchor} icon={icon}>{btnText}</MoreButton>}
+                        </div>
+                        <p className={styles['paragraph']}>
+                            {description}
+                        </p>
                     </div>
-                    <p className={styles['paragraph']}>
-                        {description}
-                    </p>
                 </div>
                 <div className={styles['mobile-768-description']}>
                     <p>{descriptionPartOne}</p>

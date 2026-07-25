@@ -7,6 +7,12 @@
     line-height: 0;
 }
 
+.photo-frame {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
 .title {
     padding: 0px 150px;
     font-family: var(--font-dzuarikau);
@@ -20,8 +26,6 @@
 
 .photo {
     object-fit: cover;
-    width: 100%;
-    height: 100vh;
 }
 
 .h5-and-p-box {
@@ -123,11 +127,12 @@
         position: relative;
     }
 
-    .photo {
-        object-fit: cover;
-        width: 100%;
+    .photo-frame {
         height: 15em;
         background-color: #696054;
-        display: block;
+    }
+
+    .photo {
+        object-fit: cover;
     }
 }

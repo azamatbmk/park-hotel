@@ -14,8 +14,13 @@ export default function SiteLogo({
   priority?: boolean;
 }) {
   return (
-    <Link href="/" className={`${styles["logo-link"]} ${className ?? ""}`} aria-label="На главную — Парк-отель Дзуарикау">
+    <Link
+      href="/"
+      className={`${styles["logo-link"]} ${className ?? ""}`}
+      aria-label="На главную — Парк-отель Дзуарикау"
+    >
       <Image
+        className={styles["logo-image"]}
         src="/logo.svg"
         alt="Парк-отель Дзуарикау"
         width={width}

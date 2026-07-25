@@ -12,45 +12,44 @@
     z-index: 30;
 }
 
-.rest-bg__desktop {
+/* Fill HeroSection (100vh desktop / 25em mobile) — do not hardcode 100vh */
+.rest-bg-container {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
+    inset: 0;
+    overflow: hidden;
+}
+
+.rest-bg-wrapper__desktop,
+.rest-bg-wrapper__mobile {
+    position: absolute;
+    inset: 0;
+}
+
+.rest-bg__desktop {
     object-fit: cover;
     z-index: 0;
 }
 
 .rest-bg__mobile {
-   display: none;
+    display: none;
 }
 
-
-
-
-
-
-
 @media (max-width: 768px) {
-    .rest-bg__desktop {
-            display: none;
+    .rest-bg-wrapper__desktop {
+        display: none;
     }
 
     .h1 {
         font-size: 66px;
     }
 
-    
-     .rest-bg__mobile {
+    .rest-bg-wrapper__mobile {
         display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    }
+
+    .rest-bg__mobile {
+        display: block;
         object-fit: cover;
         z-index: 0;
     }
-
 }

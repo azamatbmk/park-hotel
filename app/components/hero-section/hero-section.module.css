@@ -71,6 +71,13 @@
     object-position: left;
 }
 
+.main-logo img,
+.main-logo :global(img) {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -122,7 +129,12 @@
 
     .main-logo {
         width: 210px;
-        height: 70px;
+    }
+
+    .main-logo img,
+    .main-logo :global(img) {
+        width: 210px;
+        height: auto;
         object-fit: contain;
         object-position: left;
     }

@@ -13,6 +13,7 @@ export default function PagesHeroSectionBackground({ src, alt, h2}: {
                     className={styles['rest-bg__desktop']}
                     src={src}
                     alt={alt}
+                    fill
                     sizes="100vw"
                     priority
                 />
@@ -22,6 +23,7 @@ export default function PagesHeroSectionBackground({ src, alt, h2}: {
                     className={styles['rest-bg__mobile']}
                     src={src}
                     alt={alt}
+                    fill
                     sizes="100vw"
                     priority
                 />
