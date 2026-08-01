@@ -57,9 +57,9 @@ export default function PoolPage() {
                 h2={'Бассейн'}
                 description={'Открытый подогреваемый бассейн парк-отеля «Дзуарикау» доступен для гостей с\u00A010:00 до 17:00. Для комфортного отдыха предусмотрены солнечные зоны для загара и\u00A0тени под навесами.'}
                 buttonText={'Забронировать лежак'}
-                price={"1\u00A0300"}
+                price={"1\u00A0500"}
                 guestsAndTime="1 гость"
-                guestsAndTimeMobile="Гости от 6 лет"
+                guestsAndTimeMobile="Гости до 1 года — бесплатно."
             />
             <H2HeaderComponent>{'Баня'}</H2HeaderComponent>
             <PoolFotoSection

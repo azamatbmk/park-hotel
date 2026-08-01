@@ -154,13 +154,6 @@ export default function PoolFotoSection({
                                     </span>
                                     <h5>{price}{'\u00A0'}₽</h5>
                                     <span style={{marginBottom: '10px'}}>{guestsAndTimeMobile}</span>
-                                    <div className={
-                                        `${infoBoxLeftSide
-                                            ? styles['price-work-days-item__none']
-                                            : styles['price-work-days-item']}`}>
-                                        <h5>700{'\u00A0'}₽/чел</h5>
-                                        <span>{'дети с 2 до 6 лет'}</span>
-                                    </div>
                                 </div>
 
                                 <div className={
@@ -169,9 +162,6 @@ export default function PoolFotoSection({
                                         : styles['price-work-days-item']}`}>
                                     <span style={{color: 'white'}}>сб-вс</span>
                                     <h5>1{'\u00A0'}500{'\u00A0'}₽</h5>
-                                    <span style={{ marginBottom: '10px' }}>{guestsAndTimeMobile}</span>
-                                    <h5>700{'\u00A0'}₽/чел</h5>
-                                    <span>{'дети с 2 до 6 лет'}</span>
                                 </div>
                             </div>
                             <div style={{ maxWidth: '65%'}}>
@@ -206,13 +196,6 @@ export default function PoolFotoSection({
                                         </span>
                                         <h5>{price}{'\u00A0'}₽</h5>
                                         <span style={{marginBottom: '10px'}}>{guestsAndTimeMobile}</span>
-                                        <div className={
-                                            `${infoBoxLeftSide
-                                                ? styles['price-work-days-item__none']
-                                                : styles['price-work-days-item']}`}>
-                                            <h5>700{'\u00A0'}₽/чел</h5>
-                                            <span>{'дети с 2 до 6 лет'}</span>
-                                        </div>
                                 </div>
                             </div> 
                             <BookButton buttonText={buttonText} />
