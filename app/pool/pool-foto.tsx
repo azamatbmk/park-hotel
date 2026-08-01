@@ -162,6 +162,7 @@ export default function PoolFotoSection({
                                         : styles['price-work-days-item']}`}>
                                     <span style={{color: 'white'}}>сб-вс</span>
                                     <h5>1{'\u00A0'}500{'\u00A0'}₽</h5>
+                                    <span style={{ marginBottom: '10px' }}>{guestsAndTimeMobile}</span>
                                 </div>
                             </div>
                             <div style={{ maxWidth: '65%'}}>
