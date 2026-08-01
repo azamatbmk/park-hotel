@@ -47,6 +47,8 @@ export default function PhotoGallery({ images }: PhotoGalleryProps) {
             width={currentImage.width}
             height={currentImage.height}
             className={styles['mainImage']}
+            sizes="(max-width: 768px) 100vw, calc(100vw - 180px)"
+            style={{ width: "100%", height: "auto" }}
             priority
           />
           
@@ -97,6 +99,7 @@ export default function PhotoGallery({ images }: PhotoGalleryProps) {
               width={120}
               height={90}
               className={styles['verticalThumbnailImage']}
+              sizes="130px"
             />
           </button>
         ))}

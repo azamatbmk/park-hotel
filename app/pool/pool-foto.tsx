@@ -32,6 +32,8 @@ export default function PoolFotoSection({
                     alt={alt}
                     width={1840}
                     height={650}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "100%" }}
                 />
                 <Image
                     className={styles['mobile-foto']}
@@ -39,6 +41,8 @@ export default function PoolFotoSection({
                     alt={alt}
                     width={393}
                     height={280}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "auto" }}
                 />
                 <div className={
                     `${infoBoxLeftSide ? styles['pool-info-box__left'] : styles['pool-info-box']}`
@@ -211,6 +215,8 @@ export default function PoolFotoSection({
                     alt={alt}
                     width={910}
                     height={607}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    style={{ width: "100%", height: "100%" }}
                 />
                 <Image
                     className={styles['one-foto']}
@@ -218,6 +224,8 @@ export default function PoolFotoSection({
                     alt={alt}
                     width={910}
                     height={607}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    style={{ width: "100%", height: "100%" }}
                 />
             </div>
             <div className={styles['three-foto-wrapper']}>
@@ -227,6 +235,8 @@ export default function PoolFotoSection({
                     alt={alt}
                     width={600}
                     height={400}
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    style={{ width: "100%", height: "100%" }}
                 />
                 <Image
                     className={styles['one-foto']}
@@ -234,6 +244,8 @@ export default function PoolFotoSection({
                     alt={alt}
                     width={600}
                     height={400}
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    style={{ width: "100%", height: "100%" }}
                 />
                 <Image
                     className={styles['one-foto']}
@@ -241,6 +253,8 @@ export default function PoolFotoSection({
                     alt={alt}
                     width={600}
                     height={400}
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    style={{ width: "100%", height: "100%" }}
                 />
             </div>
         </section>

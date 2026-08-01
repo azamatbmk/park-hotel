@@ -8,26 +8,14 @@ export default function PagesHeroSectionBackground({ src, alt, h2}: {
     }) {
     return (
         <div className={styles['rest-bg-container']}>
-            <div className={styles['rest-bg-wrapper__desktop']}>
-                <Image
-                    className={styles['rest-bg__desktop']}
-                    src={src}
-                    alt={alt}
-                    fill
-                    sizes="100vw"
-                    priority
-                />
-            </div>
-            <div className={styles['rest-bg-wrapper__mobile']}>
-                <Image
-                    className={styles['rest-bg__mobile']}
-                    src={src}
-                    alt={alt}
-                    fill
-                    sizes="100vw"
-                    priority
-                />
-            </div>
+            <Image
+                className={styles['rest-bg']}
+                src={src}
+                alt={alt}
+                fill
+                sizes="100vw"
+                priority
+            />
             <h1 className={styles['h1']}>{h2}</h1>
         </div>
     )

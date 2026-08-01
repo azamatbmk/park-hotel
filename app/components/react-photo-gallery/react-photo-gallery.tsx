@@ -88,7 +88,8 @@ export default function LuxRoomReact({
                                                 alt={alt}
                                                 width={445}
                                                 height={704}
-                                                style={{ cursor: 'pointer' }}
+                                                sizes="(max-width: 768px) 1px, 50vw"
+                                                style={{ cursor: "pointer", width: "100%", height: "100%" }}
                                             />
                                         )}
                                     </Item>
@@ -98,7 +99,9 @@ export default function LuxRoomReact({
                                         alt={alt}
                                         width={393}
                                         height={250}
+                                        sizes="100vw"
                                         quality={100}
+                                        style={{ width: "100%", height: "auto" }}
                                     />
 
                                     <MoreFotoButton />
@@ -127,7 +130,8 @@ export default function LuxRoomReact({
                                                     alt="Фото номера"
                                                     width={442}
                                                     height={345}
-                                                    style={{ cursor: 'pointer' }}
+                                                    sizes="(max-width: 768px) 1px, 25vw"
+                                                    style={{ cursor: "pointer", width: "100%", height: "100%" }}
                                                 />
                                             )}
                                         </Item>
@@ -153,7 +157,8 @@ export default function LuxRoomReact({
                                                         alt="Фото номера"
                                                         width={213}
                                                         height={342}
-                                                        style={{ cursor: 'pointer' }}
+                                                        sizes="(max-width: 768px) 1px, 12vw"
+                                                        style={{ cursor: "pointer", width: "100%", height: "100%" }}
                                                     />
                                                 )}
                                             </Item>
@@ -181,7 +186,8 @@ export default function LuxRoomReact({
                                                         alt="Фото номера"
                                                         width={213}
                                                         height={342}
-                                                        style={{ cursor: 'pointer' }}
+                                                        sizes="(max-width: 768px) 1px, 12vw"
+                                                        style={{ cursor: "pointer", width: "100%", height: "100%" }}
                                                     />
                                                 )}
                                             </Item>

@@ -127,6 +127,8 @@
         height: auto;
     }
 }
+
+@media (max-width: 500px) {
     .food-cards-section {
         padding: 0 0px;
     }

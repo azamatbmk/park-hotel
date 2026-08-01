@@ -23,6 +23,8 @@ export default function ExcursionPhotoSection(
                         alt={alt}
                         width={910}
                         height={413}
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        style={{ width: "100%", height: "auto" }}
                     />
                     <a
                         href={mapLink}

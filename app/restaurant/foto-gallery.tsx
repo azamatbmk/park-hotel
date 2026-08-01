@@ -2,70 +2,50 @@ import H2HeaderComponent from "../components/h2-header/h2-header";
 import styles from "./foto-gallery.module.css"
 import Image from "next/image";
 
+const desktopGallery = [
+    "/photos/restaurant6.png",
+    "/photos/restaurant2.png",
+    "/photos/restaurant5.png",
+    "/photos/restaurant4.png",
+] as const;
+
+const desktopCards = [
+    "/photos/restaurant7.png",
+    "/photos/restaurant8.png",
+    "/photos/restaurant9.png",
+] as const;
+
 export default function FotoGallery() {
     return(
         <section className={styles['foto-gallery-section']}>
             <H2HeaderComponent>{'Фото'}</H2HeaderComponent>
             <div className={styles['desktop-foto-gallery-container']}>
-                <div className={styles['foto-gallery-item-wrapper']}>
-                    <Image
-                        src={'/photos/restaurant6.png'}
-                        alt="Фото ресторана"
-                        width={620}
-                        height={400}
-                    />
-                </div>
-                <div className={styles['foto-gallery-item-wrapper']}>
-                    <Image
-                        src={'/photos/restaurant2.png'}
-                        alt="Фото ресторана"
-                        width={620}
-                        height={400}
-                    />
-                </div>
-                <div className={styles['foto-gallery-item-wrapper']}>
-                    <Image
-                        src={'/photos/restaurant5.png'}
-                        alt="Фото ресторана"
-                        width={620}
-                        height={400}
-                    />
-                </div>
-                <div className={styles['foto-gallery-item-wrapper']}>
-                    <Image
-                        className={styles['display__none']}
-                        src={'/photos/restaurant4.png'}
-                        alt="Фото ресторана"
-                        width={620}
-                        height={400}
-                    />
-                </div>
+                {desktopGallery.map((src) => (
+                    <div key={src} className={styles['foto-gallery-item-wrapper']}>
+                        <Image
+                            src={src}
+                            alt="Фото ресторана"
+                            width={620}
+                            height={400}
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            style={{ width: "100%", height: "auto" }}
+                        />
+                    </div>
+                ))}
             </div>
              <div className={styles['desktop-foto-cards-container']}>
-                <div className={styles['foto-card-wrapper']}>
-                    <Image
-                        src={'/photos/restaurant7.png'}
-                        alt="Фото блюда"
-                        width={400}
-                        height={310}    
-                    />
-                </div>
-                <div className={styles['foto-card-wrapper']}>
-                    <Image
-                        src={'/photos/restaurant8.png'}
-                        alt="Фото блюда"
-                        width={400}
-                        height={310}    
-                    />
-                </div>
-                <div className={styles['foto-card-wrapper']}>
-                    <Image
-                        src={'/photos/restaurant9.png'}
-                        alt="Фото блюда"
-                        width={400}
-                        height={310}    
-                    />
-                </div>
+                {desktopCards.map((src) => (
+                    <div key={src} className={styles['foto-card-wrapper']}>
+                        <Image
+                            src={src}
+                            alt="Фото блюда"
+                            width={400}
+                            height={310}
+                            sizes="(max-width: 768px) 1px, 33vw"
+                            style={{ width: "100%", height: "auto" }}
+                        />
+                    </div>
+                ))}
             </div>
 
             <div className={styles['mobile-foto-gallery-container']}>
@@ -75,6 +55,8 @@ export default function FotoGallery() {
                         alt="Фото ресторана"
                         width={620}
                         height={400}
+                        sizes="100vw"
+                        style={{ width: "100%", height: "auto" }}
                     />
                 </div>
                 <div className={styles['mobile-foto-cards-container']}>
@@ -82,16 +64,18 @@ export default function FotoGallery() {
                         <Image
                             src={'/photos/restaurant-mobile1.png'}
                             alt="Фото блюда"
-                            width={194}
-                            height={134}    
+                            fill
+                            sizes="50vw"
+                            style={{ objectFit: "cover" }}
                         />
                     </div>
                     <div className={styles['foto-card-wrapper__right']}>
                         <Image
                             src={'/photos/restaurant-mobile5.png'}
                             alt="Фото блюда"
-                            width={194}
-                            height={134}    
+                            fill
+                            sizes="50vw"
+                            style={{ objectFit: "cover" }}
                         />
                     </div>
                 </div>
@@ -103,6 +87,8 @@ export default function FotoGallery() {
                         alt="Фото ресторана"
                         width={620}
                         height={400}
+                        sizes="100vw"
+                        style={{ width: "100%", height: "auto" }}
                     />
                 </div>
                 <div className={styles['mobile-foto-cards-container']}>
@@ -110,16 +96,18 @@ export default function FotoGallery() {
                         <Image
                             src={'/photos/restaurant-mobile7.png'}
                             alt="Фото блюда"
-                            width={194}
-                            height={134}    
+                            fill
+                            sizes="50vw"
+                            style={{ objectFit: "cover" }}
                         />
                     </div>
                     <div className={styles['foto-card-wrapper__right']}>
                         <Image
                             src={'/photos/restaurant-mobile8.png'}
                             alt="Фото блюда"
-                            width={194}
-                            height={134}    
+                            fill
+                            sizes="50vw"
+                            style={{ objectFit: "cover" }}
                         />
                     </div>
                 </div>
@@ -131,6 +119,8 @@ export default function FotoGallery() {
                         alt="Фото ресторана"
                         width={620}
                         height={400}
+                        sizes="100vw"
+                        style={{ width: "100%", height: "auto" }}
                     />
                 </div>
             </div>

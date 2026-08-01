@@ -62,28 +62,26 @@
 
     .foto-card-wrapper__left  {
        flex: 1;
+       position: relative;
+       height: 134px;
+       margin: 10px 0;
     }
 
     .foto-card-wrapper__right  {
        flex: 1;
+       position: relative;
+       height: 134px;
+       margin: 10px 0;
     }
 
     .foto-card-wrapper__left img {
-        width: 100%;
         object-fit: cover;
-        height: 134px;
         border-radius: 0 12px 12px 0;
-        /* display: none; */
-        margin: 10px 0;
     }
 
     .foto-card-wrapper__right img {
-        width: 100%;
         object-fit: cover;
-        height: 134px;
         border-radius: 12px 0 0 12px;
-        /* display: none; */
-        margin: 10px 0;
     }
 
     .mobile-foto-gallery-container {
@@ -117,20 +115,12 @@
     }
 
     .foto-card-wrapper__left img {
-        width: 100%;
         object-fit: cover;
-        height: 134px;
         border-radius: 0 12px 12px 0;
-        display: block;
-        margin: 10px 0;
     }
 
     .foto-card-wrapper__right img {
-        width: 100%;
         object-fit: cover;
-        height: 134px;
         border-radius: 12px 0 0 12px;
-        display: block;
-        margin: 10px 0;
     }
 }

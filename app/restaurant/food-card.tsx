@@ -44,7 +44,7 @@ export default function FoodMenu() {
                             src={card.desktopSrc}
                             alt="Фото блюда"
                             fill
-                            sizes="(max-width: 768px) 100vw, 33vw"
+                            sizes="(max-width: 768px) 1px, 33vw"
                             priority={index === 0}
                             style={{ objectFit: "cover" }}
                         />
@@ -56,6 +56,7 @@ export default function FoodMenu() {
                             height={115}
                             sizes="90vw"
                             priority={index === 0}
+                            style={{ width: "100%", height: "auto" }}
                         />
                         <FoodCardInfo
                             anchor={card.anchor}

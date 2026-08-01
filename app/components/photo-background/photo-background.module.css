@@ -12,44 +12,19 @@
     z-index: 30;
 }
 
-/* Fill HeroSection (100vh desktop / 25em mobile) — do not hardcode 100vh */
 .rest-bg-container {
     position: absolute;
     inset: 0;
     overflow: hidden;
 }
 
-.rest-bg-wrapper__desktop,
-.rest-bg-wrapper__mobile {
-    position: absolute;
-    inset: 0;
-}
-
-.rest-bg__desktop {
+.rest-bg {
     object-fit: cover;
     z-index: 0;
 }
 
-.rest-bg__mobile {
-    display: none;
-}
-
 @media (max-width: 768px) {
-    .rest-bg-wrapper__desktop {
-        display: none;
-    }
-
     .h1 {
         font-size: 66px;
-    }
-
-    .rest-bg-wrapper__mobile {
-        display: block;
-    }
-
-    .rest-bg__mobile {
-        display: block;
-        object-fit: cover;
-        z-index: 0;
     }
 }

@@ -26,6 +26,7 @@ export default function SiteLogo({
         width={width}
         height={height}
         priority={priority}
+        style={{ width: "auto", height: "auto" }}
       />
     </Link>
   );
