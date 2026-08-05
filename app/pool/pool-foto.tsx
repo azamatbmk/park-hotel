@@ -140,7 +140,7 @@ export default function PoolFotoSection({
                                         ? styles['price-work-days-item__none']
                                         : styles['price-work-days-item']}`}>
                                     <p>сб-вс</p>
-                                    <h5>1{'\u00A0'}500{'\u00A0'}₽</h5>
+                                    <h5>2{'\u00A0'}000{'\u00A0'}₽</h5>
                                 </div>
                             </div>
                             <div className={styles['price-work-days-wrapper__mobile']}>
